@@ -1,0 +1,42 @@
+<aside class="flex flex-col w-25 py-5 px-3 border-r items-center space-y-5" data-controller="main-sidebar">
+  <!--  TODO: replace with logo -->
+
+  <!--  badge -->
+  <div class="inline-flex items-center rounded-full border px-2.5 py-0.5 text-xs font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 border-transparent bg-primary text-primary-foreground">
+    devnet
+  </div>
+
+  <a href="/dashboard"
+     data-action="main-sidebar#selectLink"
+     hx-push-url="/dashboard"
+     hx-get="/dashboard/c/page"
+     hx-target="#mainContent"
+     hx-swap="outerHTML"
+     class="p-1"
+     preload>
+    TE
+  </a>
+
+  <a href="/dashboard"
+     data-main-sidebar-target="dashboardLink"
+     hx-push-url="/dashboard"
+     hx-get="/dashboard/c/page"
+     hx-target="#mainContent"
+     hx-swap="outerHTML"
+     class='p-1 <% if active_link == "dashboardLink" { %> <%= active_classes %> <% } %>'
+     preload>
+    <!-- Assuming that "Home" is an SVG icon or image -->
+    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-home"><path d="m3 9 9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+  </a>
+
+  <a href="/portfolio"
+     data-main-sidebar-target="portfolioLink"
+     hx-push-url="/portfolio"
+     hx-get="/portfolio/c/page"
+     hx-target="#mainContent"
+     hx-swap="outerHTML"
+     class='p-1 <% if active_link == "portfolioLink" { %> <%= active_classes %> <% } %>'
+     preload>
+    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-portfolio"><path d="M21 12V7H5a2 2 0 0 1 0-4h14v4"/><path d="M3 5v14a2 2 0 0 0 2 2h16v-5"/><path d="M18 12a2 2 0 0 0 0 4h4v-4Z"/></svg>
+  </a>
+</aside>

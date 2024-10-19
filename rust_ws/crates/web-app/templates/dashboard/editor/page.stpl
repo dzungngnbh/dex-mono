@@ -1,0 +1,44 @@
+
+
+
+
+
+
+<div id="mainContent" class="min-h-screen w-full"
+     data-controller="editor-page"
+>
+
+  <%- breadcrumb_ui %>
+
+  <div class="h-full grid grid-cols-4">
+    <div class="px-5 col-span-3 border-r pt-10">
+      <div class="flex flex-col items-center">
+        <form class="flex w-[600px] mb-5">
+          <input
+              class="flex h-10 w-full rounded-md border border-input bg-background px-3 py-2 ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50 text-xl font-medium border-none"
+              placeholder="Enter strategy name"
+              data-action="input->http#onInput"
+              data-http-url-param="/api/strategy/update"
+              data-http-payload-param='{"strategyId": "<%= strategy_id %>"}'
+              name="strategyName"
+              value="<%= strategy_name %>"/>
+        </form>
+        <div class="border-t w-[600px] mt-3 mb-7"></div>
+        <div data-controller="editor"
+             data-editor-strategy-id-value="<%= strategy_id %>"
+        >
+          <h3 class="font-bold mb-5">Steps</h3>
+
+          <!-- connectors included -->
+          <%- strategy_commands_ui %>
+
+          <%- blank_block_menu_v1_ui %>
+        </div>
+      </div>
+    </div>
+
+    <%- command_block_test_ui %>
+  </div>
+
+  <% include!("../../components/ui/combobox/results.stpl"); %>
+</div>

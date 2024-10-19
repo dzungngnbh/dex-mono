@@ -1,0 +1,9 @@
+.ag-theme-alpine-dark.ag-theme-tradingexec {
+    font-family: Inter, sans-serif;
+}
+
+.ag-theme-alpine-dark.ag-theme-tradingexec {
+    --ag-background-color: transparent;
+    --ag-header-background-color: transparent;
+    --ag-row-border-width: 0px;
+}

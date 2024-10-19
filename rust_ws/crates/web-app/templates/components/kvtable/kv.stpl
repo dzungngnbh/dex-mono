@@ -1,0 +1,4 @@
+<div class="flex py-2 border-b last-child:border-none">
+  <div class="w-1/2 pl-4"><%- k_ui %></div>
+  <div class="w-1/2 pr-4"><%- v_ui %></div>
+</div>

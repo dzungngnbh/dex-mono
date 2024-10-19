@@ -1,0 +1,36 @@
+<div class="border-2 rounded-lg transition w-[600px] shadow-2xl transition"
+     data-controller="blank-block"
+     data-action="mouseover->blank-block#showDeleteButton
+                  mouseout->blank-block#hideDeleteButton
+                  click->editor#showBlockOptionMenu"
+     data-editor-block-order="<%= block_order %>"
+     data-editor-target="blankBlock"
+     data-editor-page-target="commandBlock"
+     data-strategy-command-id="<%= id %>"
+>
+  <div class="py-3 px-5 flex items-center cursor-pointer">
+    <div class="mr-3">
+      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+           stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+           class="lucide lucide-plus-square">
+        <rect width="18" height="18" x="3" y="3" rx="2"/>
+        <path d="M8 12h8"/>
+        <path d="M12 8v8"/>
+      </svg>
+    </div>
+    <div class="text-sm flex flex-col">
+      Add a block ( Tokens, Weights, Conditions )
+    </div>
+    <div class="grow"></div>
+    <div class="hidden hover:flex"
+         data-blank-block-target="deleteButton">
+      <span class="px-2 py-1 text-xs flex items-center bg-gray-800 rounded"><span>
+      <svg xmlns="http://www.w3.org/200/svg" width="16" height="16" viewBox="0 0 24 24" fill="none"
+           stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+           class="lucide lucide-trash-2"><path d="M3 6h18"/><path
+          d="M19 6v14c0 1-1 2-2 2H7c-1 0-2-1-2-2V6"/><path d="M8 6V4c0-1 1-2 2-2h4c1 0 2 1 2 2v2"/><line
+          x1="10" x2="10" y1="11" y2="17"/><line x1="14" x2="14" y1="11" y2="17"/></svg>
+      </span></span>
+    </div>
+  </div>
+</div>

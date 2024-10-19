@@ -1,0 +1,3 @@
+<img alt="<%= alt %>" loading="lazy" width="<%= width %>" height="<%= height %>"
+     class="<%= class %>"
+     src="<%= src %>">

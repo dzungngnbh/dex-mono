@@ -1,0 +1,66 @@
+<div data-test="command-block-details" class="border-t py-3 px-5 text-sm space-y-5 hidden"
+     data-command-block-target="commandDetails"
+     data-controller="swap-command-block-details"
+     data-action="swap-command-block-details:selectItem->combobox#selectItemDispatched"
+>
+  <div class="flex flex-col"><h4 class="font-bold mb-2 text-xs">Select signal source</h4>
+    <button
+        class="inline-flex items-center rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 border border-input bg-background hover:bg-accent hover:text-accent-foreground h-10 px-4 py-2 w-[500px] justify-between"
+        role="combobox" aria-expanded="false" type="button" aria-haspopup="dialog"
+        aria-controls="radix-:r5:" data-state="closed"><img alt="" loading="lazy" width="22" height="22"
+                                                            decoding="async" data-nimg="1"
+                                                            src="/public/logos/uniswap.svg"
+                                                            style="color: transparent;">Swap ( single hop )
+      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+           stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+           class="ml-2 h-4 w-4 shrink-0 opacity-50">
+        <path d="m7 15 5 5 5-5"></path>
+        <path d="m7 9 5-5 5 5"></path>
+      </svg>
+    </button>
+  </div>
+
+  <div class="flex flex-col space-y-2"><h4 class="font-bold text-xs">Swap component</h4>
+    <div class="flex flex-col w-full max-w-sm space-y-2">
+      <div class="flex items-center space-x-2"><label
+          class="text-sm font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70 w-[100px]"
+          for="slippage">From</label>
+        <%- token_from_combobox_ui %>
+      </div>
+
+      <div class="flex items-center space-x-2"><label
+          class="text-sm font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70 w-[100px]"
+          for="slippage">To</label>
+
+        <%- token_to_combobox_ui %>
+      </div>
+      <div class="flex items-center space-x-2"><label
+          class="text-sm font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70 w-[100px]"
+          for="amount">Amount</label>
+        <input
+            class="flex h-10 w-full rounded-md border border-input bg-background px-3 py-2 text-sm ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50"
+            id="amount"
+            placeholder="Amount"
+
+            data-action="input->http#onInput"
+            data-http-url-param="/api/strategy_command/update"
+            data-http-payload-param='{"strategyCommandId": "<%= strategy_command_id %>"}'
+            name="amount"
+            value="<%= amount %>">
+      </div>
+      <div class="flex items-center space-x-2"><label
+          class="text-sm font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70 w-[100px]"
+          for="slippage">Slippage</label>
+        <input
+            class="flex h-10 w-full rounded-md border border-input bg-background px-3 py-2 text-sm ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50"
+            id="slippage"
+            data-action="input->http#onInput"
+            data-http-url-param="/api/strategy_command/update"
+            data-http-payload-param='{"strategyCommandId": "<%= strategy_command_id %>"}'
+            placeholder="Slippage"
+            name="slippage"
+            value="<%= slippage %>">
+      </div>
+    </div>
+  </div>
+</div>

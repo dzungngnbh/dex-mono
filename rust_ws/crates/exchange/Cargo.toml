@@ -1,0 +1,43 @@
+[package]
+name = "exchange"
+version = "0.1.0"
+edition = "2021"
+
+build = "src/exchange_service/build.rs"
+
+[[bin]]
+name = "exchange_service"
+path = "src/exchange_service/main.rs"
+
+[[bin]]
+name = "exchange_client"
+path = "src/exchange_client/main.rs"
+
+[build-dependencies]
+capnpc = "0.19.0"
+
+[dependencies]
+shared = { path = "../shared" }
+dex-client = { path = "../dex-client" }
+
+mimalloc = { workspace = true }
+anyhow = { workspace = true }
+thiserror = { workspace = true }
+dotenvy = { workspace = true }
+tokio = { workspace = true }
+tracing = { workspace = true }
+tracing-subscriber = { workspace = true }
+
+clickhouse = { workspace = true }
+ethers = { workspace = true }
+
+axum = { version = "0.7.4", features = ["ws"] }
+axum-server = { version = "0.6.0", features = ["tls-rustls"] }
+capnp = "0.19"
+capnp-rpc = "0.19.0"
+dashmap = "5.5.3"
+futures = { version = "0.3.17", features = ["compat"] }
+skiplist = "0.5.1"
+tokio-util = { version = "0.7.10", features = ["codec", "compat"] }
+tower = "0.4.13"
+tower-http = { version = "0.5.1", features = ["trace", "compression-br"] }

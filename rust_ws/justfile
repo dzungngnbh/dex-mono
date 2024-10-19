@@ -1,0 +1,34 @@
+alias u := update
+alias r := release
+alias t := test
+alias b := build
+alias f := fmt
+alias d := dev
+
+export RUSTFLAGS := '-C target-cpu=native'
+
+dev:
+    cargo run
+
+update:
+    cargo update
+
+test:
+    cargo test -- --nocapture
+
+fmt:
+    cargo fmt --all;
+
+clippy:
+    cargo clippy --fix --allow-dirty
+
+release:
+    cargo build --workspace --release
+
+release-linux:
+    cargo build --target x86_64-unknown-linux-musl --release
+
+build:
+    cargo build
+
+pre: fmt test

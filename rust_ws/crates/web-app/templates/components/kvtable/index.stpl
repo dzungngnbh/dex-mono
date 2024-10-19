@@ -1,0 +1,6 @@
+<div class="flex flex-col border-2 rounded shadow-md <%= classes %>"
+     <% if !id.is_empty() { %> id="<%= id %>" <% } %>
+>
+  <%- header_ui %>
+  <%- kvs_ui %>
+</div>

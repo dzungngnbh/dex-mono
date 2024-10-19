@@ -1,0 +1,9 @@
+<div
+    class="overflow-hidden p-1 text-foreground [&amp;_[cmdk-group-heading]]:px-2 [&amp;_[cmdk-group-heading]]:py-1.5 [&amp;_[cmdk-group-heading]]:text-xs [&amp;_[cmdk-group-heading]]:font-medium [&amp;_[cmdk-group-heading]]:text-muted-foreground"
+    cmdk-group="" role="presentation"
+    data-combobox-target="comboboxResultsItems"
+>
+  <div cmdk-group-items="" role="group">
+    <%- result_items_ui %>
+  </div>
+</div>

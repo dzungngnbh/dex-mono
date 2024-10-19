@@ -1,0 +1,24 @@
+<section class="mb-auto pl-9 pr-7 mt-3">
+  <h2 class="font-bold mb-3 text-base">Portfolio</h2>
+  <table class="w-full caption-bottom text-sm">
+    <thead class="[&_tr]:border-b">
+    <tr class="border-b transition-colors hover:bg-muted/50 data-[state=selected]:bg-muted">
+      <th class="h-12 px-4 text-left align-middle font-medium text-muted-foreground [&:has([role=checkbox])]:pr-0 w-[100px]">
+        Name
+      </th>
+      <th class="h-12 px-4 text-left align-middle font-medium text-muted-foreground [&:has([role=checkbox])]:pr-0">
+        Amount
+      </th>
+      <th class="h-12 px-4 text-left align-middle font-medium text-muted-foreground [&:has([role=checkbox])]:pr-0">
+        Price
+      </th>
+      <th class="h-12 px-4 text-left align-middle font-medium text-muted-foreground [&:has([role=checkbox])]:pr-0">
+        Total
+      </th>
+    </tr>
+    </thead>
+    <tbody class="[&_tr:last-child]:border-0">
+      <%- portfolio_items_ui %>
+    </tbody>
+  </table>
+</section>

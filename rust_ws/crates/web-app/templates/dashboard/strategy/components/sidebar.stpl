@@ -1,0 +1,46 @@
+<div class="bg-slate-900 w-1/4" id="strategyPageSidebar">
+  <div class="pl-7 py-4 border-b text-sm flex items-center">
+    <div class="w-[96px]">some text</div>
+    <div class="space-x-3">
+      <div class="relative inline-block"><span class="hover:cursor-pointer hover:underline transition"><svg
+          xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none"
+          stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+          class="cursor-pointer"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path
+          d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></span></div>
+    </div>
+  </div>
+  <div class="p-7">
+    <div class="flex flex-col">
+      <ul class="space-y-10">
+        <li class="flex">
+          <span class="w-[96px]">Run</span>
+          <span class="underline cursor-pointer">
+            <div class="relative inline-block"
+                 data-controller="clipboard">
+              <span class="hover:cursor-pointer hover:underline transition"
+                    data-clipboard-target="source"
+                    data-clipboardvalue="<%= strategy_run_id %>"
+                    data-action="click->clipboard#copy"
+              >#<%= strategy_run_id %></span>
+            </div>
+          </span>
+        </li>
+        <li class="flex"
+            data-controller="clipboard">
+          <span class="w-[96px]">Started at</span>
+          <span class="hover:underline cursor-pointer"
+                data-clipboard-target="source"
+                data-clipboardvalue="<%= started_at %>"
+                data-action="click->clipboard#copy"
+          ><%= started_at %></span></li>
+        <li class="flex"><span class="w-[96px]">Status</span>
+          <%- status_badge_ui %>
+        </li>
+        <li class="flex flex-col">
+          <div class="mb-2">Results</div>
+          <%- results_ui %>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>

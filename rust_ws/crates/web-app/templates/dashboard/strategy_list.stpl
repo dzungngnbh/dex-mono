@@ -1,0 +1,12 @@
+<div class="w-full border-t-background border-b mt-10">
+  <h3 class="pl-9 font-bold mb-2">Recent strategies</h3>
+  <div class="border-t">
+    <div class="w-full overflow-auto">
+      <table class="w-full caption-bottom text-sm">
+        <tbody>
+          <%- strategy_items_ui %>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>

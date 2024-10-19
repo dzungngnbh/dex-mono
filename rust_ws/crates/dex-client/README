@@ -1,0 +1,5 @@
+ This client will be used both for market maker ( to place order, cancel order, list current orders ... ) and
+ exchange owner to operate exchanges.
+
+ # Usage
+ - we dont want to expose the client and server code, so customize each usage for each repo.

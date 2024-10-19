@@ -1,0 +1,46 @@
+
+
+
+<section id="mainContent" class="flex flex-col w-full"
+         data-controller="dashboard-page"
+         data-action="dashboard-page:selectComboboxItem->combobox#selectItemDispatched"
+>
+  <section class="pl-9 pr-7 flex flex-col">
+    <div class="py-5 grid grid-cols-9 items-center">
+      <div class="col-span-4">
+        <%- select_signal_ui %>
+      </div>
+      <div class="col-span-1"></div>
+      <div class="col-span-4">
+        <%- select_action_ui %>
+      </div>
+    </div>
+
+    <div class="mt-5 grid grid-cols-9 items-center">
+      <div class="col-span-4">
+        <%- select_signal_event_ui %>
+      </div>
+      <div class="col-span-1"></div>
+      <div class="col-span-4">
+        <%- select_action_event_ui %>
+      </div>
+    </div>
+
+    <div class="border p-4 mt-5 flex items-center">
+        <span>
+          On the next step, you'll be able to build, test, and turn on / backtest your strategy.
+        </span>
+      <span class="grow"></span>
+      <button
+          class="px-4 py-2 bg-blue-500 text-white rounded"
+          data-action="click->dashboard-page#createStrategy"
+      >
+        Create strategy
+      </button>
+    </div>
+  </section>
+
+  <%- strategy_list_ui %>
+
+  <% include!("../components/ui/combobox/results.stpl"); %>
+</section>

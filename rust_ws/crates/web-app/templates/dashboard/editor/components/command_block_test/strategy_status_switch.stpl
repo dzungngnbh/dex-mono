@@ -1,0 +1,29 @@
+<div class="flex items-center space-x-2 mb-3">
+  <% if status == "Running" { %>
+    <button type="button" role="switch" aria-checked="true" data-state="checked" value="on"
+            class="peer inline-flex h-[24px] w-[44px] shrink-0 cursor-pointer items-center rounded-full border-2 border-transparent transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 focus-visible:ring-offset-background disabled:cursor-not-allowed disabled:opacity-50 data-[state=checked]:bg-primary data-[state=unchecked]:bg-input"
+            data-action="click->http#onSwitch"
+            data-http-url-param="/api/strategy/update"
+            data-http-payload-param='{"strategyId": "<%= strategy_id %>"}'
+            name="strategyStatus"
+    >
+      <span data-state="checked"
+            class="pointer-events-none block h-5 w-5 rounded-full bg-background shadow-lg ring-0 transition-transform data-[state=checked]:translate-x-5 data-[state=unchecked]:translate-x-0"></span>
+    </button>
+  <% } else { %>
+    <button type="button" role="switch" aria-checked="false" data-state="unchecked" value="on"
+            class="peer inline-flex h-[24px] w-[44px] shrink-0 cursor-pointer items-center rounded-full border-2 border-transparent transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 focus-visible:ring-offset-background disabled:cursor-not-allowed disabled:opacity-50 data-[state=checked]:bg-primary data-[state=unchecked]:bg-input"
+            data-action="click->http#onSwitch"
+            data-http-url-param="/api/strategy/update"
+            data-http-payload-param='{"strategyId": "<%= strategy_id %>"}'
+            name="strategyStatus"
+    >
+      <span data-state="unchecked"
+            class="pointer-events-none block h-5 w-5 rounded-full bg-background shadow-lg ring-0 transition-transform data-[state=checked]:translate-x-5 data-[state=unchecked]:translate-x-0"></span>
+    </button>
+  <% } %>
+  <label class="text-sm font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70">
+    <%= status %>
+  </label>
+</div>
+

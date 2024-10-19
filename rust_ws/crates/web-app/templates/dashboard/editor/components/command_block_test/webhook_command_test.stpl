@@ -1,0 +1,17 @@
+<div>
+  <h4 class="font-bold mb-3">Try webhook</h4>
+  <div class="mb-3"><p>Verify your webhook URL with a single click. Receive immediate feedback on the response status
+    and data, ensuring seamless integration.</p>
+    <button
+        class="inline-flex items-center justify-center text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 bg-secondary text-secondary-foreground hover:bg-secondary/80 h-9 rounded-md px-3 mt-3">
+      Verify webhook
+    </button>
+  </div>
+  <textarea
+      class="flex min-h-[80px] w-full rounded-md border border-input bg-transparent px-3 py-2 text-sm ring-offset-background placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50 cursor-pointer"
+      disabled="" placeholder="Waiting for response..." style="height: 112px;">{
+  "ticker": "BNBUSDT",
+  "interval": "1m",
+  "action": "buy"
+}</textarea>
+</div>

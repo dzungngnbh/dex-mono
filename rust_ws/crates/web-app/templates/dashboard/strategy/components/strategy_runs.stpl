@@ -1,0 +1,5 @@
+<table class="w-full caption-bottom text-sm">
+  <tbody id="turbo_strategyPage_strategy_runs_<%= strategy_id %>" class="[&amp;_tr:last-child]:border-0">
+    <%- strategy_runs_ui %>
+  </tbody>
+</table>

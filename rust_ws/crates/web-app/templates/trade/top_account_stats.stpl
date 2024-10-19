@@ -1,0 +1,14 @@
+<button type="button" aria-haspopup="dialog" aria-expanded="false" aria-controls="radix-:rh:" data-state="closed"
+				id="top-account-stats"
+				class="h-desktop-navbar-item  pl-3 pr-1.5 transition border-black-200 rounded-md border hover:bg-black-400 hover:border-purple-700 flex items-center justify-end bg-black-700">
+	<div class="flex items-center gap-x-2">
+		<div class="text-2xs flex w-max flex-col items-start justify-center px-1">
+			<div class="text-white-700">Acct. Value</div>
+			<div class="text-white-900 font-mono"><%= total_balance %></div>
+		</div>
+		<div class="text-2xs flex w-max flex-col items-start justify-center px-1">
+			<div class="text-white-700">Assets</div>
+			<div class="text-white-900 font-mono"><%= sub_account_balance %></div>
+		</div>
+	</div>
+</button>

@@ -1,0 +1,6 @@
+<div class="px-5 col-span-1 pt-10"
+     id="editorPageCommandTest"
+>
+  <%- strategy_status_switch_ui %>
+  <%- command_block_test_details_ui %>
+</div>

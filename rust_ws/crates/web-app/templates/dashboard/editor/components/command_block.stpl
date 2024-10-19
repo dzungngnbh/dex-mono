@@ -1,0 +1,41 @@
+
+
+<div data-test="command-block" class="border-2 rounded-lg transition w-[600px] shadow-2xl transition"
+     data-editor-page-target="commandBlock"
+     data-controller="command-block"
+     data-action="click->editor-page#selectCommandBlock"
+
+     hx-get="<%= page_component_route %>/command_test?strategy_command_id=<%= strategy_command_id %>"
+     hx-target="#editorPageCommandTest"
+     hx-swap="outerHTML"
+>
+  <div class="py-3 px-5 flex items-center cursor-pointer"
+       data-action="click->command-block#toggleDetails"
+    >
+    <div class="mr-3">
+      <img alt="" loading="lazy" width="22" height="22" decoding="async" data-nimg="1"
+                           src="/public/logos/<%= service_name %>.svg" style="color: transparent;">
+    </div>
+    <div class="text-sm flex flex-col"><span
+        class="text-xs text-gray-400 mb-1">Trigger: <%= trigger_text %></span>
+      <span data-test="command-title" class="font-bold"><%= order.to_string() %>. <%= title %></span>
+    </div>
+    <div class="grow"></div>
+    <div class="mr-2"><span class="px-2 py-1 text-xs flex items-center bg-gray-800 rounded"><span
+        class="mr-1"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24"
+                          fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                          stroke-linejoin="round" class="lucide lucide-clock"><circle cx="12" cy="12"
+                                                                                      r="10"></circle><polyline
+        points="12 6 12 12 16 14"></polyline></svg></span><span>Instant</span></span></div>
+    <div class="cursor-pointer">
+      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+           stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+           class="lucide lucide-chevron-up">
+        <polyline points="18 15 12 9 6 15"></polyline>
+      </svg>
+    </div>
+  </div>
+
+  <%- strategy_command_details_ui %>
+
+</div>

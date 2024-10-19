@@ -1,0 +1,6 @@
+<div class="py-2 px-4 border-b <%= classes %>">
+  <%- children_ui %>
+<!--  <img alt="" loading="lazy" width="16" height="16" decoding="async"-->
+<!--       data-nimg="1" class="mr-2" src="/public/logos/uniswap.svg"-->
+<!--       style="color: transparent;">-->
+</div>

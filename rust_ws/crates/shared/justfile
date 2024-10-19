@@ -1,0 +1,32 @@
+alias u := update
+alias r := release
+alias t := test
+alias b := build
+alias f := fmt
+alias d := dev
+
+dev:
+    cargo run
+
+update:
+    cargo update
+
+test:
+    cargo test -- --nocapture
+
+fmt:
+    cargo fmt --all
+
+check-todo:
+    rg -i '// ai|// todo|console.log|print'
+
+release:
+    cargo build --release
+
+release-linux:
+    cargo build --target x86_64-unknown-linux-musl --release
+
+build:
+    cargo build
+
+pre: fmt test check-todo

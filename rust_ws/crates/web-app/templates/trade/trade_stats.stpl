@@ -1,0 +1,92 @@
+<div class="no-scrollbar bg-black-800 flex w-full items-center overflow-x-auto px-4 py-2 flex-1" id="trade-stats">
+  <div class="flex min-w-max flex-col justify-center">
+    <div class="text-white-800 min-w-max font-mono text-xs leading-4 tracking-wide">
+      <div>
+        <div class="flex h-max items-center gap-x-2 text-sm text-white">
+          <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 16 16" class="text-green-400" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+            <path d="m7.247 4.86-4.796 5.481c-.566.647-.106 1.659.753 1.659h9.592a1 1 0 0 0 .753-1.659l-4.796-5.48a1 1 0 0 0-1.506 0z"></path>
+          </svg>
+          <div class="flex items-baseline gap-x-1 text-green-400">
+            <%= quote_price %><span class="text-white-600 text-3xs"><%= quote_price_usd %></span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="flex w-full items-center gap-x-3 px-3">
+    <div class="bg-black-200 w-px min-w-[1px] h-7"></div>
+    <div class="flex min-w-max flex-col justify-center">
+      <div class="underline-offset-2 text-3xs text-white-600 min-w-max leading-3">24h Change</div>
+      <div class="text-white-800 min-w-max font-mono text-xs leading-4 tracking-wide">
+        <div>
+          <div class="text-green-500"><%= daily_change %></div>
+        </div>
+      </div>
+    </div>
+    <div class="bg-black-200 w-px min-w-[1px] h-6"></div>
+    <div class="flex min-w-max flex-col justify-center">
+      <div class="underline-offset-2 text-3xs text-white-600 min-w-max leading-3">24h Volume <span class="text-white-500"> USDC.e</span>
+      </div>
+      <div class="text-white-800 min-w-max font-mono text-xs leading-4 tracking-wide">
+        <div><%= daily_volume %></div>
+      </div>
+    </div>
+    <div class="bg-black-200 w-px min-w-[1px] h-6"></div>
+    <div class="flex min-w-max flex-col justify-center">
+      <div class="cursor-help underline decoration-dashed decoration-white-500 underline-offset-2 text-3xs text-white-600 min-w-max leading-3"> Oracle Price </div>
+      <div class="text-white-800 min-w-max font-mono text-xs leading-4 tracking-wide">
+        <div><%= oracle_price %></div>
+      </div>
+    </div>
+    <div class="bg-black-200 w-px min-w-[1px] h-6"></div>
+    <div class="flex min-w-max flex-col justify-center">
+      <div class="cursor-help underline decoration-dashed decoration-white-500 underline-offset-2 text-3xs text-white-600 min-w-max leading-3"> Spot Index Price </div>
+      <div class="text-white-800 min-w-max font-mono text-xs leading-4 tracking-wide">
+        <div>46,771.22</div>
+      </div>
+    </div>
+    <div class="bg-black-200 w-px min-w-[1px] h-6"></div>
+    <div class="flex min-w-max flex-col justify-center">
+      <div class="cursor-help underline decoration-dashed decoration-white-500 underline-offset-2 text-3xs text-white-600 min-w-max leading-3"> Open Interest <span class="text-white-500"> USDC.e</span>
+      </div>
+      <div class="text-white-800 min-w-max font-mono text-xs leading-4 tracking-wide">
+        <div>10,739,750</div>
+      </div>
+    </div>
+    <div class="bg-black-200 w-px min-w-[1px] h-6"></div>
+    <div class="flex min-w-max flex-col justify-center">
+      <div class="cursor-help underline decoration-dashed decoration-white-500 underline-offset-2 text-3xs text-white-600 min-w-max leading-3"> 1h Funding </div>
+      <div class="text-white-800 min-w-max font-mono text-xs leading-4 tracking-wide">
+        <div>
+          <div class="text-green-500">+0.0053%</div>
+        </div>
+      </div>
+    </div>
+    <div class="flex min-w-max flex-col justify-center">
+      <div class="underline-offset-2 text-3xs text-white-600 min-w-max leading-3">Countdown</div>
+      <div class="text-white-800 min-w-max font-mono text-xs leading-4 tracking-wide">
+        <div>35:30</div>
+      </div>
+    </div>
+    <div class="bg-black-200 w-px min-w-[1px] h-6"></div>
+    <div class="flex min-w-max flex-col justify-center">
+      <div class="underline-offset-2 text-3xs text-white-600 min-w-max leading-3">Annualized Funding</div>
+      <div class="text-white-800 min-w-max font-mono text-xs leading-4 tracking-wide">
+        <div>
+          <div class="text-green-500">+46.20%</div>
+        </div>
+      </div>
+    </div>
+    <div class="bg-black-200 w-px min-w-[1px] flex h-6 lg:hidden"></div>
+    <div class="flex items-center gap-x-3 pr-3 text-xs lg:ml-auto lg:pl-4 lg:pr-0">
+      <button class="transition-all duration-200 inline-flex items-center justify-center whitespace-nowrap cursor-pointer disabled:opacity-50 text-white-900 hover:text-white no-underline" type="button">Market Details </button>
+      <div class="bg-black-200 w-px min-w-[1px] h-6"></div>
+      <a target="_blank" rel="noopener noreferrer" class="transition-all duration-200 inline-flex items-center justify-center whitespace-nowrap gap-x-2 cursor-pointer disabled:opacity-50 text-white-900 hover:text-white no-underline" href="
+                                                                                                                                                                <doc-link>">
+        <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 16 16" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+          <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"></path>
+          <path d="M6.271 5.055a.5.5 0 0 1 .52.038l3.5 2.5a.5.5 0 0 1 0 .814l-3.5 2.5A.5.5 0 0 1 6 10.5v-5a.5.5 0 0 1 .271-.445z"></path>
+        </svg> Perpetuals Tutorial </a>
+    </div>
+  </div>
+</div>

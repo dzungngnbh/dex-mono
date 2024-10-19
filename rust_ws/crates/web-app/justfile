@@ -1,0 +1,48 @@
+alias u := update
+alias r := release
+alias t := test
+alias b := build
+alias f := fmt
+alias d := dev
+
+dev:
+    cargo run --bin web-api
+
+update:
+    cargo update
+
+test:
+    cargo test -- --nocapture
+
+fmt: fmt-ts
+    cargo fmt --all;
+
+compile-css-webapp:
+		pnpm dlx tailwindcss -c '.\tailwind.config.js' -i '.\styles\global.css' -o '.\dist\output.css' --minify --watch
+
+compile-css-prototype:
+		pnpm dlx tailwindcss -c '.\tailwind.config.js' -i '.\styles\global.css' -o '.\dist\prototype_output.css' --minify --watch
+
+compile-js-webapp:
+		swc -d dist templates --watch
+
+clippy:
+    cargo clippy --fix --allow-dirty
+
+fmt-ts:
+    biome format ./templates/ --write
+
+test-e2e:
+    '.\node_modules\.bin\playwright' test './e2etests'
+
+release:
+    cargo build --release
+
+# `&`&
+release-linux:
+    wsl ~/.cargo/bin/cargo build --release
+
+build:
+    cargo build --bin web-api
+
+pre: fmt test

@@ -1,0 +1,21 @@
+[package]
+name = "shared"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+anyhow = { workspace = true }
+thiserror = { workspace = true }
+dotenvy = { workspace = true }
+tokio = { workspace = true }
+
+serde = { workspace = true }
+redis = { workspace = true }
+bincode = { workspace = true }
+alloy-primitives = { workspace = true }
+
+clickhouse = { version ="0.11.5", features = ["uuid", "tls", "time", "test-util"] }
+futures = { version = "*", default-features = false, features = ["std", "async-await"] }
+hyper = "0.14"
+hyper-tls = "0.5"
+uuid = { version = "1.4.0", features = ["v4", "serde"] }

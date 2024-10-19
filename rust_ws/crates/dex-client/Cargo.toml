@@ -1,0 +1,19 @@
+[package]
+name = "dex-client"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+anyhow = { workspace = true }
+thiserror = { workspace = true }
+dotenvy = { workspace = true }
+dashmap = { workspace = true }
+tokio = { workspace = true }
+
+serde = { workspace = true }
+
+ethers = { workspace = true }
+ethers-signers = { workspace = true }
+ethers-contract = { workspace = true }
+ethers-core = { workspace = true }
+serde_json = "1.0.111"

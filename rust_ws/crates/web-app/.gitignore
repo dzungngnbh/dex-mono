@@ -1,0 +1,6 @@
+dist/*
+public/output.css
+
+# templates
+# all of the templates will be compiled to binary
+templates/dist/*

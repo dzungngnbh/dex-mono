@@ -1,0 +1,45 @@
+<div
+    style="position: fixed; left: 0px; top: 0px; min-width: max-content; transform: translate(333.406px, 631.5px);"
+    class="hidden" data-editor-target="blockOptionMenu">
+  <div
+      class="z-50 rounded-md border bg-popover text-popover-foreground shadow-md outline-none data-[state=open]:animate-in data-[state=closed]:animate-out data-[state=closed]:fade-out-0 data-[state=open]:fade-in-0 data-[state=closed]:zoom-out-95 data-[state=open]:zoom-in-95 data-[side=bottom]:slide-in-from-top-2 data-[side=left]:slide-in-from-right-2 data-[side=right]:slide-in-from-left-2 data-[side=top]:slide-in-from-bottom-2 p-0 w-[298px]"
+      style="--radix-popover-content-transform-origin: var(--radix-popper-transform-origin); --radix-popover-content-available-width: var(--radix-popper-available-width); --radix-popover-content-available-height: var(--radix-popper-available-height); --radix-popover-trigger-width: var(--radix-popper-anchor-width); --radix-popover-trigger-height: var(--radix-popper-anchor-height);"
+      data-align="center" data-combobox-target="comboboxResultsWrapper" data-side="bottom"
+      data-state="open" id="radix-:r3k:" role="dialog" tabindex="-1">
+    <div class="flex h-full w-full flex-col overflow-hidden rounded-md bg-popover text-popover-foreground"
+         cmdk-root=""><label
+        style="position: absolute; width: 1px; height: 1px; padding: 0px; margin: -1px; overflow: hidden; clip: rect(0px, 0px, 0px, 0px); white-space: nowrap; border-width: 0px;"></label>
+      <div
+          class="overflow-hidden p-1 text-foreground [&amp;_[cmdk-group-heading]]:px-2 [&amp;_[cmdk-group-heading]]:py-1.5 [&amp;_[cmdk-group-heading]]:text-xs [&amp;_[cmdk-group-heading]]:font-medium [&amp;_[cmdk-group-heading]]:text-muted-foreground"
+          cmdk-group="" data-combobox-target="comboboxResultsItems" role="presentation">
+        <div cmdk-group-items="" role="group">
+          <div class="relative flex  items-center px-2 py-1.5 text-sm">
+            <div class="flex flex-col">
+              <span class="text-base">Add block</span>
+            </div>
+          </div>
+        </div>
+
+        <% for (i, service_option) in service_options.iter().enumerate() { %>
+        <div cmdk-group-items="" role="group">
+          <div
+              class="relative flex cursor-default select-none items-center rounded-sm px-2 py-1.5 text-sm outline-none aria-selected:bg-accent aria-selected:text-accent-foreground data-[disabled]:pointer-events-none data-[disabled]:opacity-50 hover:cursor-pointer hover:bg-slate-800"
+              data-action="click->editor#replaceBlankBlock"
+              data-editor-service-command-id-param="<%= service_option.id %>"
+              role="option">
+            <div class="flex flex-col">
+              <div class="flex content-center">
+                <div class="mr-3"><img style="color: transparent;" alt="" data-nimg="1" decoding="async" height="22"
+                                       loading="lazy" src="<%= service_option.img_src %>" width="22"></div>
+                <span><%= service_option.title %></span>
+              </div>
+              <span class="text-xs text-muted-foreground"><%= service_option.description %></span>
+            </div>
+
+          </div>
+        </div>
+        <% } %>
+      </div>
+    </div>
+  </div>
+</div>

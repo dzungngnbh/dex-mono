@@ -1,0 +1,8 @@
+<div style="position: fixed; left: 0px; top: 0px; min-width: max-content;
+     --radix-popper-transform-origin: 50% 0px; z-index: 50; --radix-popper-available-width: 1263px; --radix-popper-available-height: 286px; --radix-popper-anchor-width: 1000px; --radix-popper-anchor-height: 37.5px;"
+     class="hidden"
+     id="comboboxResults"
+     data-combobox-target="comboboxResults"
+>
+<!--  results inner will be get at run time by click on combobox -->
+</div>

@@ -1,0 +1,54 @@
+[package]
+name = "web-app"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+[[bin]]
+name = "web_app"
+path = "src/main.rs"
+
+[dependencies]
+shared = { path = "../shared" }
+oracle = { path = "../oracle" }
+indexer_service = { path = "../indexer-service" }
+
+mimalloc = { workspace = true }
+anyhow = { workspace = true }
+thiserror = { workspace = true }
+dotenvy = { workspace = true }
+tokio = { workspace = true }
+tracing = { workspace = true }
+tracing-subscriber = { workspace = true }
+ecow = { workspace = true }
+dashmap = { workspace = true }
+
+clickhouse = { workspace = true }
+redis = { workspace = true }
+
+alloy-primitives = { version = "0.6.2", features = ["k256"] }
+
+async-broadcast = "0.6.0"
+axiom-rs = "0.9.0"
+axum = { version = "0.6.20", features = ["ws"] }
+axum-server = { version = "0.5.1", features = ["tls-rustls"] }
+capnp = "0.17.2"
+capnpc = "0.17.2"
+deadpool-postgres = "*"
+futures = { version = "*", default-features = false, features = ["std", "async-await"] }
+hyper = { version = "0.14", features = ["http2"] }
+jsonwebtoken = "9.2.0"
+maud = "*"
+memchr = "2.5.0"
+minify-html = "0.11.5"
+reqwest = "0.11.23"
+sailfish = "=0.8.0"
+sailfish-compiler = "=0.8.0"
+serde = { version = "1.0.195", features = ["derive"] }
+serde_json = "*"
+serde_repr = "0.1"
+time = { version = "0.3.22", features = ["parsing", "macros"] }
+tower = "0.4.13"
+tower-cookies = { version = "0.9.0", features = ["private"] }
+tower-http = { version = "0.4.4", features = ["trace", "fs", "compression-br"] }
+uuid = { version = "1.7.0", features = ["v4"] }

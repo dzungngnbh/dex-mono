@@ -1,0 +1,19 @@
+<tr class="border-b transition-colors hover:bg-muted/50 data-[state=selected]:bg-muted cursor-pointer px-2"
+    data-state="false"
+    data-htmx-turbostream-target="turbostream"
+
+    hx-get="<%= page_component_route %>/sidebar?strategy_run_result_id=<%= strategy_run_result.id %>"
+    hx-target="#strategyPageSidebar"
+    hx-swap="outerHTML"
+    id="turbo_strategyPage_strategy_run_result_<%= strategy_run_result.id %>"
+>
+  <td class="p-4 align-middle [&amp;:has([role=checkbox])]:pr-0 py-2 pl-9 pr-7">
+    <div class="flex flex-col"><%= strategy_run_result.started_at %></div>
+  </td>
+  <td class="p-4 align-middle [&amp;:has([role=checkbox])]:pr-0 py-2 pl-9 pr-7">
+    <span><%= strategy_run_result.view_executed_step_count %> step(s)</span>
+  </td>
+  <td id="turbo_<%= strategy_run_result.id %>_status_badge_ui" class="p-4 align-middle [&amp;:has([role=checkbox])]:pr-0 py-2 pl-9 pr-7">
+    <%- strategy_run_result.status_badge_ui %>
+  </td>
+</tr>

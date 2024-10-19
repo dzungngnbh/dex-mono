@@ -1,0 +1,10 @@
+<a href="<%= href %>"
+   hx-push-url="<%= href %>"
+   hx-get="<%= href %>/c/page"
+   hx-target="<%= hx_target %>"
+   hx-swap="outerHTML"
+   preload
+
+   class="<% if class.is_some() { %> <%= class.unwrap() %> <% } %>">
+  <%= text %>
+</a>

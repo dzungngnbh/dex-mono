@@ -1,0 +1,18 @@
+[package]
+name = "ws-client"
+version = "0.1.0"
+edition = "2021"
+
+[[example]]
+name = "client"
+
+[dependencies]
+anyhow = { workspace = true }
+thiserror = { workspace = true }
+dotenvy = { workspace = true }
+tokio = { workspace = true }
+
+futures = "0.3.30"
+http = "1.0.0"
+tokio-tungstenite = { version = "*", features = ["native-tls", "tokio-native-tls"] }
+url = "2.5.0"

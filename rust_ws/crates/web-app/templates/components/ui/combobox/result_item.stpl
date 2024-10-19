@@ -1,0 +1,16 @@
+<!-- data-id is being used to search -->
+<!-- data_attributes_ui is being used to perform action on page level or combobox select
+       why don't we just use combobox#selectItem, since combobox select will come with page's state change, so
+       they normally being setup with page controller. For prototype, we can use combobox#selectItem, it will just work.
+-->
+<div
+    class="relative flex cursor-default select-none items-center rounded-sm px-2 py-1.5 text-sm outline-none aria-selected:bg-accent aria-selected:text-accent-foreground data-[disabled]:pointer-events-none data-[disabled]:opacity-50
+              hover:cursor-pointer hover:bg-slate-800"
+    data-combobox-target="resultItem"
+    role="option" data-value="<%= value %>" data-id="<%= id %>"
+    <%- data_attributes_ui %>
+>
+  <div class="flex">
+    <%- inner_ui %>
+  </div>
+</div>

@@ -1,0 +1,10 @@
+
+
+<section id="mainContent" class="flex flex-col w-full"
+         data-controller="portfolio-page"
+         data-action="dashboard-page:selectComboboxItem->combobox#selectItemDispatched"
+>
+
+  <%- portfolio_table_ui %>
+
+</section>

@@ -1,0 +1,9 @@
+This exchange is for a DEX with offchain orderbook.
+
+# Protocol used
+Capnp
+
+# How to run
+```
+cargo run --bin exchange_service
+```

@@ -1,0 +1,28 @@
+
+
+
+
+<div class="min-h-screen w-full" id="mainContent"
+     data-controller="strategy-monitor-page combobox"
+>
+  <div class="flex min-h-full">
+    <div class="w-3/4 flex flex-col border-r">
+
+      <%- breadcrumb_ui %>
+
+      <div id="chart" class="min-h-[450px] border-b">TODO: chart region</div>
+      <div>
+        <div class="w-full"><h3 class="text-sm pl-9 font-bold py-2 bg-slate-900">Strategy runs</h3>
+          <div class="border-t">
+            <div class="w-full overflow-auto">
+              <%- strategy_runs_ui %>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <%- sidebar_ui %>
+
+  </div>
+</div>
