@@ -1,9 +1,14 @@
-# services
-1. Run clickhouse, dragonfly for indexer
-2. web-app for frontend ( can get prebuilt in target )
-	cargo run -r ( to have config file in same dev folder )
-3. indexer service to sync price
-	$env:RUST_LOG='info'; cargo run --bin indexer_service
+# 🚀 DEX - A Cutting-Edge Adventure in DeFi!
+🔥 Warning: This project is a blazing trail in development. Proceed with caution and excitement!
 
-# smart contract
-1. Run local anvil and deploy smart contract
+## 🚀 Stack:
+1. EVM chain
+2. Rust as backend services.
+3. Turbo framework on frontend.
+
+## 🏗️ Architecture:
+⚙️ Services That Keep The Engine Running:
+1. Cache: ClickHouse & Dragonfly (Redis)
+
+## 🧠 Smart Contract:
+Deploy the smart contract locally to test services.
