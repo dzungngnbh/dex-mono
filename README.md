@@ -32,8 +32,11 @@ just compile-css-prototype
 ```
 
 5. Running application in dev mode
-
 ```
 cd web-app; cargo run;
 # enter https://0.0.0.0:3000/prototypes/trade/index.html
 ```
+
+Screenshot:
+
+![Screenshot](./static/trade.png)
