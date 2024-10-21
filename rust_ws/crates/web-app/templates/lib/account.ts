@@ -52,13 +52,13 @@ enum AccountStatus {
 const SIGN_MESSAGE = "By joining, you agree to our Terms of Service ( https://tradingexec.xyz/legal/terms ) and Privacy Policy ( https://tradingexec.xyz/legal/policy ) ."
 
 class Account {
-	private #endpointContract: any
-	private #accountStatus: AccountStatus
-	private #currentAccount: any
+	#endpointContract: any
+	#accountStatus: AccountStatus
+	#currentAccount: any
 	private _watchAccount: any
 
-	private #walletClient: any = null
-	private #publicClient: any = null
+	#walletClient: any = null
+	#publicClient: any = null
 
 	#defaultSubaccount: string
 
