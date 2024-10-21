@@ -1,4 +1,4 @@
-# 🚀 [WIP] DEX - A Cutting-Edge Adventure in DeFi!
+# 🚀 DEX - A Cutting-Edge Adventure in DeFi!
 🔥 Warning: This project is a blazing trail in development. Proceed with caution and excitement!
 
 ## 🚀 Stack:
