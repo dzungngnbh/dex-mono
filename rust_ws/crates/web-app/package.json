@@ -1,9 +1,11 @@
 {
 	"devDependencies": {
-		"@playwright/test": "^1.36.2",
-		"@types/node": "^20.5.1",
-		"tailwindcss": "^3.3.3",
-		"tailwindcss-animate": "^1.0.6",
-		"typescript": "*"
+		"@playwright/test": "^1.48.1",
+		"@swc/cli": "0.4.1-nightly.20240914",
+		"@swc/core": "^1.7.36",
+		"@types/node": "^20.16.13",
+		"tailwindcss": "^3.4.14",
+		"tailwindcss-animate": "^1.0.7",
+		"typescript": "^5.6.3"
 	}
 }
