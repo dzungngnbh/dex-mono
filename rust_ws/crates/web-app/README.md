@@ -19,5 +19,5 @@ swc -d dist ts --watch
 pnpm dlx tailwindcss -i .\public\global.css -o .\dist\output.css --minify --watch
 
 # run server 
-rmrf .......//* ; cargo run # TODO
+cargo run # TODO
 ```

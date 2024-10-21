@@ -18,10 +18,10 @@ fmt: fmt-ts
     cargo fmt --all;
 
 compile-css-webapp:
-		pnpm dlx tailwindcss -c '.\tailwind.config.js' -i '.\styles\global.css' -o '.\dist\output.css' --minify --watch
+		pnpm dlx tailwindcss -c './tailwind.config.js' -i './styles/global.css' -o './dist/output.css' --minify --watch
 
 compile-css-prototype:
-		pnpm dlx tailwindcss -c '.\tailwind.config.js' -i '.\styles\global.css' -o '.\dist\prototype_output.css' --minify --watch
+		pnpm dlx tailwindcss -c './tailwind.config.js' -i './styles/global.css' -o './dist/prototype_output.css' --minify --watch
 
 compile-js-webapp:
 		npx swc -d dist templates --watch
