@@ -72,6 +72,7 @@ async fn main() -> Result<()> {
 
     // dev only routes
     if env.env == "dev" {
+        info!("[dev] Prototypes are enabled");
         app = app.nest_service("/prototypes", ServeDir::new("prototypes"))
     }
 
