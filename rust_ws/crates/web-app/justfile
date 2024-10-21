@@ -24,7 +24,7 @@ compile-css-prototype:
 		pnpm dlx tailwindcss -c '.\tailwind.config.js' -i '.\styles\global.css' -o '.\dist\prototype_output.css' --minify --watch
 
 compile-js-webapp:
-		swc -d dist templates --watch
+		npx swc -d dist templates --watch
 
 clippy:
     cargo clippy --fix --allow-dirty
