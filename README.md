@@ -12,3 +12,28 @@
 
 ## 🧠 Smart Contract:
 Deploy the smart contract locally to test services.
+
+## How to run application
+1. Running redis, clickhouse
+2. Create def_exchange database, and int seed data
+3. Generate key for https locally
+```
+cd rust_ws/crates/web-app; 
+openssl genrsa -out key.pem 2048
+openssl req -new -key key.pem -out csr.pem
+openssl req -x509 -new -nodes -key key.pem -subj "/C=US/ST=California/L=San Francisco/O=YourCompany/CN=localhost" -days 365 -out cert.pem
+```
+
+4. Build css files
+```
+cd rust_ws/crates/web-app; 
+just compile-js-webapp
+just compile-css-prototype
+```
+
+5. Running application in dev mode
+
+```
+cd web-app; cargo run;
+# enter https://0.0.0.0:3000/prototypes/trade/index.html
+```
