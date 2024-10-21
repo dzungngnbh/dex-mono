@@ -1,4 +1,4 @@
-# 🚀 DEX - A Cutting-Edge Adventure in DeFi!
+# 🚀 [WIP] DEX - A Cutting-Edge Adventure in DeFi!
 🔥 Warning: This project is a blazing trail in development. Proceed with caution and excitement!
 
 ## 🚀 Stack:
@@ -35,6 +35,9 @@ just compile-css-prototype
 ```
 cd web-app; cargo run;
 # enter https://0.0.0.0:3000/prototypes/trade/index.html
+
+# Running indexer service
+RUST_LOG=info cargo run --bin indexer_service
 ```
 
 Screenshot:

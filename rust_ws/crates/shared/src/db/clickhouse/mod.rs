@@ -80,7 +80,4 @@ mod tests {
         value: &'a str,
         label: &'a str,
     }
-
-    #[tokio::test]
-    async fn test_client() -> Result<()> {}
 }

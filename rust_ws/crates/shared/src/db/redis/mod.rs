@@ -79,8 +79,11 @@ where
 // This can be used to get dragonfly client as well
 pub fn get_redis_client() -> Result<Client> {
     dotenvy::dotenv().ok();
-    let conn_str = std::env::var("REDIS_CONN_STR").unwrap();
-    let client = get_client(conn_str)?;
+    let env_str = std::env::var("REDIS_CONN_STR");
+    let client = match env_str {
+        Ok(conn_str) => get_client(conn_str)?,
+        Err(_) => get_client("redis://localhost:6379")?,
+    };
     Ok(client)
 }
 

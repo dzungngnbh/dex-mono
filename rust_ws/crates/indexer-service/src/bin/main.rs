@@ -1,11 +1,11 @@
 use anyhow::Result;
+use log::info;
 use minitrace::collector::Config;
 use minitrace::collector::ConsoleReporter;
 use minitrace::prelude::*;
 use minitrace::Event;
-use std::io::Write;
-
 use shared::db::redis as rediss;
+use std::io::Write;
 
 mod oracle_task;
 
@@ -16,21 +16,11 @@ static GLOBAL: MiMalloc = MiMalloc;
 #[tokio::main]
 async fn main() -> Result<()> {
     minitrace::set_reporter(ConsoleReporter, Config::default());
-    env_logger::Builder::from_default_env()
-        .format(|buf, record| {
-            // Add a event to the current local span representing the log record
-            Event::add_to_local_parent(record.level().as_str(), || {
-                [("message".into(), record.args().to_string().into())]
-            });
-
-            // Output the log to stdout as usual
-            writeln!(buf, "[{}] {}", record.level(), record.args())
-        })
-        // .filter_level(log::LevelFilter::Debug)
-        .init();
+    env_logger::init();
 
     dotenvy::dotenv().ok();
     let redis_client = rediss::get_redis_client()?;
+    info!("Starting oracle service");
 
     // spawn tokio task with tthis loop
     let oracle_task = tokio::spawn(async move { oracle_task::run(&redis_client).await.unwrap() });
