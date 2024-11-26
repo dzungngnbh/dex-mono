@@ -20,7 +20,7 @@ async fn main() -> Result<()> {
 
     dotenvy::dotenv().ok();
     let redis_client = rediss::get_redis_client()?;
-    info!("Starting oracle service");
+    info!("Indexer service started");
 
     // spawn tokio task with tthis loop
     let oracle_task = tokio::spawn(async move { oracle_task::run(&redis_client).await.unwrap() });
