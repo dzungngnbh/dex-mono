@@ -14,10 +14,16 @@ update:
     cargo update
 
 test:
-    cargo test -- --nocapture
+    cd {{invocation_directory()}}; cargo +nightly nextest run --all-features
+
+testt:
+    cargo +nightly nextest run --all-features --workspace
 
 fmt:
-    cargo fmt --all;
+    cd {{invocation_directory()}}; cargo +nightly fmt ; cargo +nightly clippy --examples --tests --benches --all-features --fix --allow-dirty  --allow-staged
+
+fmtt:
+    cargo +nightly fmt --all ; cargo +nightly clippy --workspace --lib --examples --tests --benches --all-features --fix --allow-dirty  --allow-staged
 
 clippy:
     cargo clippy --fix --allow-dirty
