@@ -971,7 +971,7 @@
           overflow: hidden
       }
   </style>
-  <style data-n-href="/_next/static/css/e9e0fc13db2466c0.css?dpl=dpl_CrHnTVT2u3haqz1oYHkihPyfgDaE">
+  <style>
       .gauge_circle__N47Fa {
           --transition-length: 1s;
           --transition-step: 200ms;
@@ -2065,7 +2065,7 @@
           }
       }
   </style>
-  <style data-n-href="/_next/static/css/dc95dbb45b02e72d.css?dpl=dpl_CrHnTVT2u3haqz1oYHkihPyfgDaE">
+  <style>
       .oauth_display__UizRB {
           width: 48px;
           height: 48px;
@@ -3727,7 +3727,7 @@
           background-color: transparent
       }
   </style>
-  <style data-n-href="/_next/static/css/2e9c2ca6bc0183b2.css?dpl=dpl_CrHnTVT2u3haqz1oYHkihPyfgDaE">
+  <style>
       .deployment-status_wrapper__HhXbC {
           display: inline-flex;
           align-items: center
@@ -4109,7 +4109,7 @@
           }
       }
   </style>
-  <style data-n-href="/_next/static/css/9c371008cc4b0983.css?dpl=dpl_CrHnTVT2u3haqz1oYHkihPyfgDaE" media="x">
+  <style>
       .input_container__styln {
           position: relative
       }
