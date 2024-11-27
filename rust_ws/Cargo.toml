@@ -13,11 +13,16 @@ members = [
 resolver = "2"
 
 [workspace.dependencies]
+
+# log
+env_logger = "0.11.3"
+log = "0.4.21"
+fastrace = "0.7.4"
+logcall = "0.1.8"
+
 anyhow = "*"
 dotenvy = "*"
 ecow = { version = '*', features = ["serde"] }
-env_logger = "0.11.1"
-log = "0.4.20"
 mimalloc = { version = '*' }
 minitrace = "0.6"
 thiserror = "*"

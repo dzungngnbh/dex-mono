@@ -50,6 +50,7 @@ fn setup_routes(env: &Env) -> Router {
         // API routes
         .nest("/api/auth", auth::routes())
         .nest("/api/account", account::routes())
+
         // WebSocket handler
         .route("/ws", get(ws::ws_handler))
         // UI routes
@@ -90,6 +91,7 @@ fn setup_middleware(app: Router, backend: Backend) -> Router {
 #[tokio::main]
 async fn main() -> Result<()> {
     // Initialize logging
+    shared::log::init();
     tracing_subscriber::fmt::init();
 
     // Load environment configuration

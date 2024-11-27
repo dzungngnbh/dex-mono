@@ -4,10 +4,16 @@ version = "0.1.0"
 edition = "2021"
 
 [dependencies]
+# log
+env_logger = { workspace = true }
+log = { workspace = true }
+fastrace = { workspace = true }
+tokio = { workspace = true }
+logcall = { workspace = true }
+
 anyhow = { workspace = true }
 thiserror = { workspace = true }
 dotenvy = { workspace = true }
-tokio = { workspace = true }
 
 serde = { workspace = true }
 redis = { workspace = true }
