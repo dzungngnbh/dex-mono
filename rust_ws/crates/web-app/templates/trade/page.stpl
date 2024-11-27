@@ -4,6 +4,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <title id="page-title"><%= title %></title>
     <meta name="next-head-count" content="3">
+    <meta name="turbo-cache-control" content="no-cache">
     <link rel="icon" href="/favicon.ico">
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
@@ -159,6 +160,16 @@
     </script>
     <script type="module" src="/dist/lib/htmx_turbostream.js"></script>
     <script type="module" src="/dist/trade/page.js"></script>
+    <script>
+        document.addEventListener("turbo:load", function() {
+          // Your initialization code
+          console.log("Page loaded with Turbo");
+        });
+
+        document.addEventListener("turbo:render", function() {
+            console.log("new content is loaded")
+        });
+    </script>
   </head>
   <body
     data-controller="trade-page"
@@ -197,6 +208,7 @@
                       </button>
                     </div>
                     <a class="transition-all duration-200 whitespace-nowrap cursor-pointer flex w-full items-center justify-start gap-x-1 rounded font-medium px-3 py-1 text-white-600 hover:text-white-800 hover:bg-black-500 text-sm" href="/referrals">Referrals</a>
+
                     <div aria-expanded="false" aria-haspopup="dialog">
                       <button class="transition-all duration-200 whitespace-nowrap cursor-pointer flex w-full items-center justify-start gap-x-1 rounded font-medium px-3 py-1 text-white-600 hover:text-white-800 hover:bg-black-500 text-sm" type="button">More <svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
                           <polyline points="6 9 12 15 18 9"></polyline>
