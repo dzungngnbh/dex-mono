@@ -1,0 +1,1678 @@
+<div data-radix-popper-content-wrapper="" style="position: fixed; left: 0px; top: 0px; transform: translate(13px, 115px); min-width: max-content; --radix-popper-transform-origin: 50% 0px; z-index: 10; --radix-popper-available-width: 1605px; --radix-popper-available-height: 664px; --radix-popper-anchor-width: 318px; --radix-popper-anchor-height: 46px;">
+  <div class="bg-surface-card border border-stroke rounded-lg z-10 flex flex-col gap-y-3 overflow-y-auto px-1 py-2 shadow-xl shadow-black h-[calc(var(--radix-popover-content-available-height)-8px)] w-[var(--radix-popover-trigger-width)] rounded-t-none sm:rounded-t-lg" data-side="bottom" data-align="center" data-state="open" role="dialog" id="radix-:r31:" tabindex="-1" style="--radix-popover-content-transform-origin: var(--radix-popper-transform-origin); --radix-popover-content-available-width: var(--radix-popper-available-width); --radix-popover-content-available-height: var(--radix-popper-available-height); --radix-popover-trigger-width: var(--radix-popper-anchor-width); --radix-popover-trigger-height: var(--radix-popper-anchor-height);">
+    <div class="flex flex-col gap-y-2 px-2">
+      <div class="relative flex items-center gap-x-1 p-1 before:h-px before:absolute before:bottom-0 before:left-0 before:right-0 before:bg-overlay-divider/10 after:h-px after:absolute after:inset-0 after:top-auto after:transform-gpu after:origin-left after:duration-300 after:bg-accent focus-within:after:scale-x-100 after:scale-x-0">
+        <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 256 256" class="text-text-tertiary h-3 w-3 shrink-0">
+          <path d="M229.66,218.34l-50.07-50.06a88.11,88.11,0,1,0-11.31,11.31l50.06,50.07a8,8,0,0,0,11.32-11.32ZM40,112a72,72,0,1,1,72,72A72.08,72.08,0,0,1,40,112Z"></path>
+        </svg>
+        <input id=":r5i:" class="w-full bg-transparent placeholder:text-text-tertiary text-text-primary text-xs" autocomplete="off" step="any" placeholder="Search" type="text" value="" name=":r5i:">
+      </div>
+      <div role="radiogroup" aria-required="false" dir="ltr" tabindex="0" style="outline: none;">
+        <div class="no-scrollbar overflow-x-auto overflow-y-hidden scroll-shadow-r flex items-center gap-x-1">
+          <button class="inline-flex items-center justify-center whitespace-nowrap cursor-pointer bg-surface-1 rounded px-2.5 py-1 text-text-tertiary relative before:absolute before:inset-0 before:pointer-events-none hover:before:bg-overlay-hover before:opacity-[.07] before:rounded text-xs" type="button" role="radio" aria-checked="false" data-state="unchecked" value="all" tabindex="-1" data-radix-collection-item="">All</button>
+          <button class="inline-flex items-center justify-center whitespace-nowrap cursor-pointer bg-surface-1 rounded px-2.5 py-1 text-text-primary relative before:absolute before:inset-0 before:pointer-events-none before:bg-overlay-hover before:opacity-[.07] before:rounded text-xs" type="button" role="radio" aria-checked="true" data-state="checked" value="perp" tabindex="-1" data-radix-collection-item="">Perps</button>
+          <button class="inline-flex items-center justify-center whitespace-nowrap cursor-pointer bg-surface-1 rounded px-2.5 py-1 text-text-tertiary relative before:absolute before:inset-0 before:pointer-events-none hover:before:bg-overlay-hover before:opacity-[.07] before:rounded text-xs" type="button" role="radio" aria-checked="false" data-state="unchecked" value="spot" tabindex="-1" data-radix-collection-item="">Spot</button>
+          <button class="inline-flex items-center justify-center whitespace-nowrap cursor-pointer bg-surface-1 rounded px-2.5 py-1 text-text-tertiary relative before:absolute before:inset-0 before:pointer-events-none hover:before:bg-overlay-hover before:opacity-[.07] before:rounded text-xs" type="button" role="radio" aria-checked="false" data-state="unchecked" value="meme" tabindex="-1" data-radix-collection-item="">Memes</button>
+          <button class="inline-flex items-center justify-center whitespace-nowrap cursor-pointer bg-surface-1 rounded px-2.5 py-1 text-text-tertiary relative before:absolute before:inset-0 before:pointer-events-none hover:before:bg-overlay-hover before:opacity-[.07] before:rounded text-xs" type="button" role="radio" aria-checked="false" data-state="unchecked" value="defi" tabindex="-1" data-radix-collection-item="">DeFi</button>
+          <button class="inline-flex items-center justify-center whitespace-nowrap cursor-pointer bg-surface-1 rounded px-2.5 py-1 text-text-tertiary relative before:absolute before:inset-0 before:pointer-events-none hover:before:bg-overlay-hover before:opacity-[.07] before:rounded text-xs" type="button" role="radio" aria-checked="false" data-state="unchecked" value="chain" tabindex="-1" data-radix-collection-item="">Chains</button>
+          <button class="inline-flex items-center justify-center whitespace-nowrap cursor-pointer bg-surface-1 rounded px-2.5 py-1 text-text-tertiary relative before:absolute before:inset-0 before:pointer-events-none hover:before:bg-overlay-hover before:opacity-[.07] before:rounded text-xs" type="button" role="radio" aria-checked="false" data-state="unchecked" value="index" tabindex="-1" data-radix-collection-item="">Indices</button>
+        </div>
+      </div>
+    </div>
+    <div class="flex flex-col overflow-y-hidden">
+      <div class="flex pr-3">
+        <div>
+          <div class="text-text-primary whitespace-nowrap text-xs flex h-full items-center pointer-events-auto">
+            <button class="inline-flex items-center justify-center whitespace-nowrap gap-x-2 cursor-not-allowed text-disabled p-1.5 px-3" disabled="" type="button">
+              <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="currentColor" viewBox="0 0 256 256">
+                <path d="M234.29,114.85l-45,38.83L203,211.75a16.4,16.4,0,0,1-24.5,17.82L128,198.49,77.47,229.57A16.4,16.4,0,0,1,53,211.75l13.76-58.07-45-38.83A16.46,16.46,0,0,1,31.08,86l59-4.76,22.76-55.08a16.36,16.36,0,0,1,30.27,0l22.75,55.08,59,4.76a16.46,16.46,0,0,1,9.37,28.86Z"></path>
+              </svg>
+            </button>
+          </div>
+        </div>
+        <div class="flex-1">
+          <div class="text-xs h-full group flex items-center gap-x-1 whitespace-nowrap text-text-secondary pointer-events-auto hover:text-text-primary cursor-pointer select-none">
+            <div>Market / Volume</div>
+            <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" fill="currentColor" viewBox="0 0 256 256" class="text-text-tertiary group-hover:text-text-secondary">
+              <path d="M72.61,83.06a8,8,0,0,1,1.73-8.72l48-48a8,8,0,0,1,11.32,0l48,48A8,8,0,0,1,176,88H80A8,8,0,0,1,72.61,83.06ZM176,168H80a8,8,0,0,0-5.66,13.66l48,48a8,8,0,0,0,11.32,0l48-48A8,8,0,0,0,176,168Z"></path>
+            </svg>
+          </div>
+        </div>
+        <div>
+          <div class="text-xs h-full group flex items-center gap-x-1 whitespace-nowrap text-text-secondary pointer-events-auto hover:text-text-primary cursor-pointer select-none">
+            <div>Price</div>
+            <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" fill="currentColor" viewBox="0 0 256 256" class="text-text-tertiary group-hover:text-text-secondary">
+              <path d="M72.61,83.06a8,8,0,0,1,1.73-8.72l48-48a8,8,0,0,1,11.32,0l48,48A8,8,0,0,1,176,88H80A8,8,0,0,1,72.61,83.06ZM176,168H80a8,8,0,0,0-5.66,13.66l48,48a8,8,0,0,0,11.32,0l48-48A8,8,0,0,0,176,168Z"></path>
+            </svg>
+          </div>
+        </div>
+      </div>
+      <div class="no-scrollbar overflow-y-auto overflow-x-hidden scroll-shadow-b flex flex-col gap-y-0.5">
+        <a class="items-center justify-center whitespace-nowrap flex relative before:absolute before:inset-0 before:pointer-events-none hover:before:bg-overlay-hover before:opacity-[.07] before:rounded cursor-pointer pr-3 py-1" href="/perpetuals/BTC-PERP">
+          <div>
+            <div class="text-text-primary whitespace-nowrap text-xs flex h-full items-center pointer-events-auto">
+              <button class="inline-flex items-center justify-center whitespace-nowrap gap-x-2 cursor-not-allowed text-disabled p-3" disabled="" type="button">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 256 256">
+                  <path d="M239.18,97.26A16.38,16.38,0,0,0,224.92,86l-59-4.76L143.14,26.15a16.36,16.36,0,0,0-30.27,0L90.11,81.23,31.08,86a16.46,16.46,0,0,0-9.37,28.86l45,38.83L53,211.75a16.38,16.38,0,0,0,24.5,17.82L128,198.49l50.53,31.08A16.4,16.4,0,0,0,203,211.75l-13.76-58.07,45-38.83A16.43,16.43,0,0,0,239.18,97.26Zm-15.34,5.47-48.7,42a8,8,0,0,0-2.56,7.91l14.88,62.8a.37.37,0,0,1-.17.48c-.18.14-.23.11-.38,0l-54.72-33.65a8,8,0,0,0-8.38,0L69.09,215.94c-.15.09-.19.12-.38,0a.37.37,0,0,1-.17-.48l14.88-62.8a8,8,0,0,0-2.56-7.91l-48.7-42c-.12-.1-.23-.19-.13-.5s.18-.27.33-.29l63.92-5.16A8,8,0,0,0,103,91.86l24.62-59.61c.08-.17.11-.25.35-.25s.27.08.35.25L153,91.86a8,8,0,0,0,6.75,4.92l63.92,5.16c.15,0,.24,0,.33.29S224,102.63,223.84,102.73Z"></path>
+                </svg>
+              </button>
+            </div>
+          </div>
+          <div class="flex-1">
+            <div class="text-text-primary whitespace-nowrap text-xs pointer-events-none flex h-full items-center gap-x-2.5">
+              <img alt="BTC" loading="lazy" width="24" height="24" decoding="async" data-nimg="1" class="h-auto w-6" src="/_next/static/media/btc.a7bb970b.svg" style="color: transparent;">
+              <div class="flex flex-col items-start leading-4">
+                <p class="text-text-secondary text-xs">BTC-PERP</p>
+                <p class="text-text-tertiary text-2xs">157,305,914</p>
+              </div>
+            </div>
+          </div>
+          <div>
+            <div class="text-text-primary whitespace-nowrap text-xs pointer-events-none h-full flex flex-col justify-center items-end gap-y-0">
+              <div class="text-text-primary">93,164.50</div>
+              <div class="text-text-tertiary text-2xs">
+                <span class="text-negative text-2xs">−1.36%</span>
+              </div>
+            </div>
+          </div>
+        </a>
+        <a class="items-center justify-center whitespace-nowrap flex relative before:absolute before:inset-0 before:pointer-events-none hover:before:bg-overlay-hover before:opacity-[.07] before:rounded cursor-pointer pr-3 py-1" href="/perpetuals/ETH-PERP">
+          <div>
+            <div class="text-text-primary whitespace-nowrap text-xs flex h-full items-center pointer-events-auto">
+              <button class="inline-flex items-center justify-center whitespace-nowrap gap-x-2 cursor-not-allowed text-disabled p-3" disabled="" type="button">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 256 256">
+                  <path d="M239.18,97.26A16.38,16.38,0,0,0,224.92,86l-59-4.76L143.14,26.15a16.36,16.36,0,0,0-30.27,0L90.11,81.23,31.08,86a16.46,16.46,0,0,0-9.37,28.86l45,38.83L53,211.75a16.38,16.38,0,0,0,24.5,17.82L128,198.49l50.53,31.08A16.4,16.4,0,0,0,203,211.75l-13.76-58.07,45-38.83A16.43,16.43,0,0,0,239.18,97.26Zm-15.34,5.47-48.7,42a8,8,0,0,0-2.56,7.91l14.88,62.8a.37.37,0,0,1-.17.48c-.18.14-.23.11-.38,0l-54.72-33.65a8,8,0,0,0-8.38,0L69.09,215.94c-.15.09-.19.12-.38,0a.37.37,0,0,1-.17-.48l14.88-62.8a8,8,0,0,0-2.56-7.91l-48.7-42c-.12-.1-.23-.19-.13-.5s.18-.27.33-.29l63.92-5.16A8,8,0,0,0,103,91.86l24.62-59.61c.08-.17.11-.25.35-.25s.27.08.35.25L153,91.86a8,8,0,0,0,6.75,4.92l63.92,5.16c.15,0,.24,0,.33.29S224,102.63,223.84,102.73Z"></path>
+                </svg>
+              </button>
+            </div>
+          </div>
+          <div class="flex-1">
+            <div class="text-text-primary whitespace-nowrap text-xs pointer-events-none flex h-full items-center gap-x-2.5">
+              <img alt="ETH" loading="lazy" width="25" height="25" decoding="async" data-nimg="1" class="h-auto w-6" src="/_next/static/media/eth.b2205244.svg" style="color: transparent;">
+              <div class="flex flex-col items-start leading-4">
+                <p class="text-text-secondary text-xs">ETH-PERP</p>
+                <p class="text-text-tertiary text-2xs">116,211,612</p>
+              </div>
+            </div>
+          </div>
+          <div>
+            <div class="text-text-primary whitespace-nowrap text-xs pointer-events-none h-full flex flex-col justify-center items-end gap-y-0">
+              <div class="text-text-primary">3,417.70</div>
+              <div class="text-text-tertiary text-2xs">
+                <span class="text-negative text-2xs">−0.41%</span>
+              </div>
+            </div>
+          </div>
+        </a>
+        <a class="items-center justify-center whitespace-nowrap flex relative before:absolute before:inset-0 before:pointer-events-none hover:before:bg-overlay-hover before:opacity-[.07] before:rounded cursor-pointer pr-3 py-1" href="/perpetuals/SOL-PERP">
+          <div>
+            <div class="text-text-primary whitespace-nowrap text-xs flex h-full items-center pointer-events-auto">
+              <button class="inline-flex items-center justify-center whitespace-nowrap gap-x-2 cursor-not-allowed text-disabled p-3" disabled="" type="button">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 256 256">
+                  <path d="M239.18,97.26A16.38,16.38,0,0,0,224.92,86l-59-4.76L143.14,26.15a16.36,16.36,0,0,0-30.27,0L90.11,81.23,31.08,86a16.46,16.46,0,0,0-9.37,28.86l45,38.83L53,211.75a16.38,16.38,0,0,0,24.5,17.82L128,198.49l50.53,31.08A16.4,16.4,0,0,0,203,211.75l-13.76-58.07,45-38.83A16.43,16.43,0,0,0,239.18,97.26Zm-15.34,5.47-48.7,42a8,8,0,0,0-2.56,7.91l14.88,62.8a.37.37,0,0,1-.17.48c-.18.14-.23.11-.38,0l-54.72-33.65a8,8,0,0,0-8.38,0L69.09,215.94c-.15.09-.19.12-.38,0a.37.37,0,0,1-.17-.48l14.88-62.8a8,8,0,0,0-2.56-7.91l-48.7-42c-.12-.1-.23-.19-.13-.5s.18-.27.33-.29l63.92-5.16A8,8,0,0,0,103,91.86l24.62-59.61c.08-.17.11-.25.35-.25s.27.08.35.25L153,91.86a8,8,0,0,0,6.75,4.92l63.92,5.16c.15,0,.24,0,.33.29S224,102.63,223.84,102.73Z"></path>
+                </svg>
+              </button>
+            </div>
+          </div>
+          <div class="flex-1">
+            <div class="text-text-primary whitespace-nowrap text-xs pointer-events-none flex h-full items-center gap-x-2.5">
+              <img alt="SOL" loading="lazy" width="24" height="24" decoding="async" data-nimg="1" class="h-auto w-6" src="/_next/static/media/sol.5c652667.svg" style="color: transparent;">
+              <div class="flex flex-col items-start leading-4">
+                <p class="text-text-secondary text-xs">SOL-PERP</p>
+                <p class="text-text-tertiary text-2xs">11,788,174</p>
+              </div>
+            </div>
+          </div>
+          <div>
+            <div class="text-text-primary whitespace-nowrap text-xs pointer-events-none h-full flex flex-col justify-center items-end gap-y-0">
+              <div class="text-text-primary">233.209</div>
+              <div class="text-text-tertiary text-2xs">
+                <span class="text-negative text-2xs">−1.56%</span>
+              </div>
+            </div>
+          </div>
+        </a>
+        <a class="items-center justify-center whitespace-nowrap flex relative before:absolute before:inset-0 before:pointer-events-none hover:before:bg-overlay-hover before:opacity-[.07] before:rounded cursor-pointer pr-3 py-1" href="/perpetuals/TIA-PERP">
+          <div>
+            <div class="text-text-primary whitespace-nowrap text-xs flex h-full items-center pointer-events-auto">
+              <button class="inline-flex items-center justify-center whitespace-nowrap gap-x-2 cursor-not-allowed text-disabled p-3" disabled="" type="button">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 256 256">
+                  <path d="M239.18,97.26A16.38,16.38,0,0,0,224.92,86l-59-4.76L143.14,26.15a16.36,16.36,0,0,0-30.27,0L90.11,81.23,31.08,86a16.46,16.46,0,0,0-9.37,28.86l45,38.83L53,211.75a16.38,16.38,0,0,0,24.5,17.82L128,198.49l50.53,31.08A16.4,16.4,0,0,0,203,211.75l-13.76-58.07,45-38.83A16.43,16.43,0,0,0,239.18,97.26Zm-15.34,5.47-48.7,42a8,8,0,0,0-2.56,7.91l14.88,62.8a.37.37,0,0,1-.17.48c-.18.14-.23.11-.38,0l-54.72-33.65a8,8,0,0,0-8.38,0L69.09,215.94c-.15.09-.19.12-.38,0a.37.37,0,0,1-.17-.48l14.88-62.8a8,8,0,0,0-2.56-7.91l-48.7-42c-.12-.1-.23-.19-.13-.5s.18-.27.33-.29l63.92-5.16A8,8,0,0,0,103,91.86l24.62-59.61c.08-.17.11-.25.35-.25s.27.08.35.25L153,91.86a8,8,0,0,0,6.75,4.92l63.92,5.16c.15,0,.24,0,.33.29S224,102.63,223.84,102.73Z"></path>
+                </svg>
+              </button>
+            </div>
+          </div>
+          <div class="flex-1">
+            <div class="text-text-primary whitespace-nowrap text-xs pointer-events-none flex h-full items-center gap-x-2.5">
+              <img alt="TIA" loading="lazy" width="24" height="24" decoding="async" data-nimg="1" class="h-auto w-6" src="/_next/static/media/tia.5e123867.svg" style="color: transparent;">
+              <div class="flex flex-col items-start leading-4">
+                <p class="text-text-secondary text-xs">TIA-PERP</p>
+                <p class="text-text-tertiary text-2xs">5,554,878</p>
+              </div>
+            </div>
+          </div>
+          <div>
+            <div class="text-text-primary whitespace-nowrap text-xs pointer-events-none h-full flex flex-col justify-center items-end gap-y-0">
+              <div class="text-text-primary">8.271</div>
+              <div class="text-text-tertiary text-2xs">
+                <span class="text-positive text-2xs">+10.39%</span>
+              </div>
+            </div>
+          </div>
+        </a>
+        <a class="items-center justify-center whitespace-nowrap flex relative before:absolute before:inset-0 before:pointer-events-none hover:before:bg-overlay-hover before:opacity-[.07] before:rounded cursor-pointer pr-3 py-1" href="/perpetuals/DOGE-PERP">
+          <div>
+            <div class="text-text-primary whitespace-nowrap text-xs flex h-full items-center pointer-events-auto">
+              <button class="inline-flex items-center justify-center whitespace-nowrap gap-x-2 cursor-not-allowed text-disabled p-3" disabled="" type="button">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 256 256">
+                  <path d="M239.18,97.26A16.38,16.38,0,0,0,224.92,86l-59-4.76L143.14,26.15a16.36,16.36,0,0,0-30.27,0L90.11,81.23,31.08,86a16.46,16.46,0,0,0-9.37,28.86l45,38.83L53,211.75a16.38,16.38,0,0,0,24.5,17.82L128,198.49l50.53,31.08A16.4,16.4,0,0,0,203,211.75l-13.76-58.07,45-38.83A16.43,16.43,0,0,0,239.18,97.26Zm-15.34,5.47-48.7,42a8,8,0,0,0-2.56,7.91l14.88,62.8a.37.37,0,0,1-.17.48c-.18.14-.23.11-.38,0l-54.72-33.65a8,8,0,0,0-8.38,0L69.09,215.94c-.15.09-.19.12-.38,0a.37.37,0,0,1-.17-.48l14.88-62.8a8,8,0,0,0-2.56-7.91l-48.7-42c-.12-.1-.23-.19-.13-.5s.18-.27.33-.29l63.92-5.16A8,8,0,0,0,103,91.86l24.62-59.61c.08-.17.11-.25.35-.25s.27.08.35.25L153,91.86a8,8,0,0,0,6.75,4.92l63.92,5.16c.15,0,.24,0,.33.29S224,102.63,223.84,102.73Z"></path>
+                </svg>
+              </button>
+            </div>
+          </div>
+          <div class="flex-1">
+            <div class="text-text-primary whitespace-nowrap text-xs pointer-events-none flex h-full items-center gap-x-2.5">
+              <img alt="DOGE" loading="lazy" width="24" height="24" decoding="async" data-nimg="1" class="h-auto w-6" src="/_next/static/media/doge.0f4c0880.svg" style="color: transparent;">
+              <div class="flex flex-col items-start leading-4">
+                <p class="text-text-secondary text-xs">DOGE-PERP</p>
+                <p class="text-text-tertiary text-2xs">5,434,424</p>
+              </div>
+            </div>
+          </div>
+          <div>
+            <div class="text-text-primary whitespace-nowrap text-xs pointer-events-none h-full flex flex-col justify-center items-end gap-y-0">
+              <div class="text-text-primary">0.39348</div>
+              <div class="text-text-tertiary text-2xs">
+                <span class="text-negative text-2xs">−2.94%</span>
+              </div>
+            </div>
+          </div>
+        </a>
+        <a class="items-center justify-center whitespace-nowrap flex relative before:absolute before:inset-0 before:pointer-events-none hover:before:bg-overlay-hover before:opacity-[.07] before:rounded cursor-pointer pr-3 py-1" href="/perpetuals/INJ-PERP">
+          <div>
+            <div class="text-text-primary whitespace-nowrap text-xs flex h-full items-center pointer-events-auto">
+              <button class="inline-flex items-center justify-center whitespace-nowrap gap-x-2 cursor-not-allowed text-disabled p-3" disabled="" type="button">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 256 256">
+                  <path d="M239.18,97.26A16.38,16.38,0,0,0,224.92,86l-59-4.76L143.14,26.15a16.36,16.36,0,0,0-30.27,0L90.11,81.23,31.08,86a16.46,16.46,0,0,0-9.37,28.86l45,38.83L53,211.75a16.38,16.38,0,0,0,24.5,17.82L128,198.49l50.53,31.08A16.4,16.4,0,0,0,203,211.75l-13.76-58.07,45-38.83A16.43,16.43,0,0,0,239.18,97.26Zm-15.34,5.47-48.7,42a8,8,0,0,0-2.56,7.91l14.88,62.8a.37.37,0,0,1-.17.48c-.18.14-.23.11-.38,0l-54.72-33.65a8,8,0,0,0-8.38,0L69.09,215.94c-.15.09-.19.12-.38,0a.37.37,0,0,1-.17-.48l14.88-62.8a8,8,0,0,0-2.56-7.91l-48.7-42c-.12-.1-.23-.19-.13-.5s.18-.27.33-.29l63.92-5.16A8,8,0,0,0,103,91.86l24.62-59.61c.08-.17.11-.25.35-.25s.27.08.35.25L153,91.86a8,8,0,0,0,6.75,4.92l63.92,5.16c.15,0,.24,0,.33.29S224,102.63,223.84,102.73Z"></path>
+                </svg>
+              </button>
+            </div>
+          </div>
+          <div class="flex-1">
+            <div class="text-text-primary whitespace-nowrap text-xs pointer-events-none flex h-full items-center gap-x-2.5">
+              <img alt="INJ" loading="lazy" width="24" height="24" decoding="async" data-nimg="1" class="h-auto w-6" src="/_next/static/media/inj.99b0d82a.svg" style="color: transparent;">
+              <div class="flex flex-col items-start leading-4">
+                <p class="text-text-secondary text-xs">INJ-PERP</p>
+                <p class="text-text-tertiary text-2xs">5,302,999</p>
+              </div>
+            </div>
+          </div>
+          <div>
+            <div class="text-text-primary whitespace-nowrap text-xs pointer-events-none h-full flex flex-col justify-center items-end gap-y-0">
+              <div class="text-text-primary">29.779</div>
+              <div class="text-text-tertiary text-2xs">
+                <span class="text-positive text-2xs">+8.92%</span>
+              </div>
+            </div>
+          </div>
+        </a>
+        <a class="items-center justify-center whitespace-nowrap flex relative before:absolute before:inset-0 before:pointer-events-none hover:before:bg-overlay-hover before:opacity-[.07] before:rounded cursor-pointer pr-3 py-1" href="/perpetuals/XRP-PERP">
+          <div>
+            <div class="text-text-primary whitespace-nowrap text-xs flex h-full items-center pointer-events-auto">
+              <button class="inline-flex items-center justify-center whitespace-nowrap gap-x-2 cursor-not-allowed text-disabled p-3" disabled="" type="button">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 256 256">
+                  <path d="M239.18,97.26A16.38,16.38,0,0,0,224.92,86l-59-4.76L143.14,26.15a16.36,16.36,0,0,0-30.27,0L90.11,81.23,31.08,86a16.46,16.46,0,0,0-9.37,28.86l45,38.83L53,211.75a16.38,16.38,0,0,0,24.5,17.82L128,198.49l50.53,31.08A16.4,16.4,0,0,0,203,211.75l-13.76-58.07,45-38.83A16.43,16.43,0,0,0,239.18,97.26Zm-15.34,5.47-48.7,42a8,8,0,0,0-2.56,7.91l14.88,62.8a.37.37,0,0,1-.17.48c-.18.14-.23.11-.38,0l-54.72-33.65a8,8,0,0,0-8.38,0L69.09,215.94c-.15.09-.19.12-.38,0a.37.37,0,0,1-.17-.48l14.88-62.8a8,8,0,0,0-2.56-7.91l-48.7-42c-.12-.1-.23-.19-.13-.5s.18-.27.33-.29l63.92-5.16A8,8,0,0,0,103,91.86l24.62-59.61c.08-.17.11-.25.35-.25s.27.08.35.25L153,91.86a8,8,0,0,0,6.75,4.92l63.92,5.16c.15,0,.24,0,.33.29S224,102.63,223.84,102.73Z"></path>
+                </svg>
+              </button>
+            </div>
+          </div>
+          <div class="flex-1">
+            <div class="text-text-primary whitespace-nowrap text-xs pointer-events-none flex h-full items-center gap-x-2.5">
+              <img alt="XRP" loading="lazy" width="24" height="24" decoding="async" data-nimg="1" class="h-auto w-6" src="/_next/static/media/xrp.a69dd461.svg" style="color: transparent;">
+              <div class="flex flex-col items-start leading-4">
+                <p class="text-text-secondary text-xs">XRP-PERP</p>
+                <p class="text-text-tertiary text-2xs">4,874,099</p>
+              </div>
+            </div>
+          </div>
+          <div>
+            <div class="text-text-primary whitespace-nowrap text-xs pointer-events-none h-full flex flex-col justify-center items-end gap-y-0">
+              <div class="text-text-primary">1.3850</div>
+              <div class="text-text-tertiary text-2xs">
+                <span class="text-negative text-2xs">−3.82%</span>
+              </div>
+            </div>
+          </div>
+        </a>
+        <a class="items-center justify-center whitespace-nowrap flex relative before:absolute before:inset-0 before:pointer-events-none hover:before:bg-overlay-hover before:opacity-[.07] before:rounded cursor-pointer pr-3 py-1" href="/perpetuals/FTM-PERP">
+          <div>
+            <div class="text-text-primary whitespace-nowrap text-xs flex h-full items-center pointer-events-auto">
+              <button class="inline-flex items-center justify-center whitespace-nowrap gap-x-2 cursor-not-allowed text-disabled p-3" disabled="" type="button">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 256 256">
+                  <path d="M239.18,97.26A16.38,16.38,0,0,0,224.92,86l-59-4.76L143.14,26.15a16.36,16.36,0,0,0-30.27,0L90.11,81.23,31.08,86a16.46,16.46,0,0,0-9.37,28.86l45,38.83L53,211.75a16.38,16.38,0,0,0,24.5,17.82L128,198.49l50.53,31.08A16.4,16.4,0,0,0,203,211.75l-13.76-58.07,45-38.83A16.43,16.43,0,0,0,239.18,97.26Zm-15.34,5.47-48.7,42a8,8,0,0,0-2.56,7.91l14.88,62.8a.37.37,0,0,1-.17.48c-.18.14-.23.11-.38,0l-54.72-33.65a8,8,0,0,0-8.38,0L69.09,215.94c-.15.09-.19.12-.38,0a.37.37,0,0,1-.17-.48l14.88-62.8a8,8,0,0,0-2.56-7.91l-48.7-42c-.12-.1-.23-.19-.13-.5s.18-.27.33-.29l63.92-5.16A8,8,0,0,0,103,91.86l24.62-59.61c.08-.17.11-.25.35-.25s.27.08.35.25L153,91.86a8,8,0,0,0,6.75,4.92l63.92,5.16c.15,0,.24,0,.33.29S224,102.63,223.84,102.73Z"></path>
+                </svg>
+              </button>
+            </div>
+          </div>
+          <div class="flex-1">
+            <div class="text-text-primary whitespace-nowrap text-xs pointer-events-none flex h-full items-center gap-x-2.5">
+              <img alt="FTM" loading="lazy" width="24" height="24" decoding="async" data-nimg="1" class="h-auto w-6" src="/_next/static/media/ftm.5cf6ef08.svg" style="color: transparent;">
+              <div class="flex flex-col items-start leading-4">
+                <p class="text-text-secondary text-xs">FTM-PERP</p>
+                <p class="text-text-tertiary text-2xs">4,762,725</p>
+              </div>
+            </div>
+          </div>
+          <div>
+            <div class="text-text-primary whitespace-nowrap text-xs pointer-events-none h-full flex flex-col justify-center items-end gap-y-0">
+              <div class="text-text-primary">1.12415</div>
+              <div class="text-text-tertiary text-2xs">
+                <span class="text-positive text-2xs">+18.47%</span>
+              </div>
+            </div>
+          </div>
+        </a>
+        <a class="items-center justify-center whitespace-nowrap flex relative before:absolute before:inset-0 before:pointer-events-none hover:before:bg-overlay-hover before:opacity-[.07] before:rounded cursor-pointer pr-3 py-1" href="/perpetuals/SEI-PERP">
+          <div>
+            <div class="text-text-primary whitespace-nowrap text-xs flex h-full items-center pointer-events-auto">
+              <button class="inline-flex items-center justify-center whitespace-nowrap gap-x-2 cursor-not-allowed text-disabled p-3" disabled="" type="button">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 256 256">
+                  <path d="M239.18,97.26A16.38,16.38,0,0,0,224.92,86l-59-4.76L143.14,26.15a16.36,16.36,0,0,0-30.27,0L90.11,81.23,31.08,86a16.46,16.46,0,0,0-9.37,28.86l45,38.83L53,211.75a16.38,16.38,0,0,0,24.5,17.82L128,198.49l50.53,31.08A16.4,16.4,0,0,0,203,211.75l-13.76-58.07,45-38.83A16.43,16.43,0,0,0,239.18,97.26Zm-15.34,5.47-48.7,42a8,8,0,0,0-2.56,7.91l14.88,62.8a.37.37,0,0,1-.17.48c-.18.14-.23.11-.38,0l-54.72-33.65a8,8,0,0,0-8.38,0L69.09,215.94c-.15.09-.19.12-.38,0a.37.37,0,0,1-.17-.48l14.88-62.8a8,8,0,0,0-2.56-7.91l-48.7-42c-.12-.1-.23-.19-.13-.5s.18-.27.33-.29l63.92-5.16A8,8,0,0,0,103,91.86l24.62-59.61c.08-.17.11-.25.35-.25s.27.08.35.25L153,91.86a8,8,0,0,0,6.75,4.92l63.92,5.16c.15,0,.24,0,.33.29S224,102.63,223.84,102.73Z"></path>
+                </svg>
+              </button>
+            </div>
+          </div>
+          <div class="flex-1">
+            <div class="text-text-primary whitespace-nowrap text-xs pointer-events-none flex h-full items-center gap-x-2.5">
+              <img alt="SEI" loading="lazy" width="24" height="24" decoding="async" data-nimg="1" class="h-auto w-6" src="/_next/static/media/sei.02c4e925.svg" style="color: transparent;">
+              <div class="flex flex-col items-start leading-4">
+                <p class="text-text-secondary text-xs">SEI-PERP</p>
+                <p class="text-text-tertiary text-2xs">4,414,108</p>
+              </div>
+            </div>
+          </div>
+          <div>
+            <div class="text-text-primary whitespace-nowrap text-xs pointer-events-none h-full flex flex-col justify-center items-end gap-y-0">
+              <div class="text-text-primary">0.67416</div>
+              <div class="text-text-tertiary text-2xs">
+                <span class="text-positive text-2xs">+7.12%</span>
+              </div>
+            </div>
+          </div>
+        </a>
+        <a class="items-center justify-center whitespace-nowrap flex relative before:absolute before:inset-0 before:pointer-events-none hover:before:bg-overlay-hover before:opacity-[.07] before:rounded cursor-pointer pr-3 py-1" href="/perpetuals/WIF-PERP">
+          <div>
+            <div class="text-text-primary whitespace-nowrap text-xs flex h-full items-center pointer-events-auto">
+              <button class="inline-flex items-center justify-center whitespace-nowrap gap-x-2 cursor-not-allowed text-disabled p-3" disabled="" type="button">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 256 256">
+                  <path d="M239.18,97.26A16.38,16.38,0,0,0,224.92,86l-59-4.76L143.14,26.15a16.36,16.36,0,0,0-30.27,0L90.11,81.23,31.08,86a16.46,16.46,0,0,0-9.37,28.86l45,38.83L53,211.75a16.38,16.38,0,0,0,24.5,17.82L128,198.49l50.53,31.08A16.4,16.4,0,0,0,203,211.75l-13.76-58.07,45-38.83A16.43,16.43,0,0,0,239.18,97.26Zm-15.34,5.47-48.7,42a8,8,0,0,0-2.56,7.91l14.88,62.8a.37.37,0,0,1-.17.48c-.18.14-.23.11-.38,0l-54.72-33.65a8,8,0,0,0-8.38,0L69.09,215.94c-.15.09-.19.12-.38,0a.37.37,0,0,1-.17-.48l14.88-62.8a8,8,0,0,0-2.56-7.91l-48.7-42c-.12-.1-.23-.19-.13-.5s.18-.27.33-.29l63.92-5.16A8,8,0,0,0,103,91.86l24.62-59.61c.08-.17.11-.25.35-.25s.27.08.35.25L153,91.86a8,8,0,0,0,6.75,4.92l63.92,5.16c.15,0,.24,0,.33.29S224,102.63,223.84,102.73Z"></path>
+                </svg>
+              </button>
+            </div>
+          </div>
+          <div class="flex-1">
+            <div class="text-text-primary whitespace-nowrap text-xs pointer-events-none flex h-full items-center gap-x-2.5">
+              <img alt="WIF" loading="lazy" width="24" height="24" decoding="async" data-nimg="1" class="h-auto w-6" src="/_next/static/media/wif.a7cbef6e.svg" style="color: transparent;">
+              <div class="flex flex-col items-start leading-4">
+                <p class="text-text-secondary text-xs">WIF-PERP</p>
+                <p class="text-text-tertiary text-2xs">3,800,997</p>
+              </div>
+            </div>
+          </div>
+          <div>
+            <div class="text-text-primary whitespace-nowrap text-xs pointer-events-none h-full flex flex-col justify-center items-end gap-y-0">
+              <div class="text-text-primary">3.0603</div>
+              <div class="text-text-tertiary text-2xs">
+                <span class="text-negative text-2xs">−8.40%</span>
+              </div>
+            </div>
+          </div>
+        </a>
+        <a class="items-center justify-center whitespace-nowrap flex relative before:absolute before:inset-0 before:pointer-events-none hover:before:bg-overlay-hover before:opacity-[.07] before:rounded cursor-pointer pr-3 py-1" href="/perpetuals/CRV-PERP">
+          <div>
+            <div class="text-text-primary whitespace-nowrap text-xs flex h-full items-center pointer-events-auto">
+              <button class="inline-flex items-center justify-center whitespace-nowrap gap-x-2 cursor-not-allowed text-disabled p-3" disabled="" type="button">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 256 256">
+                  <path d="M239.18,97.26A16.38,16.38,0,0,0,224.92,86l-59-4.76L143.14,26.15a16.36,16.36,0,0,0-30.27,0L90.11,81.23,31.08,86a16.46,16.46,0,0,0-9.37,28.86l45,38.83L53,211.75a16.38,16.38,0,0,0,24.5,17.82L128,198.49l50.53,31.08A16.4,16.4,0,0,0,203,211.75l-13.76-58.07,45-38.83A16.43,16.43,0,0,0,239.18,97.26Zm-15.34,5.47-48.7,42a8,8,0,0,0-2.56,7.91l14.88,62.8a.37.37,0,0,1-.17.48c-.18.14-.23.11-.38,0l-54.72-33.65a8,8,0,0,0-8.38,0L69.09,215.94c-.15.09-.19.12-.38,0a.37.37,0,0,1-.17-.48l14.88-62.8a8,8,0,0,0-2.56-7.91l-48.7-42c-.12-.1-.23-.19-.13-.5s.18-.27.33-.29l63.92-5.16A8,8,0,0,0,103,91.86l24.62-59.61c.08-.17.11-.25.35-.25s.27.08.35.25L153,91.86a8,8,0,0,0,6.75,4.92l63.92,5.16c.15,0,.24,0,.33.29S224,102.63,223.84,102.73Z"></path>
+                </svg>
+              </button>
+            </div>
+          </div>
+          <div class="flex-1">
+            <div class="text-text-primary whitespace-nowrap text-xs pointer-events-none flex h-full items-center gap-x-2.5">
+              <img alt="CRV" loading="lazy" width="24" height="24" decoding="async" data-nimg="1" class="h-auto w-6" src="/_next/static/media/crv.2fb3c73e.svg" style="color: transparent;">
+              <div class="flex flex-col items-start leading-4">
+                <p class="text-text-secondary text-xs">CRV-PERP</p>
+                <p class="text-text-tertiary text-2xs">3,543,411</p>
+              </div>
+            </div>
+          </div>
+          <div>
+            <div class="text-text-primary whitespace-nowrap text-xs pointer-events-none h-full flex flex-col justify-center items-end gap-y-0">
+              <div class="text-text-primary">0.4934</div>
+              <div class="text-text-tertiary text-2xs">
+                <span class="text-negative text-2xs">−3.30%</span>
+              </div>
+            </div>
+          </div>
+        </a>
+        <a class="items-center justify-center whitespace-nowrap flex relative before:absolute before:inset-0 before:pointer-events-none hover:before:bg-overlay-hover before:opacity-[.07] before:rounded cursor-pointer pr-3 py-1" href="/perpetuals/SUI-PERP">
+          <div>
+            <div class="text-text-primary whitespace-nowrap text-xs flex h-full items-center pointer-events-auto">
+              <button class="inline-flex items-center justify-center whitespace-nowrap gap-x-2 cursor-not-allowed text-disabled p-3" disabled="" type="button">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 256 256">
+                  <path d="M239.18,97.26A16.38,16.38,0,0,0,224.92,86l-59-4.76L143.14,26.15a16.36,16.36,0,0,0-30.27,0L90.11,81.23,31.08,86a16.46,16.46,0,0,0-9.37,28.86l45,38.83L53,211.75a16.38,16.38,0,0,0,24.5,17.82L128,198.49l50.53,31.08A16.4,16.4,0,0,0,203,211.75l-13.76-58.07,45-38.83A16.43,16.43,0,0,0,239.18,97.26Zm-15.34,5.47-48.7,42a8,8,0,0,0-2.56,7.91l14.88,62.8a.37.37,0,0,1-.17.48c-.18.14-.23.11-.38,0l-54.72-33.65a8,8,0,0,0-8.38,0L69.09,215.94c-.15.09-.19.12-.38,0a.37.37,0,0,1-.17-.48l14.88-62.8a8,8,0,0,0-2.56-7.91l-48.7-42c-.12-.1-.23-.19-.13-.5s.18-.27.33-.29l63.92-5.16A8,8,0,0,0,103,91.86l24.62-59.61c.08-.17.11-.25.35-.25s.27.08.35.25L153,91.86a8,8,0,0,0,6.75,4.92l63.92,5.16c.15,0,.24,0,.33.29S224,102.63,223.84,102.73Z"></path>
+                </svg>
+              </button>
+            </div>
+          </div>
+          <div class="flex-1">
+            <div class="text-text-primary whitespace-nowrap text-xs pointer-events-none flex h-full items-center gap-x-2.5">
+              <img alt="SUI" loading="lazy" width="24" height="24" decoding="async" data-nimg="1" class="h-auto w-6" src="/_next/static/media/sui.e5e65fe2.svg" style="color: transparent;">
+              <div class="flex flex-col items-start leading-4">
+                <p class="text-text-secondary text-xs">SUI-PERP</p>
+                <p class="text-text-tertiary text-2xs">3,448,978</p>
+              </div>
+            </div>
+          </div>
+          <div>
+            <div class="text-text-primary whitespace-nowrap text-xs pointer-events-none h-full flex flex-col justify-center items-end gap-y-0">
+              <div class="text-text-primary">3.3509</div>
+              <div class="text-text-tertiary text-2xs">
+                <span class="text-positive text-2xs">+3.75%</span>
+              </div>
+            </div>
+          </div>
+        </a>
+        <a class="items-center justify-center whitespace-nowrap flex relative before:absolute before:inset-0 before:pointer-events-none hover:before:bg-overlay-hover before:opacity-[.07] before:rounded cursor-pointer pr-3 py-1" href="/perpetuals/OP-PERP">
+          <div>
+            <div class="text-text-primary whitespace-nowrap text-xs flex h-full items-center pointer-events-auto">
+              <button class="inline-flex items-center justify-center whitespace-nowrap gap-x-2 cursor-not-allowed text-disabled p-3" disabled="" type="button">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 256 256">
+                  <path d="M239.18,97.26A16.38,16.38,0,0,0,224.92,86l-59-4.76L143.14,26.15a16.36,16.36,0,0,0-30.27,0L90.11,81.23,31.08,86a16.46,16.46,0,0,0-9.37,28.86l45,38.83L53,211.75a16.38,16.38,0,0,0,24.5,17.82L128,198.49l50.53,31.08A16.4,16.4,0,0,0,203,211.75l-13.76-58.07,45-38.83A16.43,16.43,0,0,0,239.18,97.26Zm-15.34,5.47-48.7,42a8,8,0,0,0-2.56,7.91l14.88,62.8a.37.37,0,0,1-.17.48c-.18.14-.23.11-.38,0l-54.72-33.65a8,8,0,0,0-8.38,0L69.09,215.94c-.15.09-.19.12-.38,0a.37.37,0,0,1-.17-.48l14.88-62.8a8,8,0,0,0-2.56-7.91l-48.7-42c-.12-.1-.23-.19-.13-.5s.18-.27.33-.29l63.92-5.16A8,8,0,0,0,103,91.86l24.62-59.61c.08-.17.11-.25.35-.25s.27.08.35.25L153,91.86a8,8,0,0,0,6.75,4.92l63.92,5.16c.15,0,.24,0,.33.29S224,102.63,223.84,102.73Z"></path>
+                </svg>
+              </button>
+            </div>
+          </div>
+          <div class="flex-1">
+            <div class="text-text-primary whitespace-nowrap text-xs pointer-events-none flex h-full items-center gap-x-2.5">
+              <img alt="OP" loading="lazy" width="24" height="24" decoding="async" data-nimg="1" class="h-auto w-6" src="/_next/static/media/op.1117d870.svg" style="color: transparent;">
+              <div class="flex flex-col items-start leading-4">
+                <p class="text-text-secondary text-xs">OP-PERP</p>
+                <p class="text-text-tertiary text-2xs">2,984,639</p>
+              </div>
+            </div>
+          </div>
+          <div>
+            <div class="text-text-primary whitespace-nowrap text-xs pointer-events-none h-full flex flex-col justify-center items-end gap-y-0">
+              <div class="text-text-primary">2.2815</div>
+              <div class="text-text-tertiary text-2xs">
+                <span class="text-positive text-2xs">+1.30%</span>
+              </div>
+            </div>
+          </div>
+        </a>
+        <a class="items-center justify-center whitespace-nowrap flex relative before:absolute before:inset-0 before:pointer-events-none hover:before:bg-overlay-hover before:opacity-[.07] before:rounded cursor-pointer pr-3 py-1" href="/perpetuals/ICP-PERP">
+          <div>
+            <div class="text-text-primary whitespace-nowrap text-xs flex h-full items-center pointer-events-auto">
+              <button class="inline-flex items-center justify-center whitespace-nowrap gap-x-2 cursor-not-allowed text-disabled p-3" disabled="" type="button">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 256 256">
+                  <path d="M239.18,97.26A16.38,16.38,0,0,0,224.92,86l-59-4.76L143.14,26.15a16.36,16.36,0,0,0-30.27,0L90.11,81.23,31.08,86a16.46,16.46,0,0,0-9.37,28.86l45,38.83L53,211.75a16.38,16.38,0,0,0,24.5,17.82L128,198.49l50.53,31.08A16.4,16.4,0,0,0,203,211.75l-13.76-58.07,45-38.83A16.43,16.43,0,0,0,239.18,97.26Zm-15.34,5.47-48.7,42a8,8,0,0,0-2.56,7.91l14.88,62.8a.37.37,0,0,1-.17.48c-.18.14-.23.11-.38,0l-54.72-33.65a8,8,0,0,0-8.38,0L69.09,215.94c-.15.09-.19.12-.38,0a.37.37,0,0,1-.17-.48l14.88-62.8a8,8,0,0,0-2.56-7.91l-48.7-42c-.12-.1-.23-.19-.13-.5s.18-.27.33-.29l63.92-5.16A8,8,0,0,0,103,91.86l24.62-59.61c.08-.17.11-.25.35-.25s.27.08.35.25L153,91.86a8,8,0,0,0,6.75,4.92l63.92,5.16c.15,0,.24,0,.33.29S224,102.63,223.84,102.73Z"></path>
+                </svg>
+              </button>
+            </div>
+          </div>
+          <div class="flex-1">
+            <div class="text-text-primary whitespace-nowrap text-xs pointer-events-none flex h-full items-center gap-x-2.5">
+              <img alt="ICP" loading="lazy" width="24" height="25" decoding="async" data-nimg="1" class="h-auto w-6" src="/_next/static/media/icp.ce1a3d18.svg" style="color: transparent;">
+              <div class="flex flex-col items-start leading-4">
+                <p class="text-text-secondary text-xs">ICP-PERP</p>
+                <p class="text-text-tertiary text-2xs">2,979,248</p>
+              </div>
+            </div>
+          </div>
+          <div>
+            <div class="text-text-primary whitespace-nowrap text-xs pointer-events-none h-full flex flex-col justify-center items-end gap-y-0">
+              <div class="text-text-primary">11.3021</div>
+              <div class="text-text-tertiary text-2xs">
+                <span class="text-negative text-2xs">−2.77%</span>
+              </div>
+            </div>
+          </div>
+        </a>
+        <a class="items-center justify-center whitespace-nowrap flex relative before:absolute before:inset-0 before:pointer-events-none hover:before:bg-overlay-hover before:opacity-[.07] before:rounded cursor-pointer pr-3 py-1" href="/perpetuals/AVAX-PERP">
+          <div>
+            <div class="text-text-primary whitespace-nowrap text-xs flex h-full items-center pointer-events-auto">
+              <button class="inline-flex items-center justify-center whitespace-nowrap gap-x-2 cursor-not-allowed text-disabled p-3" disabled="" type="button">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 256 256">
+                  <path d="M239.18,97.26A16.38,16.38,0,0,0,224.92,86l-59-4.76L143.14,26.15a16.36,16.36,0,0,0-30.27,0L90.11,81.23,31.08,86a16.46,16.46,0,0,0-9.37,28.86l45,38.83L53,211.75a16.38,16.38,0,0,0,24.5,17.82L128,198.49l50.53,31.08A16.4,16.4,0,0,0,203,211.75l-13.76-58.07,45-38.83A16.43,16.43,0,0,0,239.18,97.26Zm-15.34,5.47-48.7,42a8,8,0,0,0-2.56,7.91l14.88,62.8a.37.37,0,0,1-.17.48c-.18.14-.23.11-.38,0l-54.72-33.65a8,8,0,0,0-8.38,0L69.09,215.94c-.15.09-.19.12-.38,0a.37.37,0,0,1-.17-.48l14.88-62.8a8,8,0,0,0-2.56-7.91l-48.7-42c-.12-.1-.23-.19-.13-.5s.18-.27.33-.29l63.92-5.16A8,8,0,0,0,103,91.86l24.62-59.61c.08-.17.11-.25.35-.25s.27.08.35.25L153,91.86a8,8,0,0,0,6.75,4.92l63.92,5.16c.15,0,.24,0,.33.29S224,102.63,223.84,102.73Z"></path>
+                </svg>
+              </button>
+            </div>
+          </div>
+          <div class="flex-1">
+            <div class="text-text-primary whitespace-nowrap text-xs pointer-events-none flex h-full items-center gap-x-2.5">
+              <img alt="AVAX" loading="lazy" width="24" height="24" decoding="async" data-nimg="1" class="h-auto w-6" src="/_next/static/media/avax.3384c338.svg" style="color: transparent;">
+              <div class="flex flex-col items-start leading-4">
+                <p class="text-text-secondary text-xs">AVAX-PERP</p>
+                <p class="text-text-tertiary text-2xs">2,955,198</p>
+              </div>
+            </div>
+          </div>
+          <div>
+            <div class="text-text-primary whitespace-nowrap text-xs pointer-events-none h-full flex flex-col justify-center items-end gap-y-0">
+              <div class="text-text-primary">43.276</div>
+              <div class="text-text-tertiary text-2xs">
+                <span class="text-positive text-2xs">+3.94%</span>
+              </div>
+            </div>
+          </div>
+        </a>
+        <a class="items-center justify-center whitespace-nowrap flex relative before:absolute before:inset-0 before:pointer-events-none hover:before:bg-overlay-hover before:opacity-[.07] before:rounded cursor-pointer pr-3 py-1" href="/perpetuals/ADA-PERP">
+          <div>
+            <div class="text-text-primary whitespace-nowrap text-xs flex h-full items-center pointer-events-auto">
+              <button class="inline-flex items-center justify-center whitespace-nowrap gap-x-2 cursor-not-allowed text-disabled p-3" disabled="" type="button">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 256 256">
+                  <path d="M239.18,97.26A16.38,16.38,0,0,0,224.92,86l-59-4.76L143.14,26.15a16.36,16.36,0,0,0-30.27,0L90.11,81.23,31.08,86a16.46,16.46,0,0,0-9.37,28.86l45,38.83L53,211.75a16.38,16.38,0,0,0,24.5,17.82L128,198.49l50.53,31.08A16.4,16.4,0,0,0,203,211.75l-13.76-58.07,45-38.83A16.43,16.43,0,0,0,239.18,97.26Zm-15.34,5.47-48.7,42a8,8,0,0,0-2.56,7.91l14.88,62.8a.37.37,0,0,1-.17.48c-.18.14-.23.11-.38,0l-54.72-33.65a8,8,0,0,0-8.38,0L69.09,215.94c-.15.09-.19.12-.38,0a.37.37,0,0,1-.17-.48l14.88-62.8a8,8,0,0,0-2.56-7.91l-48.7-42c-.12-.1-.23-.19-.13-.5s.18-.27.33-.29l63.92-5.16A8,8,0,0,0,103,91.86l24.62-59.61c.08-.17.11-.25.35-.25s.27.08.35.25L153,91.86a8,8,0,0,0,6.75,4.92l63.92,5.16c.15,0,.24,0,.33.29S224,102.63,223.84,102.73Z"></path>
+                </svg>
+              </button>
+            </div>
+          </div>
+          <div class="flex-1">
+            <div class="text-text-primary whitespace-nowrap text-xs pointer-events-none flex h-full items-center gap-x-2.5">
+              <img alt="ADA" loading="lazy" width="24" height="24" decoding="async" data-nimg="1" class="h-auto w-6" src="/_next/static/media/ada.a17d3f25.svg" style="color: transparent;">
+              <div class="flex flex-col items-start leading-4">
+                <p class="text-text-secondary text-xs">ADA-PERP</p>
+                <p class="text-text-tertiary text-2xs">2,809,160</p>
+              </div>
+            </div>
+          </div>
+          <div>
+            <div class="text-text-primary whitespace-nowrap text-xs pointer-events-none h-full flex flex-col justify-center items-end gap-y-0">
+              <div class="text-text-primary">0.97078</div>
+              <div class="text-text-tertiary text-2xs">
+                <span class="text-positive text-2xs">+0.53%</span>
+              </div>
+            </div>
+          </div>
+        </a>
+        <a class="items-center justify-center whitespace-nowrap flex relative before:absolute before:inset-0 before:pointer-events-none hover:before:bg-overlay-hover before:opacity-[.07] before:rounded cursor-pointer pr-3 py-1" href="/perpetuals/NEAR-PERP">
+          <div>
+            <div class="text-text-primary whitespace-nowrap text-xs flex h-full items-center pointer-events-auto">
+              <button class="inline-flex items-center justify-center whitespace-nowrap gap-x-2 cursor-not-allowed text-disabled p-3" disabled="" type="button">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 256 256">
+                  <path d="M239.18,97.26A16.38,16.38,0,0,0,224.92,86l-59-4.76L143.14,26.15a16.36,16.36,0,0,0-30.27,0L90.11,81.23,31.08,86a16.46,16.46,0,0,0-9.37,28.86l45,38.83L53,211.75a16.38,16.38,0,0,0,24.5,17.82L128,198.49l50.53,31.08A16.4,16.4,0,0,0,203,211.75l-13.76-58.07,45-38.83A16.43,16.43,0,0,0,239.18,97.26Zm-15.34,5.47-48.7,42a8,8,0,0,0-2.56,7.91l14.88,62.8a.37.37,0,0,1-.17.48c-.18.14-.23.11-.38,0l-54.72-33.65a8,8,0,0,0-8.38,0L69.09,215.94c-.15.09-.19.12-.38,0a.37.37,0,0,1-.17-.48l14.88-62.8a8,8,0,0,0-2.56-7.91l-48.7-42c-.12-.1-.23-.19-.13-.5s.18-.27.33-.29l63.92-5.16A8,8,0,0,0,103,91.86l24.62-59.61c.08-.17.11-.25.35-.25s.27.08.35.25L153,91.86a8,8,0,0,0,6.75,4.92l63.92,5.16c.15,0,.24,0,.33.29S224,102.63,223.84,102.73Z"></path>
+                </svg>
+              </button>
+            </div>
+          </div>
+          <div class="flex-1">
+            <div class="text-text-primary whitespace-nowrap text-xs pointer-events-none flex h-full items-center gap-x-2.5">
+              <img alt="NEAR" loading="lazy" width="24" height="24" decoding="async" data-nimg="1" class="h-auto w-6" src="/_next/static/media/near.81e38bf7.svg" style="color: transparent;">
+              <div class="flex flex-col items-start leading-4">
+                <p class="text-text-secondary text-xs">NEAR-PERP</p>
+                <p class="text-text-tertiary text-2xs">2,590,622</p>
+              </div>
+            </div>
+          </div>
+          <div>
+            <div class="text-text-primary whitespace-nowrap text-xs pointer-events-none h-full flex flex-col justify-center items-end gap-y-0">
+              <div class="text-text-primary">6.5431</div>
+              <div class="text-text-tertiary text-2xs">
+                <span class="text-positive text-2xs">+0.91%</span>
+              </div>
+            </div>
+          </div>
+        </a>
+        <a class="items-center justify-center whitespace-nowrap flex relative before:absolute before:inset-0 before:pointer-events-none hover:before:bg-overlay-hover before:opacity-[.07] before:rounded cursor-pointer pr-3 py-1" href="/perpetuals/APT-PERP">
+          <div>
+            <div class="text-text-primary whitespace-nowrap text-xs flex h-full items-center pointer-events-auto">
+              <button class="inline-flex items-center justify-center whitespace-nowrap gap-x-2 cursor-not-allowed text-disabled p-3" disabled="" type="button">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 256 256">
+                  <path d="M239.18,97.26A16.38,16.38,0,0,0,224.92,86l-59-4.76L143.14,26.15a16.36,16.36,0,0,0-30.27,0L90.11,81.23,31.08,86a16.46,16.46,0,0,0-9.37,28.86l45,38.83L53,211.75a16.38,16.38,0,0,0,24.5,17.82L128,198.49l50.53,31.08A16.4,16.4,0,0,0,203,211.75l-13.76-58.07,45-38.83A16.43,16.43,0,0,0,239.18,97.26Zm-15.34,5.47-48.7,42a8,8,0,0,0-2.56,7.91l14.88,62.8a.37.37,0,0,1-.17.48c-.18.14-.23.11-.38,0l-54.72-33.65a8,8,0,0,0-8.38,0L69.09,215.94c-.15.09-.19.12-.38,0a.37.37,0,0,1-.17-.48l14.88-62.8a8,8,0,0,0-2.56-7.91l-48.7-42c-.12-.1-.23-.19-.13-.5s.18-.27.33-.29l63.92-5.16A8,8,0,0,0,103,91.86l24.62-59.61c.08-.17.11-.25.35-.25s.27.08.35.25L153,91.86a8,8,0,0,0,6.75,4.92l63.92,5.16c.15,0,.24,0,.33.29S224,102.63,223.84,102.73Z"></path>
+                </svg>
+              </button>
+            </div>
+          </div>
+          <div class="flex-1">
+            <div class="text-text-primary whitespace-nowrap text-xs pointer-events-none flex h-full items-center gap-x-2.5">
+              <img alt="APT" loading="lazy" width="25" height="25" decoding="async" data-nimg="1" class="h-auto w-6" src="/_next/static/media/apt.ccfa6198.svg" style="color: transparent;">
+              <div class="flex flex-col items-start leading-4">
+                <p class="text-text-secondary text-xs">APT-PERP</p>
+                <p class="text-text-tertiary text-2xs">2,548,917</p>
+              </div>
+            </div>
+          </div>
+          <div>
+            <div class="text-text-primary whitespace-nowrap text-xs pointer-events-none h-full flex flex-col justify-center items-end gap-y-0">
+              <div class="text-text-primary">12.051</div>
+              <div class="text-text-tertiary text-2xs">
+                <span class="text-positive text-2xs">+0.63%</span>
+              </div>
+            </div>
+          </div>
+        </a>
+        <a class="items-center justify-center whitespace-nowrap flex relative before:absolute before:inset-0 before:pointer-events-none hover:before:bg-overlay-hover before:opacity-[.07] before:rounded cursor-pointer pr-3 py-1" href="/perpetuals/BLUR-PERP">
+          <div>
+            <div class="text-text-primary whitespace-nowrap text-xs flex h-full items-center pointer-events-auto">
+              <button class="inline-flex items-center justify-center whitespace-nowrap gap-x-2 cursor-not-allowed text-disabled p-3" disabled="" type="button">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 256 256">
+                  <path d="M239.18,97.26A16.38,16.38,0,0,0,224.92,86l-59-4.76L143.14,26.15a16.36,16.36,0,0,0-30.27,0L90.11,81.23,31.08,86a16.46,16.46,0,0,0-9.37,28.86l45,38.83L53,211.75a16.38,16.38,0,0,0,24.5,17.82L128,198.49l50.53,31.08A16.4,16.4,0,0,0,203,211.75l-13.76-58.07,45-38.83A16.43,16.43,0,0,0,239.18,97.26Zm-15.34,5.47-48.7,42a8,8,0,0,0-2.56,7.91l14.88,62.8a.37.37,0,0,1-.17.48c-.18.14-.23.11-.38,0l-54.72-33.65a8,8,0,0,0-8.38,0L69.09,215.94c-.15.09-.19.12-.38,0a.37.37,0,0,1-.17-.48l14.88-62.8a8,8,0,0,0-2.56-7.91l-48.7-42c-.12-.1-.23-.19-.13-.5s.18-.27.33-.29l63.92-5.16A8,8,0,0,0,103,91.86l24.62-59.61c.08-.17.11-.25.35-.25s.27.08.35.25L153,91.86a8,8,0,0,0,6.75,4.92l63.92,5.16c.15,0,.24,0,.33.29S224,102.63,223.84,102.73Z"></path>
+                </svg>
+              </button>
+            </div>
+          </div>
+          <div class="flex-1">
+            <div class="text-text-primary whitespace-nowrap text-xs pointer-events-none flex h-full items-center gap-x-2.5">
+              <img alt="BLUR" loading="lazy" width="24" height="24" decoding="async" data-nimg="1" class="h-auto w-6" src="/_next/static/media/blur.d0c825bc.svg" style="color: transparent;">
+              <div class="flex flex-col items-start leading-4">
+                <p class="text-text-secondary text-xs">BLUR-PERP</p>
+                <p class="text-text-tertiary text-2xs">2,388,313</p>
+              </div>
+            </div>
+          </div>
+          <div>
+            <div class="text-text-primary whitespace-nowrap text-xs pointer-events-none h-full flex flex-col justify-center items-end gap-y-0">
+              <div class="text-text-primary">0.31111</div>
+              <div class="text-text-tertiary text-2xs">
+                <span class="text-negative text-2xs">−3.62%</span>
+              </div>
+            </div>
+          </div>
+        </a>
+        <a class="items-center justify-center whitespace-nowrap flex relative before:absolute before:inset-0 before:pointer-events-none hover:before:bg-overlay-hover before:opacity-[.07] before:rounded cursor-pointer pr-3 py-1" href="/perpetuals/IMX-PERP">
+          <div>
+            <div class="text-text-primary whitespace-nowrap text-xs flex h-full items-center pointer-events-auto">
+              <button class="inline-flex items-center justify-center whitespace-nowrap gap-x-2 cursor-not-allowed text-disabled p-3" disabled="" type="button">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 256 256">
+                  <path d="M239.18,97.26A16.38,16.38,0,0,0,224.92,86l-59-4.76L143.14,26.15a16.36,16.36,0,0,0-30.27,0L90.11,81.23,31.08,86a16.46,16.46,0,0,0-9.37,28.86l45,38.83L53,211.75a16.38,16.38,0,0,0,24.5,17.82L128,198.49l50.53,31.08A16.4,16.4,0,0,0,203,211.75l-13.76-58.07,45-38.83A16.43,16.43,0,0,0,239.18,97.26Zm-15.34,5.47-48.7,42a8,8,0,0,0-2.56,7.91l14.88,62.8a.37.37,0,0,1-.17.48c-.18.14-.23.11-.38,0l-54.72-33.65a8,8,0,0,0-8.38,0L69.09,215.94c-.15.09-.19.12-.38,0a.37.37,0,0,1-.17-.48l14.88-62.8a8,8,0,0,0-2.56-7.91l-48.7-42c-.12-.1-.23-.19-.13-.5s.18-.27.33-.29l63.92-5.16A8,8,0,0,0,103,91.86l24.62-59.61c.08-.17.11-.25.35-.25s.27.08.35.25L153,91.86a8,8,0,0,0,6.75,4.92l63.92,5.16c.15,0,.24,0,.33.29S224,102.63,223.84,102.73Z"></path>
+                </svg>
+              </button>
+            </div>
+          </div>
+          <div class="flex-1">
+            <div class="text-text-primary whitespace-nowrap text-xs pointer-events-none flex h-full items-center gap-x-2.5">
+              <img alt="IMX" loading="lazy" width="24" height="24" decoding="async" data-nimg="1" class="h-auto w-6" src="/_next/static/media/imx.5adbc0c2.svg" style="color: transparent;">
+              <div class="flex flex-col items-start leading-4">
+                <p class="text-text-secondary text-xs">IMX-PERP</p>
+                <p class="text-text-tertiary text-2xs">2,250,583</p>
+              </div>
+            </div>
+          </div>
+          <div>
+            <div class="text-text-primary whitespace-nowrap text-xs pointer-events-none h-full flex flex-col justify-center items-end gap-y-0">
+              <div class="text-text-primary">1.7271</div>
+              <div class="text-text-tertiary text-2xs">
+                <span class="text-positive text-2xs">+0.77%</span>
+              </div>
+            </div>
+          </div>
+        </a>
+        <a class="items-center justify-center whitespace-nowrap flex relative before:absolute before:inset-0 before:pointer-events-none hover:before:bg-overlay-hover before:opacity-[.07] before:rounded cursor-pointer pr-3 py-1" href="/perpetuals/TON-PERP">
+          <div>
+            <div class="text-text-primary whitespace-nowrap text-xs flex h-full items-center pointer-events-auto">
+              <button class="inline-flex items-center justify-center whitespace-nowrap gap-x-2 cursor-not-allowed text-disabled p-3" disabled="" type="button">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 256 256">
+                  <path d="M239.18,97.26A16.38,16.38,0,0,0,224.92,86l-59-4.76L143.14,26.15a16.36,16.36,0,0,0-30.27,0L90.11,81.23,31.08,86a16.46,16.46,0,0,0-9.37,28.86l45,38.83L53,211.75a16.38,16.38,0,0,0,24.5,17.82L128,198.49l50.53,31.08A16.4,16.4,0,0,0,203,211.75l-13.76-58.07,45-38.83A16.43,16.43,0,0,0,239.18,97.26Zm-15.34,5.47-48.7,42a8,8,0,0,0-2.56,7.91l14.88,62.8a.37.37,0,0,1-.17.48c-.18.14-.23.11-.38,0l-54.72-33.65a8,8,0,0,0-8.38,0L69.09,215.94c-.15.09-.19.12-.38,0a.37.37,0,0,1-.17-.48l14.88-62.8a8,8,0,0,0-2.56-7.91l-48.7-42c-.12-.1-.23-.19-.13-.5s.18-.27.33-.29l63.92-5.16A8,8,0,0,0,103,91.86l24.62-59.61c.08-.17.11-.25.35-.25s.27.08.35.25L153,91.86a8,8,0,0,0,6.75,4.92l63.92,5.16c.15,0,.24,0,.33.29S224,102.63,223.84,102.73Z"></path>
+                </svg>
+              </button>
+            </div>
+          </div>
+          <div class="flex-1">
+            <div class="text-text-primary whitespace-nowrap text-xs pointer-events-none flex h-full items-center gap-x-2.5">
+              <img alt="TON" loading="lazy" width="24" height="24" decoding="async" data-nimg="1" class="h-auto w-6" src="/_next/static/media/ton.341e3aac.svg" style="color: transparent;">
+              <div class="flex flex-col items-start leading-4">
+                <p class="text-text-secondary text-xs">TON-PERP</p>
+                <p class="text-text-tertiary text-2xs">2,196,062</p>
+              </div>
+            </div>
+          </div>
+          <div>
+            <div class="text-text-primary whitespace-nowrap text-xs pointer-events-none h-full flex flex-col justify-center items-end gap-y-0">
+              <div class="text-text-primary">6.2788</div>
+              <div class="text-text-tertiary text-2xs">
+                <span class="text-positive text-2xs">+1.53%</span>
+              </div>
+            </div>
+          </div>
+        </a>
+        <a class="items-center justify-center whitespace-nowrap flex relative before:absolute before:inset-0 before:pointer-events-none hover:before:bg-overlay-hover before:opacity-[.07] before:rounded cursor-pointer pr-3 py-1" href="/perpetuals/GALA-PERP">
+          <div>
+            <div class="text-text-primary whitespace-nowrap text-xs flex h-full items-center pointer-events-auto">
+              <button class="inline-flex items-center justify-center whitespace-nowrap gap-x-2 cursor-not-allowed text-disabled p-3" disabled="" type="button">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 256 256">
+                  <path d="M239.18,97.26A16.38,16.38,0,0,0,224.92,86l-59-4.76L143.14,26.15a16.36,16.36,0,0,0-30.27,0L90.11,81.23,31.08,86a16.46,16.46,0,0,0-9.37,28.86l45,38.83L53,211.75a16.38,16.38,0,0,0,24.5,17.82L128,198.49l50.53,31.08A16.4,16.4,0,0,0,203,211.75l-13.76-58.07,45-38.83A16.43,16.43,0,0,0,239.18,97.26Zm-15.34,5.47-48.7,42a8,8,0,0,0-2.56,7.91l14.88,62.8a.37.37,0,0,1-.17.48c-.18.14-.23.11-.38,0l-54.72-33.65a8,8,0,0,0-8.38,0L69.09,215.94c-.15.09-.19.12-.38,0a.37.37,0,0,1-.17-.48l14.88-62.8a8,8,0,0,0-2.56-7.91l-48.7-42c-.12-.1-.23-.19-.13-.5s.18-.27.33-.29l63.92-5.16A8,8,0,0,0,103,91.86l24.62-59.61c.08-.17.11-.25.35-.25s.27.08.35.25L153,91.86a8,8,0,0,0,6.75,4.92l63.92,5.16c.15,0,.24,0,.33.29S224,102.63,223.84,102.73Z"></path>
+                </svg>
+              </button>
+            </div>
+          </div>
+          <div class="flex-1">
+            <div class="text-text-primary whitespace-nowrap text-xs pointer-events-none flex h-full items-center gap-x-2.5">
+              <img alt="GALA" loading="lazy" width="24" height="25" decoding="async" data-nimg="1" class="h-auto w-6" src="/_next/static/media/gala.8eae92cd.svg" style="color: transparent;">
+              <div class="flex flex-col items-start leading-4">
+                <p class="text-text-secondary text-xs">GALA-PERP</p>
+                <p class="text-text-tertiary text-2xs">2,144,969</p>
+              </div>
+            </div>
+          </div>
+          <div>
+            <div class="text-text-primary whitespace-nowrap text-xs pointer-events-none h-full flex flex-col justify-center items-end gap-y-0">
+              <div class="text-text-primary">0.036682</div>
+              <div class="text-text-tertiary text-2xs">
+                <span class="text-positive text-2xs">+0.29%</span>
+              </div>
+            </div>
+          </div>
+        </a>
+        <a class="items-center justify-center whitespace-nowrap flex relative before:absolute before:inset-0 before:pointer-events-none hover:before:bg-overlay-hover before:opacity-[.07] before:rounded cursor-pointer pr-3 py-1" href="/perpetuals/LDO-PERP">
+          <div>
+            <div class="text-text-primary whitespace-nowrap text-xs flex h-full items-center pointer-events-auto">
+              <button class="inline-flex items-center justify-center whitespace-nowrap gap-x-2 cursor-not-allowed text-disabled p-3" disabled="" type="button">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 256 256">
+                  <path d="M239.18,97.26A16.38,16.38,0,0,0,224.92,86l-59-4.76L143.14,26.15a16.36,16.36,0,0,0-30.27,0L90.11,81.23,31.08,86a16.46,16.46,0,0,0-9.37,28.86l45,38.83L53,211.75a16.38,16.38,0,0,0,24.5,17.82L128,198.49l50.53,31.08A16.4,16.4,0,0,0,203,211.75l-13.76-58.07,45-38.83A16.43,16.43,0,0,0,239.18,97.26Zm-15.34,5.47-48.7,42a8,8,0,0,0-2.56,7.91l14.88,62.8a.37.37,0,0,1-.17.48c-.18.14-.23.11-.38,0l-54.72-33.65a8,8,0,0,0-8.38,0L69.09,215.94c-.15.09-.19.12-.38,0a.37.37,0,0,1-.17-.48l14.88-62.8a8,8,0,0,0-2.56-7.91l-48.7-42c-.12-.1-.23-.19-.13-.5s.18-.27.33-.29l63.92-5.16A8,8,0,0,0,103,91.86l24.62-59.61c.08-.17.11-.25.35-.25s.27.08.35.25L153,91.86a8,8,0,0,0,6.75,4.92l63.92,5.16c.15,0,.24,0,.33.29S224,102.63,223.84,102.73Z"></path>
+                </svg>
+              </button>
+            </div>
+          </div>
+          <div class="flex-1">
+            <div class="text-text-primary whitespace-nowrap text-xs pointer-events-none flex h-full items-center gap-x-2.5">
+              <img alt="LDO" loading="lazy" width="24" height="25" decoding="async" data-nimg="1" class="h-auto w-6" src="/_next/static/media/ldo.aab45223.svg" style="color: transparent;">
+              <div class="flex flex-col items-start leading-4">
+                <p class="text-text-secondary text-xs">LDO-PERP</p>
+                <p class="text-text-tertiary text-2xs">1,960,087</p>
+              </div>
+            </div>
+          </div>
+          <div>
+            <div class="text-text-primary whitespace-nowrap text-xs pointer-events-none h-full flex flex-col justify-center items-end gap-y-0">
+              <div class="text-text-primary">1.7769</div>
+              <div class="text-text-tertiary text-2xs">
+                <span class="text-positive text-2xs">+9.89%</span>
+              </div>
+            </div>
+          </div>
+        </a>
+        <a class="items-center justify-center whitespace-nowrap flex relative before:absolute before:inset-0 before:pointer-events-none hover:before:bg-overlay-hover before:opacity-[.07] before:rounded cursor-pointer pr-3 py-1" href="/perpetuals/BNB-PERP">
+          <div>
+            <div class="text-text-primary whitespace-nowrap text-xs flex h-full items-center pointer-events-auto">
+              <button class="inline-flex items-center justify-center whitespace-nowrap gap-x-2 cursor-not-allowed text-disabled p-3" disabled="" type="button">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 256 256">
+                  <path d="M239.18,97.26A16.38,16.38,0,0,0,224.92,86l-59-4.76L143.14,26.15a16.36,16.36,0,0,0-30.27,0L90.11,81.23,31.08,86a16.46,16.46,0,0,0-9.37,28.86l45,38.83L53,211.75a16.38,16.38,0,0,0,24.5,17.82L128,198.49l50.53,31.08A16.4,16.4,0,0,0,203,211.75l-13.76-58.07,45-38.83A16.43,16.43,0,0,0,239.18,97.26Zm-15.34,5.47-48.7,42a8,8,0,0,0-2.56,7.91l14.88,62.8a.37.37,0,0,1-.17.48c-.18.14-.23.11-.38,0l-54.72-33.65a8,8,0,0,0-8.38,0L69.09,215.94c-.15.09-.19.12-.38,0a.37.37,0,0,1-.17-.48l14.88-62.8a8,8,0,0,0-2.56-7.91l-48.7-42c-.12-.1-.23-.19-.13-.5s.18-.27.33-.29l63.92-5.16A8,8,0,0,0,103,91.86l24.62-59.61c.08-.17.11-.25.35-.25s.27.08.35.25L153,91.86a8,8,0,0,0,6.75,4.92l63.92,5.16c.15,0,.24,0,.33.29S224,102.63,223.84,102.73Z"></path>
+                </svg>
+              </button>
+            </div>
+          </div>
+          <div class="flex-1">
+            <div class="text-text-primary whitespace-nowrap text-xs pointer-events-none flex h-full items-center gap-x-2.5">
+              <img alt="BNB" loading="lazy" width="24" height="24" decoding="async" data-nimg="1" class="h-auto w-6" src="/_next/static/media/bnb.cefe75c8.svg" style="color: transparent;">
+              <div class="flex flex-col items-start leading-4">
+                <p class="text-text-secondary text-xs">BNB-PERP</p>
+                <p class="text-text-tertiary text-2xs">1,914,699</p>
+              </div>
+            </div>
+          </div>
+          <div>
+            <div class="text-text-primary whitespace-nowrap text-xs pointer-events-none h-full flex flex-col justify-center items-end gap-y-0">
+              <div class="text-text-primary">620.45</div>
+              <div class="text-text-tertiary text-2xs">
+                <span class="text-negative text-2xs">−3.32%</span>
+              </div>
+            </div>
+          </div>
+        </a>
+        <a class="items-center justify-center whitespace-nowrap flex relative before:absolute before:inset-0 before:pointer-events-none hover:before:bg-overlay-hover before:opacity-[.07] before:rounded cursor-pointer pr-3 py-1" href="/perpetuals/MEME-PERP">
+          <div>
+            <div class="text-text-primary whitespace-nowrap text-xs flex h-full items-center pointer-events-auto">
+              <button class="inline-flex items-center justify-center whitespace-nowrap gap-x-2 cursor-not-allowed text-disabled p-3" disabled="" type="button">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 256 256">
+                  <path d="M239.18,97.26A16.38,16.38,0,0,0,224.92,86l-59-4.76L143.14,26.15a16.36,16.36,0,0,0-30.27,0L90.11,81.23,31.08,86a16.46,16.46,0,0,0-9.37,28.86l45,38.83L53,211.75a16.38,16.38,0,0,0,24.5,17.82L128,198.49l50.53,31.08A16.4,16.4,0,0,0,203,211.75l-13.76-58.07,45-38.83A16.43,16.43,0,0,0,239.18,97.26Zm-15.34,5.47-48.7,42a8,8,0,0,0-2.56,7.91l14.88,62.8a.37.37,0,0,1-.17.48c-.18.14-.23.11-.38,0l-54.72-33.65a8,8,0,0,0-8.38,0L69.09,215.94c-.15.09-.19.12-.38,0a.37.37,0,0,1-.17-.48l14.88-62.8a8,8,0,0,0-2.56-7.91l-48.7-42c-.12-.1-.23-.19-.13-.5s.18-.27.33-.29l63.92-5.16A8,8,0,0,0,103,91.86l24.62-59.61c.08-.17.11-.25.35-.25s.27.08.35.25L153,91.86a8,8,0,0,0,6.75,4.92l63.92,5.16c.15,0,.24,0,.33.29S224,102.63,223.84,102.73Z"></path>
+                </svg>
+              </button>
+            </div>
+          </div>
+          <div class="flex-1">
+            <div class="text-text-primary whitespace-nowrap text-xs pointer-events-none flex h-full items-center gap-x-2.5">
+              <img alt="MEME" loading="lazy" width="24" height="24" decoding="async" data-nimg="1" class="h-auto w-6" src="/_next/static/media/meme.d46d588a.svg" style="color: transparent;">
+              <div class="flex flex-col items-start leading-4">
+                <p class="text-text-secondary text-xs">MEME-PERP</p>
+                <p class="text-text-tertiary text-2xs">1,902,360</p>
+              </div>
+            </div>
+          </div>
+          <div>
+            <div class="text-text-primary whitespace-nowrap text-xs pointer-events-none h-full flex flex-col justify-center items-end gap-y-0">
+              <div class="text-text-primary">0.013413</div>
+              <div class="text-text-tertiary text-2xs">
+                <span class="text-negative text-2xs">−11.31%</span>
+              </div>
+            </div>
+          </div>
+        </a>
+        <a class="items-center justify-center whitespace-nowrap flex relative before:absolute before:inset-0 before:pointer-events-none hover:before:bg-overlay-hover before:opacity-[.07] before:rounded cursor-pointer pr-3 py-1" href="/perpetuals/LINK-PERP">
+          <div>
+            <div class="text-text-primary whitespace-nowrap text-xs flex h-full items-center pointer-events-auto">
+              <button class="inline-flex items-center justify-center whitespace-nowrap gap-x-2 cursor-not-allowed text-disabled p-3" disabled="" type="button">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 256 256">
+                  <path d="M239.18,97.26A16.38,16.38,0,0,0,224.92,86l-59-4.76L143.14,26.15a16.36,16.36,0,0,0-30.27,0L90.11,81.23,31.08,86a16.46,16.46,0,0,0-9.37,28.86l45,38.83L53,211.75a16.38,16.38,0,0,0,24.5,17.82L128,198.49l50.53,31.08A16.4,16.4,0,0,0,203,211.75l-13.76-58.07,45-38.83A16.43,16.43,0,0,0,239.18,97.26Zm-15.34,5.47-48.7,42a8,8,0,0,0-2.56,7.91l14.88,62.8a.37.37,0,0,1-.17.48c-.18.14-.23.11-.38,0l-54.72-33.65a8,8,0,0,0-8.38,0L69.09,215.94c-.15.09-.19.12-.38,0a.37.37,0,0,1-.17-.48l14.88-62.8a8,8,0,0,0-2.56-7.91l-48.7-42c-.12-.1-.23-.19-.13-.5s.18-.27.33-.29l63.92-5.16A8,8,0,0,0,103,91.86l24.62-59.61c.08-.17.11-.25.35-.25s.27.08.35.25L153,91.86a8,8,0,0,0,6.75,4.92l63.92,5.16c.15,0,.24,0,.33.29S224,102.63,223.84,102.73Z"></path>
+                </svg>
+              </button>
+            </div>
+          </div>
+          <div class="flex-1">
+            <div class="text-text-primary whitespace-nowrap text-xs pointer-events-none flex h-full items-center gap-x-2.5">
+              <img alt="LINK" loading="lazy" width="24" height="24" decoding="async" data-nimg="1" class="h-auto w-6" src="/_next/static/media/link.e9650ffb.svg" style="color: transparent;">
+              <div class="flex flex-col items-start leading-4">
+                <p class="text-text-secondary text-xs">LINK-PERP</p>
+                <p class="text-text-tertiary text-2xs">1,873,470</p>
+              </div>
+            </div>
+          </div>
+          <div>
+            <div class="text-text-primary whitespace-nowrap text-xs pointer-events-none h-full flex flex-col justify-center items-end gap-y-0">
+              <div class="text-text-primary">17.841</div>
+              <div class="text-text-tertiary text-2xs">
+                <span class="text-positive text-2xs">+1.93%</span>
+              </div>
+            </div>
+          </div>
+        </a>
+        <a class="items-center justify-center whitespace-nowrap flex relative before:absolute before:inset-0 before:pointer-events-none hover:before:bg-overlay-hover before:opacity-[.07] before:rounded cursor-pointer pr-3 py-1" href="/perpetuals/MKR-PERP">
+          <div>
+            <div class="text-text-primary whitespace-nowrap text-xs flex h-full items-center pointer-events-auto">
+              <button class="inline-flex items-center justify-center whitespace-nowrap gap-x-2 cursor-not-allowed text-disabled p-3" disabled="" type="button">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 256 256">
+                  <path d="M239.18,97.26A16.38,16.38,0,0,0,224.92,86l-59-4.76L143.14,26.15a16.36,16.36,0,0,0-30.27,0L90.11,81.23,31.08,86a16.46,16.46,0,0,0-9.37,28.86l45,38.83L53,211.75a16.38,16.38,0,0,0,24.5,17.82L128,198.49l50.53,31.08A16.4,16.4,0,0,0,203,211.75l-13.76-58.07,45-38.83A16.43,16.43,0,0,0,239.18,97.26Zm-15.34,5.47-48.7,42a8,8,0,0,0-2.56,7.91l14.88,62.8a.37.37,0,0,1-.17.48c-.18.14-.23.11-.38,0l-54.72-33.65a8,8,0,0,0-8.38,0L69.09,215.94c-.15.09-.19.12-.38,0a.37.37,0,0,1-.17-.48l14.88-62.8a8,8,0,0,0-2.56-7.91l-48.7-42c-.12-.1-.23-.19-.13-.5s.18-.27.33-.29l63.92-5.16A8,8,0,0,0,103,91.86l24.62-59.61c.08-.17.11-.25.35-.25s.27.08.35.25L153,91.86a8,8,0,0,0,6.75,4.92l63.92,5.16c.15,0,.24,0,.33.29S224,102.63,223.84,102.73Z"></path>
+                </svg>
+              </button>
+            </div>
+          </div>
+          <div class="flex-1">
+            <div class="text-text-primary whitespace-nowrap text-xs pointer-events-none flex h-full items-center gap-x-2.5">
+              <img alt="MKR" loading="lazy" width="24" height="24" decoding="async" data-nimg="1" class="h-auto w-6" src="/_next/static/media/mkr.60abeaf2.svg" style="color: transparent;">
+              <div class="flex flex-col items-start leading-4">
+                <p class="text-text-secondary text-xs">MKR-PERP</p>
+                <p class="text-text-tertiary text-2xs">1,819,974</p>
+              </div>
+            </div>
+          </div>
+          <div>
+            <div class="text-text-primary whitespace-nowrap text-xs pointer-events-none h-full flex flex-col justify-center items-end gap-y-0">
+              <div class="text-text-primary">1,772.90</div>
+              <div class="text-text-tertiary text-2xs">
+                <span class="text-negative text-2xs">−1.85%</span>
+              </div>
+            </div>
+          </div>
+        </a>
+        <a class="items-center justify-center whitespace-nowrap flex relative before:absolute before:inset-0 before:pointer-events-none hover:before:bg-overlay-hover before:opacity-[.07] before:rounded cursor-pointer pr-3 py-1" href="/perpetuals/mPEPE-PERP">
+          <div>
+            <div class="text-text-primary whitespace-nowrap text-xs flex h-full items-center pointer-events-auto">
+              <button class="inline-flex items-center justify-center whitespace-nowrap gap-x-2 cursor-not-allowed text-disabled p-3" disabled="" type="button">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 256 256">
+                  <path d="M239.18,97.26A16.38,16.38,0,0,0,224.92,86l-59-4.76L143.14,26.15a16.36,16.36,0,0,0-30.27,0L90.11,81.23,31.08,86a16.46,16.46,0,0,0-9.37,28.86l45,38.83L53,211.75a16.38,16.38,0,0,0,24.5,17.82L128,198.49l50.53,31.08A16.4,16.4,0,0,0,203,211.75l-13.76-58.07,45-38.83A16.43,16.43,0,0,0,239.18,97.26Zm-15.34,5.47-48.7,42a8,8,0,0,0-2.56,7.91l14.88,62.8a.37.37,0,0,1-.17.48c-.18.14-.23.11-.38,0l-54.72-33.65a8,8,0,0,0-8.38,0L69.09,215.94c-.15.09-.19.12-.38,0a.37.37,0,0,1-.17-.48l14.88-62.8a8,8,0,0,0-2.56-7.91l-48.7-42c-.12-.1-.23-.19-.13-.5s.18-.27.33-.29l63.92-5.16A8,8,0,0,0,103,91.86l24.62-59.61c.08-.17.11-.25.35-.25s.27.08.35.25L153,91.86a8,8,0,0,0,6.75,4.92l63.92,5.16c.15,0,.24,0,.33.29S224,102.63,223.84,102.73Z"></path>
+                </svg>
+              </button>
+            </div>
+          </div>
+          <div class="flex-1">
+            <div class="text-text-primary whitespace-nowrap text-xs pointer-events-none flex h-full items-center gap-x-2.5">
+              <img alt="mPEPE" loading="lazy" width="24" height="24" decoding="async" data-nimg="1" class="h-auto w-6" src="/_next/static/media/pepe.794b1126.svg" style="color: transparent;">
+              <div class="flex flex-col items-start leading-4">
+                <p class="text-text-secondary text-xs">mPEPE-PERP</p>
+                <p class="text-text-tertiary text-2xs">1,742,867</p>
+              </div>
+            </div>
+          </div>
+          <div>
+            <div class="text-text-primary whitespace-nowrap text-xs pointer-events-none h-full flex flex-col justify-center items-end gap-y-0">
+              <div class="text-text-primary">18.4437</div>
+              <div class="text-text-tertiary text-2xs">
+                <span class="text-negative text-2xs">−4.02%</span>
+              </div>
+            </div>
+          </div>
+        </a>
+        <a class="items-center justify-center whitespace-nowrap flex relative before:absolute before:inset-0 before:pointer-events-none hover:before:bg-overlay-hover before:opacity-[.07] before:rounded cursor-pointer pr-3 py-1" href="/perpetuals/WLD-PERP">
+          <div>
+            <div class="text-text-primary whitespace-nowrap text-xs flex h-full items-center pointer-events-auto">
+              <button class="inline-flex items-center justify-center whitespace-nowrap gap-x-2 cursor-not-allowed text-disabled p-3" disabled="" type="button">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 256 256">
+                  <path d="M239.18,97.26A16.38,16.38,0,0,0,224.92,86l-59-4.76L143.14,26.15a16.36,16.36,0,0,0-30.27,0L90.11,81.23,31.08,86a16.46,16.46,0,0,0-9.37,28.86l45,38.83L53,211.75a16.38,16.38,0,0,0,24.5,17.82L128,198.49l50.53,31.08A16.4,16.4,0,0,0,203,211.75l-13.76-58.07,45-38.83A16.43,16.43,0,0,0,239.18,97.26Zm-15.34,5.47-48.7,42a8,8,0,0,0-2.56,7.91l14.88,62.8a.37.37,0,0,1-.17.48c-.18.14-.23.11-.38,0l-54.72-33.65a8,8,0,0,0-8.38,0L69.09,215.94c-.15.09-.19.12-.38,0a.37.37,0,0,1-.17-.48l14.88-62.8a8,8,0,0,0-2.56-7.91l-48.7-42c-.12-.1-.23-.19-.13-.5s.18-.27.33-.29l63.92-5.16A8,8,0,0,0,103,91.86l24.62-59.61c.08-.17.11-.25.35-.25s.27.08.35.25L153,91.86a8,8,0,0,0,6.75,4.92l63.92,5.16c.15,0,.24,0,.33.29S224,102.63,223.84,102.73Z"></path>
+                </svg>
+              </button>
+            </div>
+          </div>
+          <div class="flex-1">
+            <div class="text-text-primary whitespace-nowrap text-xs pointer-events-none flex h-full items-center gap-x-2.5">
+              <img alt="WLD" loading="lazy" width="24" height="25" decoding="async" data-nimg="1" class="h-auto w-6" src="/_next/static/media/wld.6d694fc9.svg" style="color: transparent;">
+              <div class="flex flex-col items-start leading-4">
+                <p class="text-text-secondary text-xs">WLD-PERP</p>
+                <p class="text-text-tertiary text-2xs">1,668,697</p>
+              </div>
+            </div>
+          </div>
+          <div>
+            <div class="text-text-primary whitespace-nowrap text-xs pointer-events-none h-full flex flex-col justify-center items-end gap-y-0">
+              <div class="text-text-primary">2.3862</div>
+              <div class="text-text-tertiary text-2xs">
+                <span class="text-negative text-2xs">−5.29%</span>
+              </div>
+            </div>
+          </div>
+        </a>
+        <a class="items-center justify-center whitespace-nowrap flex relative before:absolute before:inset-0 before:pointer-events-none hover:before:bg-overlay-hover before:opacity-[.07] before:rounded cursor-pointer pr-3 py-1" href="/perpetuals/ARB-PERP">
+          <div>
+            <div class="text-text-primary whitespace-nowrap text-xs flex h-full items-center pointer-events-auto">
+              <button class="inline-flex items-center justify-center whitespace-nowrap gap-x-2 cursor-not-allowed text-disabled p-3" disabled="" type="button">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 256 256">
+                  <path d="M239.18,97.26A16.38,16.38,0,0,0,224.92,86l-59-4.76L143.14,26.15a16.36,16.36,0,0,0-30.27,0L90.11,81.23,31.08,86a16.46,16.46,0,0,0-9.37,28.86l45,38.83L53,211.75a16.38,16.38,0,0,0,24.5,17.82L128,198.49l50.53,31.08A16.4,16.4,0,0,0,203,211.75l-13.76-58.07,45-38.83A16.43,16.43,0,0,0,239.18,97.26Zm-15.34,5.47-48.7,42a8,8,0,0,0-2.56,7.91l14.88,62.8a.37.37,0,0,1-.17.48c-.18.14-.23.11-.38,0l-54.72-33.65a8,8,0,0,0-8.38,0L69.09,215.94c-.15.09-.19.12-.38,0a.37.37,0,0,1-.17-.48l14.88-62.8a8,8,0,0,0-2.56-7.91l-48.7-42c-.12-.1-.23-.19-.13-.5s.18-.27.33-.29l63.92-5.16A8,8,0,0,0,103,91.86l24.62-59.61c.08-.17.11-.25.35-.25s.27.08.35.25L153,91.86a8,8,0,0,0,6.75,4.92l63.92,5.16c.15,0,.24,0,.33.29S224,102.63,223.84,102.73Z"></path>
+                </svg>
+              </button>
+            </div>
+          </div>
+          <div class="flex-1">
+            <div class="text-text-primary whitespace-nowrap text-xs pointer-events-none flex h-full items-center gap-x-2.5">
+              <img alt="ARB" loading="lazy" width="24" height="24" decoding="async" data-nimg="1" class="h-auto w-6" src="/_next/static/media/arb.25bdc134.svg" style="color: transparent;">
+              <div class="flex flex-col items-start leading-4">
+                <p class="text-text-secondary text-xs">ARB-PERP</p>
+                <p class="text-text-tertiary text-2xs">1,645,731</p>
+              </div>
+            </div>
+          </div>
+          <div>
+            <div class="text-text-primary whitespace-nowrap text-xs pointer-events-none h-full flex flex-col justify-center items-end gap-y-0">
+              <div class="text-text-primary">0.9086</div>
+              <div class="text-text-tertiary text-2xs">
+                <span class="text-positive text-2xs">+0.30%</span>
+              </div>
+            </div>
+          </div>
+        </a>
+        <a class="items-center justify-center whitespace-nowrap flex relative before:absolute before:inset-0 before:pointer-events-none hover:before:bg-overlay-hover before:opacity-[.07] before:rounded cursor-pointer pr-3 py-1" href="/perpetuals/DYDX-PERP">
+          <div>
+            <div class="text-text-primary whitespace-nowrap text-xs flex h-full items-center pointer-events-auto">
+              <button class="inline-flex items-center justify-center whitespace-nowrap gap-x-2 cursor-not-allowed text-disabled p-3" disabled="" type="button">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 256 256">
+                  <path d="M239.18,97.26A16.38,16.38,0,0,0,224.92,86l-59-4.76L143.14,26.15a16.36,16.36,0,0,0-30.27,0L90.11,81.23,31.08,86a16.46,16.46,0,0,0-9.37,28.86l45,38.83L53,211.75a16.38,16.38,0,0,0,24.5,17.82L128,198.49l50.53,31.08A16.4,16.4,0,0,0,203,211.75l-13.76-58.07,45-38.83A16.43,16.43,0,0,0,239.18,97.26Zm-15.34,5.47-48.7,42a8,8,0,0,0-2.56,7.91l14.88,62.8a.37.37,0,0,1-.17.48c-.18.14-.23.11-.38,0l-54.72-33.65a8,8,0,0,0-8.38,0L69.09,215.94c-.15.09-.19.12-.38,0a.37.37,0,0,1-.17-.48l14.88-62.8a8,8,0,0,0-2.56-7.91l-48.7-42c-.12-.1-.23-.19-.13-.5s.18-.27.33-.29l63.92-5.16A8,8,0,0,0,103,91.86l24.62-59.61c.08-.17.11-.25.35-.25s.27.08.35.25L153,91.86a8,8,0,0,0,6.75,4.92l63.92,5.16c.15,0,.24,0,.33.29S224,102.63,223.84,102.73Z"></path>
+                </svg>
+              </button>
+            </div>
+          </div>
+          <div class="flex-1">
+            <div class="text-text-primary whitespace-nowrap text-xs pointer-events-none flex h-full items-center gap-x-2.5">
+              <img alt="DYDX" loading="lazy" width="24" height="24" decoding="async" data-nimg="1" class="h-auto w-6" src="/_next/static/media/dydx.97e5e785.svg" style="color: transparent;">
+              <div class="flex flex-col items-start leading-4">
+                <p class="text-text-secondary text-xs">DYDX-PERP</p>
+                <p class="text-text-tertiary text-2xs">1,532,471</p>
+              </div>
+            </div>
+          </div>
+          <div>
+            <div class="text-text-primary whitespace-nowrap text-xs pointer-events-none h-full flex flex-col justify-center items-end gap-y-0">
+              <div class="text-text-primary">1.5501</div>
+              <div class="text-text-tertiary text-2xs">
+                <span class="text-positive text-2xs">+0.14%</span>
+              </div>
+            </div>
+          </div>
+        </a>
+        <a class="items-center justify-center whitespace-nowrap flex relative before:absolute before:inset-0 before:pointer-events-none hover:before:bg-overlay-hover before:opacity-[.07] before:rounded cursor-pointer pr-3 py-1" href="/perpetuals/ONDO-PERP">
+          <div>
+            <div class="text-text-primary whitespace-nowrap text-xs flex h-full items-center pointer-events-auto">
+              <button class="inline-flex items-center justify-center whitespace-nowrap gap-x-2 cursor-not-allowed text-disabled p-3" disabled="" type="button">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 256 256">
+                  <path d="M239.18,97.26A16.38,16.38,0,0,0,224.92,86l-59-4.76L143.14,26.15a16.36,16.36,0,0,0-30.27,0L90.11,81.23,31.08,86a16.46,16.46,0,0,0-9.37,28.86l45,38.83L53,211.75a16.38,16.38,0,0,0,24.5,17.82L128,198.49l50.53,31.08A16.4,16.4,0,0,0,203,211.75l-13.76-58.07,45-38.83A16.43,16.43,0,0,0,239.18,97.26Zm-15.34,5.47-48.7,42a8,8,0,0,0-2.56,7.91l14.88,62.8a.37.37,0,0,1-.17.48c-.18.14-.23.11-.38,0l-54.72-33.65a8,8,0,0,0-8.38,0L69.09,215.94c-.15.09-.19.12-.38,0a.37.37,0,0,1-.17-.48l14.88-62.8a8,8,0,0,0-2.56-7.91l-48.7-42c-.12-.1-.23-.19-.13-.5s.18-.27.33-.29l63.92-5.16A8,8,0,0,0,103,91.86l24.62-59.61c.08-.17.11-.25.35-.25s.27.08.35.25L153,91.86a8,8,0,0,0,6.75,4.92l63.92,5.16c.15,0,.24,0,.33.29S224,102.63,223.84,102.73Z"></path>
+                </svg>
+              </button>
+            </div>
+          </div>
+          <div class="flex-1">
+            <div class="text-text-primary whitespace-nowrap text-xs pointer-events-none flex h-full items-center gap-x-2.5">
+              <img alt="ONDO" loading="lazy" width="24" height="24" decoding="async" data-nimg="1" class="h-auto w-6" src="/_next/static/media/ondo.d1c5d68a.svg" style="color: transparent;">
+              <div class="flex flex-col items-start leading-4">
+                <p class="text-text-secondary text-xs">ONDO-PERP</p>
+                <p class="text-text-tertiary text-2xs">1,528,901</p>
+              </div>
+            </div>
+          </div>
+          <div>
+            <div class="text-text-primary whitespace-nowrap text-xs pointer-events-none h-full flex flex-col justify-center items-end gap-y-0">
+              <div class="text-text-primary">1.03557</div>
+              <div class="text-text-tertiary text-2xs">
+                <span class="text-positive text-2xs">+0.50%</span>
+              </div>
+            </div>
+          </div>
+        </a>
+        <a class="items-center justify-center whitespace-nowrap flex relative before:absolute before:inset-0 before:pointer-events-none hover:before:bg-overlay-hover before:opacity-[.07] before:rounded cursor-pointer pr-3 py-1" href="/perpetuals/ENA-PERP">
+          <div>
+            <div class="text-text-primary whitespace-nowrap text-xs flex h-full items-center pointer-events-auto">
+              <button class="inline-flex items-center justify-center whitespace-nowrap gap-x-2 cursor-not-allowed text-disabled p-3" disabled="" type="button">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 256 256">
+                  <path d="M239.18,97.26A16.38,16.38,0,0,0,224.92,86l-59-4.76L143.14,26.15a16.36,16.36,0,0,0-30.27,0L90.11,81.23,31.08,86a16.46,16.46,0,0,0-9.37,28.86l45,38.83L53,211.75a16.38,16.38,0,0,0,24.5,17.82L128,198.49l50.53,31.08A16.4,16.4,0,0,0,203,211.75l-13.76-58.07,45-38.83A16.43,16.43,0,0,0,239.18,97.26Zm-15.34,5.47-48.7,42a8,8,0,0,0-2.56,7.91l14.88,62.8a.37.37,0,0,1-.17.48c-.18.14-.23.11-.38,0l-54.72-33.65a8,8,0,0,0-8.38,0L69.09,215.94c-.15.09-.19.12-.38,0a.37.37,0,0,1-.17-.48l14.88-62.8a8,8,0,0,0-2.56-7.91l-48.7-42c-.12-.1-.23-.19-.13-.5s.18-.27.33-.29l63.92-5.16A8,8,0,0,0,103,91.86l24.62-59.61c.08-.17.11-.25.35-.25s.27.08.35.25L153,91.86a8,8,0,0,0,6.75,4.92l63.92,5.16c.15,0,.24,0,.33.29S224,102.63,223.84,102.73Z"></path>
+                </svg>
+              </button>
+            </div>
+          </div>
+          <div class="flex-1">
+            <div class="text-text-primary whitespace-nowrap text-xs pointer-events-none flex h-full items-center gap-x-2.5">
+              <img alt="ENA" loading="lazy" width="24" height="24" decoding="async" data-nimg="1" class="h-auto w-6" src="/_next/static/media/ena.7c693c48.svg" style="color: transparent;">
+              <div class="flex flex-col items-start leading-4">
+                <p class="text-text-secondary text-xs">ENA-PERP</p>
+                <p class="text-text-tertiary text-2xs">1,512,236</p>
+              </div>
+            </div>
+          </div>
+          <div>
+            <div class="text-text-primary whitespace-nowrap text-xs pointer-events-none h-full flex flex-col justify-center items-end gap-y-0">
+              <div class="text-text-primary">0.61814</div>
+              <div class="text-text-tertiary text-2xs">
+                <span class="text-negative text-2xs">−1.44%</span>
+              </div>
+            </div>
+          </div>
+        </a>
+        <a class="items-center justify-center whitespace-nowrap flex relative before:absolute before:inset-0 before:pointer-events-none hover:before:bg-overlay-hover before:opacity-[.07] before:rounded cursor-pointer pr-3 py-1" href="/perpetuals/DOT-PERP">
+          <div>
+            <div class="text-text-primary whitespace-nowrap text-xs flex h-full items-center pointer-events-auto">
+              <button class="inline-flex items-center justify-center whitespace-nowrap gap-x-2 cursor-not-allowed text-disabled p-3" disabled="" type="button">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 256 256">
+                  <path d="M239.18,97.26A16.38,16.38,0,0,0,224.92,86l-59-4.76L143.14,26.15a16.36,16.36,0,0,0-30.27,0L90.11,81.23,31.08,86a16.46,16.46,0,0,0-9.37,28.86l45,38.83L53,211.75a16.38,16.38,0,0,0,24.5,17.82L128,198.49l50.53,31.08A16.4,16.4,0,0,0,203,211.75l-13.76-58.07,45-38.83A16.43,16.43,0,0,0,239.18,97.26Zm-15.34,5.47-48.7,42a8,8,0,0,0-2.56,7.91l14.88,62.8a.37.37,0,0,1-.17.48c-.18.14-.23.11-.38,0l-54.72-33.65a8,8,0,0,0-8.38,0L69.09,215.94c-.15.09-.19.12-.38,0a.37.37,0,0,1-.17-.48l14.88-62.8a8,8,0,0,0-2.56-7.91l-48.7-42c-.12-.1-.23-.19-.13-.5s.18-.27.33-.29l63.92-5.16A8,8,0,0,0,103,91.86l24.62-59.61c.08-.17.11-.25.35-.25s.27.08.35.25L153,91.86a8,8,0,0,0,6.75,4.92l63.92,5.16c.15,0,.24,0,.33.29S224,102.63,223.84,102.73Z"></path>
+                </svg>
+              </button>
+            </div>
+          </div>
+          <div class="flex-1">
+            <div class="text-text-primary whitespace-nowrap text-xs pointer-events-none flex h-full items-center gap-x-2.5">
+              <img alt="DOT" loading="lazy" width="24" height="25" decoding="async" data-nimg="1" class="h-auto w-6" src="/_next/static/media/dot.acbf9cfb.svg" style="color: transparent;">
+              <div class="flex flex-col items-start leading-4">
+                <p class="text-text-secondary text-xs">DOT-PERP</p>
+                <p class="text-text-tertiary text-2xs">1,464,753</p>
+              </div>
+            </div>
+          </div>
+          <div>
+            <div class="text-text-primary whitespace-nowrap text-xs pointer-events-none h-full flex flex-col justify-center items-end gap-y-0">
+              <div class="text-text-primary">8.1504</div>
+              <div class="text-text-tertiary text-2xs">
+                <span class="text-negative text-2xs">−1.69%</span>
+              </div>
+            </div>
+          </div>
+        </a>
+        <a class="items-center justify-center whitespace-nowrap flex relative before:absolute before:inset-0 before:pointer-events-none hover:before:bg-overlay-hover before:opacity-[.07] before:rounded cursor-pointer pr-3 py-1" href="/perpetuals/JUP-PERP">
+          <div>
+            <div class="text-text-primary whitespace-nowrap text-xs flex h-full items-center pointer-events-auto">
+              <button class="inline-flex items-center justify-center whitespace-nowrap gap-x-2 cursor-not-allowed text-disabled p-3" disabled="" type="button">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 256 256">
+                  <path d="M239.18,97.26A16.38,16.38,0,0,0,224.92,86l-59-4.76L143.14,26.15a16.36,16.36,0,0,0-30.27,0L90.11,81.23,31.08,86a16.46,16.46,0,0,0-9.37,28.86l45,38.83L53,211.75a16.38,16.38,0,0,0,24.5,17.82L128,198.49l50.53,31.08A16.4,16.4,0,0,0,203,211.75l-13.76-58.07,45-38.83A16.43,16.43,0,0,0,239.18,97.26Zm-15.34,5.47-48.7,42a8,8,0,0,0-2.56,7.91l14.88,62.8a.37.37,0,0,1-.17.48c-.18.14-.23.11-.38,0l-54.72-33.65a8,8,0,0,0-8.38,0L69.09,215.94c-.15.09-.19.12-.38,0a.37.37,0,0,1-.17-.48l14.88-62.8a8,8,0,0,0-2.56-7.91l-48.7-42c-.12-.1-.23-.19-.13-.5s.18-.27.33-.29l63.92-5.16A8,8,0,0,0,103,91.86l24.62-59.61c.08-.17.11-.25.35-.25s.27.08.35.25L153,91.86a8,8,0,0,0,6.75,4.92l63.92,5.16c.15,0,.24,0,.33.29S224,102.63,223.84,102.73Z"></path>
+                </svg>
+              </button>
+            </div>
+          </div>
+          <div class="flex-1">
+            <div class="text-text-primary whitespace-nowrap text-xs pointer-events-none flex h-full items-center gap-x-2.5">
+              <img alt="JUP" loading="lazy" width="24" height="25" decoding="async" data-nimg="1" class="h-auto w-6" src="/_next/static/media/jup.6b5a0f9b.svg" style="color: transparent;">
+              <div class="flex flex-col items-start leading-4">
+                <p class="text-text-secondary text-xs">JUP-PERP</p>
+                <p class="text-text-tertiary text-2xs">1,406,758</p>
+              </div>
+            </div>
+          </div>
+          <div>
+            <div class="text-text-primary whitespace-nowrap text-xs pointer-events-none h-full flex flex-col justify-center items-end gap-y-0">
+              <div class="text-text-primary">1.04646</div>
+              <div class="text-text-tertiary text-2xs">
+                <span class="text-negative text-2xs">−3.72%</span>
+              </div>
+            </div>
+          </div>
+        </a>
+        <a class="items-center justify-center whitespace-nowrap flex relative before:absolute before:inset-0 before:pointer-events-none hover:before:bg-overlay-hover before:opacity-[.07] before:rounded cursor-pointer pr-3 py-1" href="/perpetuals/JTO-PERP">
+          <div>
+            <div class="text-text-primary whitespace-nowrap text-xs flex h-full items-center pointer-events-auto">
+              <button class="inline-flex items-center justify-center whitespace-nowrap gap-x-2 cursor-not-allowed text-disabled p-3" disabled="" type="button">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 256 256">
+                  <path d="M239.18,97.26A16.38,16.38,0,0,0,224.92,86l-59-4.76L143.14,26.15a16.36,16.36,0,0,0-30.27,0L90.11,81.23,31.08,86a16.46,16.46,0,0,0-9.37,28.86l45,38.83L53,211.75a16.38,16.38,0,0,0,24.5,17.82L128,198.49l50.53,31.08A16.4,16.4,0,0,0,203,211.75l-13.76-58.07,45-38.83A16.43,16.43,0,0,0,239.18,97.26Zm-15.34,5.47-48.7,42a8,8,0,0,0-2.56,7.91l14.88,62.8a.37.37,0,0,1-.17.48c-.18.14-.23.11-.38,0l-54.72-33.65a8,8,0,0,0-8.38,0L69.09,215.94c-.15.09-.19.12-.38,0a.37.37,0,0,1-.17-.48l14.88-62.8a8,8,0,0,0-2.56-7.91l-48.7-42c-.12-.1-.23-.19-.13-.5s.18-.27.33-.29l63.92-5.16A8,8,0,0,0,103,91.86l24.62-59.61c.08-.17.11-.25.35-.25s.27.08.35.25L153,91.86a8,8,0,0,0,6.75,4.92l63.92,5.16c.15,0,.24,0,.33.29S224,102.63,223.84,102.73Z"></path>
+                </svg>
+              </button>
+            </div>
+          </div>
+          <div class="flex-1">
+            <div class="text-text-primary whitespace-nowrap text-xs pointer-events-none flex h-full items-center gap-x-2.5">
+              <img alt="JTO" loading="lazy" width="110" height="110" decoding="async" data-nimg="1" class="h-auto w-6" srcset="/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fjto.40203e47.png&amp;w=128&amp;q=75 1x, /_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fjto.40203e47.png&amp;w=256&amp;q=75 2x" src="/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fjto.40203e47.png&amp;w=256&amp;q=75" style="color: transparent;">
+              <div class="flex flex-col items-start leading-4">
+                <p class="text-text-secondary text-xs">JTO-PERP</p>
+                <p class="text-text-tertiary text-2xs">1,346,351</p>
+              </div>
+            </div>
+          </div>
+          <div>
+            <div class="text-text-primary whitespace-nowrap text-xs pointer-events-none h-full flex flex-col justify-center items-end gap-y-0">
+              <div class="text-text-primary">3.566</div>
+              <div class="text-text-tertiary text-2xs">
+                <span class="text-positive text-2xs">+3.04%</span>
+              </div>
+            </div>
+          </div>
+        </a>
+        <a class="items-center justify-center whitespace-nowrap flex relative before:absolute before:inset-0 before:pointer-events-none hover:before:bg-overlay-hover before:opacity-[.07] before:rounded cursor-pointer pr-3 py-1" href="/perpetuals/COMP-PERP">
+          <div>
+            <div class="text-text-primary whitespace-nowrap text-xs flex h-full items-center pointer-events-auto">
+              <button class="inline-flex items-center justify-center whitespace-nowrap gap-x-2 cursor-not-allowed text-disabled p-3" disabled="" type="button">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 256 256">
+                  <path d="M239.18,97.26A16.38,16.38,0,0,0,224.92,86l-59-4.76L143.14,26.15a16.36,16.36,0,0,0-30.27,0L90.11,81.23,31.08,86a16.46,16.46,0,0,0-9.37,28.86l45,38.83L53,211.75a16.38,16.38,0,0,0,24.5,17.82L128,198.49l50.53,31.08A16.4,16.4,0,0,0,203,211.75l-13.76-58.07,45-38.83A16.43,16.43,0,0,0,239.18,97.26Zm-15.34,5.47-48.7,42a8,8,0,0,0-2.56,7.91l14.88,62.8a.37.37,0,0,1-.17.48c-.18.14-.23.11-.38,0l-54.72-33.65a8,8,0,0,0-8.38,0L69.09,215.94c-.15.09-.19.12-.38,0a.37.37,0,0,1-.17-.48l14.88-62.8a8,8,0,0,0-2.56-7.91l-48.7-42c-.12-.1-.23-.19-.13-.5s.18-.27.33-.29l63.92-5.16A8,8,0,0,0,103,91.86l24.62-59.61c.08-.17.11-.25.35-.25s.27.08.35.25L153,91.86a8,8,0,0,0,6.75,4.92l63.92,5.16c.15,0,.24,0,.33.29S224,102.63,223.84,102.73Z"></path>
+                </svg>
+              </button>
+            </div>
+          </div>
+          <div class="flex-1">
+            <div class="text-text-primary whitespace-nowrap text-xs pointer-events-none flex h-full items-center gap-x-2.5">
+              <img alt="COMP" loading="lazy" width="24" height="24" decoding="async" data-nimg="1" class="h-auto w-6" src="/_next/static/media/comp.9f2d0521.svg" style="color: transparent;">
+              <div class="flex flex-col items-start leading-4">
+                <p class="text-text-secondary text-xs">COMP-PERP</p>
+                <p class="text-text-tertiary text-2xs">1,101,407</p>
+              </div>
+            </div>
+          </div>
+          <div>
+            <div class="text-text-primary whitespace-nowrap text-xs pointer-events-none h-full flex flex-col justify-center items-end gap-y-0">
+              <div class="text-text-primary">67.48</div>
+              <div class="text-text-tertiary text-2xs">
+                <span class="text-negative text-2xs">−0.54%</span>
+              </div>
+            </div>
+          </div>
+        </a>
+        <a class="items-center justify-center whitespace-nowrap flex relative before:absolute before:inset-0 before:pointer-events-none hover:before:bg-overlay-hover before:opacity-[.07] before:rounded cursor-pointer pr-3 py-1" href="/perpetuals/TRX-PERP">
+          <div>
+            <div class="text-text-primary whitespace-nowrap text-xs flex h-full items-center pointer-events-auto">
+              <button class="inline-flex items-center justify-center whitespace-nowrap gap-x-2 cursor-not-allowed text-disabled p-3" disabled="" type="button">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 256 256">
+                  <path d="M239.18,97.26A16.38,16.38,0,0,0,224.92,86l-59-4.76L143.14,26.15a16.36,16.36,0,0,0-30.27,0L90.11,81.23,31.08,86a16.46,16.46,0,0,0-9.37,28.86l45,38.83L53,211.75a16.38,16.38,0,0,0,24.5,17.82L128,198.49l50.53,31.08A16.4,16.4,0,0,0,203,211.75l-13.76-58.07,45-38.83A16.43,16.43,0,0,0,239.18,97.26Zm-15.34,5.47-48.7,42a8,8,0,0,0-2.56,7.91l14.88,62.8a.37.37,0,0,1-.17.48c-.18.14-.23.11-.38,0l-54.72-33.65a8,8,0,0,0-8.38,0L69.09,215.94c-.15.09-.19.12-.38,0a.37.37,0,0,1-.17-.48l14.88-62.8a8,8,0,0,0-2.56-7.91l-48.7-42c-.12-.1-.23-.19-.13-.5s.18-.27.33-.29l63.92-5.16A8,8,0,0,0,103,91.86l24.62-59.61c.08-.17.11-.25.35-.25s.27.08.35.25L153,91.86a8,8,0,0,0,6.75,4.92l63.92,5.16c.15,0,.24,0,.33.29S224,102.63,223.84,102.73Z"></path>
+                </svg>
+              </button>
+            </div>
+          </div>
+          <div class="flex-1">
+            <div class="text-text-primary whitespace-nowrap text-xs pointer-events-none flex h-full items-center gap-x-2.5">
+              <img alt="TRX" loading="lazy" width="24" height="25" decoding="async" data-nimg="1" class="h-auto w-6" src="/_next/static/media/trx.46a130e8.svg" style="color: transparent;">
+              <div class="flex flex-col items-start leading-4">
+                <p class="text-text-secondary text-xs">TRX-PERP</p>
+                <p class="text-text-tertiary text-2xs">1,094,459</p>
+              </div>
+            </div>
+          </div>
+          <div>
+            <div class="text-text-primary whitespace-nowrap text-xs pointer-events-none h-full flex flex-col justify-center items-end gap-y-0">
+              <div class="text-text-primary">0.197682</div>
+              <div class="text-text-tertiary text-2xs">
+                <span class="text-negative text-2xs">−0.14%</span>
+              </div>
+            </div>
+          </div>
+        </a>
+        <a class="items-center justify-center whitespace-nowrap flex relative before:absolute before:inset-0 before:pointer-events-none hover:before:bg-overlay-hover before:opacity-[.07] before:rounded cursor-pointer pr-3 py-1" href="/perpetuals/APE-PERP">
+          <div>
+            <div class="text-text-primary whitespace-nowrap text-xs flex h-full items-center pointer-events-auto">
+              <button class="inline-flex items-center justify-center whitespace-nowrap gap-x-2 cursor-not-allowed text-disabled p-3" disabled="" type="button">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 256 256">
+                  <path d="M239.18,97.26A16.38,16.38,0,0,0,224.92,86l-59-4.76L143.14,26.15a16.36,16.36,0,0,0-30.27,0L90.11,81.23,31.08,86a16.46,16.46,0,0,0-9.37,28.86l45,38.83L53,211.75a16.38,16.38,0,0,0,24.5,17.82L128,198.49l50.53,31.08A16.4,16.4,0,0,0,203,211.75l-13.76-58.07,45-38.83A16.43,16.43,0,0,0,239.18,97.26Zm-15.34,5.47-48.7,42a8,8,0,0,0-2.56,7.91l14.88,62.8a.37.37,0,0,1-.17.48c-.18.14-.23.11-.38,0l-54.72-33.65a8,8,0,0,0-8.38,0L69.09,215.94c-.15.09-.19.12-.38,0a.37.37,0,0,1-.17-.48l14.88-62.8a8,8,0,0,0-2.56-7.91l-48.7-42c-.12-.1-.23-.19-.13-.5s.18-.27.33-.29l63.92-5.16A8,8,0,0,0,103,91.86l24.62-59.61c.08-.17.11-.25.35-.25s.27.08.35.25L153,91.86a8,8,0,0,0,6.75,4.92l63.92,5.16c.15,0,.24,0,.33.29S224,102.63,223.84,102.73Z"></path>
+                </svg>
+              </button>
+            </div>
+          </div>
+          <div class="flex-1">
+            <div class="text-text-primary whitespace-nowrap text-xs pointer-events-none flex h-full items-center gap-x-2.5">
+              <img alt="APE" loading="lazy" width="24" height="25" decoding="async" data-nimg="1" class="h-auto w-6" src="/_next/static/media/ape.9c843cf3.svg" style="color: transparent;">
+              <div class="flex flex-col items-start leading-4">
+                <p class="text-text-secondary text-xs">APE-PERP</p>
+                <p class="text-text-tertiary text-2xs">1,060,368</p>
+              </div>
+            </div>
+          </div>
+          <div>
+            <div class="text-text-primary whitespace-nowrap text-xs pointer-events-none h-full flex flex-col justify-center items-end gap-y-0">
+              <div class="text-text-primary">1.2983</div>
+              <div class="text-text-tertiary text-2xs">
+                <span class="text-negative text-2xs">−3.40%</span>
+              </div>
+            </div>
+          </div>
+        </a>
+        <a class="items-center justify-center whitespace-nowrap flex relative before:absolute before:inset-0 before:pointer-events-none hover:before:bg-overlay-hover before:opacity-[.07] before:rounded cursor-pointer pr-3 py-1" href="/perpetuals/BCH-PERP">
+          <div>
+            <div class="text-text-primary whitespace-nowrap text-xs flex h-full items-center pointer-events-auto">
+              <button class="inline-flex items-center justify-center whitespace-nowrap gap-x-2 cursor-not-allowed text-disabled p-3" disabled="" type="button">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 256 256">
+                  <path d="M239.18,97.26A16.38,16.38,0,0,0,224.92,86l-59-4.76L143.14,26.15a16.36,16.36,0,0,0-30.27,0L90.11,81.23,31.08,86a16.46,16.46,0,0,0-9.37,28.86l45,38.83L53,211.75a16.38,16.38,0,0,0,24.5,17.82L128,198.49l50.53,31.08A16.4,16.4,0,0,0,203,211.75l-13.76-58.07,45-38.83A16.43,16.43,0,0,0,239.18,97.26Zm-15.34,5.47-48.7,42a8,8,0,0,0-2.56,7.91l14.88,62.8a.37.37,0,0,1-.17.48c-.18.14-.23.11-.38,0l-54.72-33.65a8,8,0,0,0-8.38,0L69.09,215.94c-.15.09-.19.12-.38,0a.37.37,0,0,1-.17-.48l14.88-62.8a8,8,0,0,0-2.56-7.91l-48.7-42c-.12-.1-.23-.19-.13-.5s.18-.27.33-.29l63.92-5.16A8,8,0,0,0,103,91.86l24.62-59.61c.08-.17.11-.25.35-.25s.27.08.35.25L153,91.86a8,8,0,0,0,6.75,4.92l63.92,5.16c.15,0,.24,0,.33.29S224,102.63,223.84,102.73Z"></path>
+                </svg>
+              </button>
+            </div>
+          </div>
+          <div class="flex-1">
+            <div class="text-text-primary whitespace-nowrap text-xs pointer-events-none flex h-full items-center gap-x-2.5">
+              <img alt="BCH" loading="lazy" width="24" height="24" decoding="async" data-nimg="1" class="h-auto w-6" src="/_next/static/media/bch.1f83e4f9.svg" style="color: transparent;">
+              <div class="flex flex-col items-start leading-4">
+                <p class="text-text-secondary text-xs">BCH-PERP</p>
+                <p class="text-text-tertiary text-2xs">970,759</p>
+              </div>
+            </div>
+          </div>
+          <div>
+            <div class="text-text-primary whitespace-nowrap text-xs pointer-events-none h-full flex flex-col justify-center items-end gap-y-0">
+              <div class="text-text-primary">498.04</div>
+              <div class="text-text-tertiary text-2xs">
+                <span class="text-positive text-2xs">+0.15%</span>
+              </div>
+            </div>
+          </div>
+        </a>
+        <a class="items-center justify-center whitespace-nowrap flex relative before:absolute before:inset-0 before:pointer-events-none hover:before:bg-overlay-hover before:opacity-[.07] before:rounded cursor-pointer pr-3 py-1" href="/perpetuals/STX-PERP">
+          <div>
+            <div class="text-text-primary whitespace-nowrap text-xs flex h-full items-center pointer-events-auto">
+              <button class="inline-flex items-center justify-center whitespace-nowrap gap-x-2 cursor-not-allowed text-disabled p-3" disabled="" type="button">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 256 256">
+                  <path d="M239.18,97.26A16.38,16.38,0,0,0,224.92,86l-59-4.76L143.14,26.15a16.36,16.36,0,0,0-30.27,0L90.11,81.23,31.08,86a16.46,16.46,0,0,0-9.37,28.86l45,38.83L53,211.75a16.38,16.38,0,0,0,24.5,17.82L128,198.49l50.53,31.08A16.4,16.4,0,0,0,203,211.75l-13.76-58.07,45-38.83A16.43,16.43,0,0,0,239.18,97.26Zm-15.34,5.47-48.7,42a8,8,0,0,0-2.56,7.91l14.88,62.8a.37.37,0,0,1-.17.48c-.18.14-.23.11-.38,0l-54.72-33.65a8,8,0,0,0-8.38,0L69.09,215.94c-.15.09-.19.12-.38,0a.37.37,0,0,1-.17-.48l14.88-62.8a8,8,0,0,0-2.56-7.91l-48.7-42c-.12-.1-.23-.19-.13-.5s.18-.27.33-.29l63.92-5.16A8,8,0,0,0,103,91.86l24.62-59.61c.08-.17.11-.25.35-.25s.27.08.35.25L153,91.86a8,8,0,0,0,6.75,4.92l63.92,5.16c.15,0,.24,0,.33.29S224,102.63,223.84,102.73Z"></path>
+                </svg>
+              </button>
+            </div>
+          </div>
+          <div class="flex-1">
+            <div class="text-text-primary whitespace-nowrap text-xs pointer-events-none flex h-full items-center gap-x-2.5">
+              <img alt="STX" loading="lazy" width="24" height="24" decoding="async" data-nimg="1" class="h-auto w-6" src="/_next/static/media/stx.9125b500.svg" style="color: transparent;">
+              <div class="flex flex-col items-start leading-4">
+                <p class="text-text-secondary text-xs">STX-PERP</p>
+                <p class="text-text-tertiary text-2xs">935,224</p>
+              </div>
+            </div>
+          </div>
+          <div>
+            <div class="text-text-primary whitespace-nowrap text-xs pointer-events-none h-full flex flex-col justify-center items-end gap-y-0">
+              <div class="text-text-primary">2.1147</div>
+              <div class="text-text-tertiary text-2xs">
+                <span class="text-negative text-2xs">−3.80%</span>
+              </div>
+            </div>
+          </div>
+        </a>
+        <a class="items-center justify-center whitespace-nowrap flex relative before:absolute before:inset-0 before:pointer-events-none hover:before:bg-overlay-hover before:opacity-[.07] before:rounded cursor-pointer pr-3 py-1" href="/perpetuals/PYTH-PERP">
+          <div>
+            <div class="text-text-primary whitespace-nowrap text-xs flex h-full items-center pointer-events-auto">
+              <button class="inline-flex items-center justify-center whitespace-nowrap gap-x-2 cursor-not-allowed text-disabled p-3" disabled="" type="button">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 256 256">
+                  <path d="M239.18,97.26A16.38,16.38,0,0,0,224.92,86l-59-4.76L143.14,26.15a16.36,16.36,0,0,0-30.27,0L90.11,81.23,31.08,86a16.46,16.46,0,0,0-9.37,28.86l45,38.83L53,211.75a16.38,16.38,0,0,0,24.5,17.82L128,198.49l50.53,31.08A16.4,16.4,0,0,0,203,211.75l-13.76-58.07,45-38.83A16.43,16.43,0,0,0,239.18,97.26Zm-15.34,5.47-48.7,42a8,8,0,0,0-2.56,7.91l14.88,62.8a.37.37,0,0,1-.17.48c-.18.14-.23.11-.38,0l-54.72-33.65a8,8,0,0,0-8.38,0L69.09,215.94c-.15.09-.19.12-.38,0a.37.37,0,0,1-.17-.48l14.88-62.8a8,8,0,0,0-2.56-7.91l-48.7-42c-.12-.1-.23-.19-.13-.5s.18-.27.33-.29l63.92-5.16A8,8,0,0,0,103,91.86l24.62-59.61c.08-.17.11-.25.35-.25s.27.08.35.25L153,91.86a8,8,0,0,0,6.75,4.92l63.92,5.16c.15,0,.24,0,.33.29S224,102.63,223.84,102.73Z"></path>
+                </svg>
+              </button>
+            </div>
+          </div>
+          <div class="flex-1">
+            <div class="text-text-primary whitespace-nowrap text-xs pointer-events-none flex h-full items-center gap-x-2.5">
+              <img alt="PYTH" loading="lazy" width="24" height="24" decoding="async" data-nimg="1" class="h-auto w-6" src="/_next/static/media/pyth.5f6906bb.svg" style="color: transparent;">
+              <div class="flex flex-col items-start leading-4">
+                <p class="text-text-secondary text-xs">PYTH-PERP</p>
+                <p class="text-text-tertiary text-2xs">917,843</p>
+              </div>
+            </div>
+          </div>
+          <div>
+            <div class="text-text-primary whitespace-nowrap text-xs pointer-events-none h-full flex flex-col justify-center items-end gap-y-0">
+              <div class="text-text-primary">0.4292</div>
+              <div class="text-text-tertiary text-2xs">
+                <span class="text-negative text-2xs">−4.32%</span>
+              </div>
+            </div>
+          </div>
+        </a>
+        <a class="items-center justify-center whitespace-nowrap flex relative before:absolute before:inset-0 before:pointer-events-none hover:before:bg-overlay-hover before:opacity-[.07] before:rounded cursor-pointer pr-3 py-1" href="/perpetuals/LTC-PERP">
+          <div>
+            <div class="text-text-primary whitespace-nowrap text-xs flex h-full items-center pointer-events-auto">
+              <button class="inline-flex items-center justify-center whitespace-nowrap gap-x-2 cursor-not-allowed text-disabled p-3" disabled="" type="button">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 256 256">
+                  <path d="M239.18,97.26A16.38,16.38,0,0,0,224.92,86l-59-4.76L143.14,26.15a16.36,16.36,0,0,0-30.27,0L90.11,81.23,31.08,86a16.46,16.46,0,0,0-9.37,28.86l45,38.83L53,211.75a16.38,16.38,0,0,0,24.5,17.82L128,198.49l50.53,31.08A16.4,16.4,0,0,0,203,211.75l-13.76-58.07,45-38.83A16.43,16.43,0,0,0,239.18,97.26Zm-15.34,5.47-48.7,42a8,8,0,0,0-2.56,7.91l14.88,62.8a.37.37,0,0,1-.17.48c-.18.14-.23.11-.38,0l-54.72-33.65a8,8,0,0,0-8.38,0L69.09,215.94c-.15.09-.19.12-.38,0a.37.37,0,0,1-.17-.48l14.88-62.8a8,8,0,0,0-2.56-7.91l-48.7-42c-.12-.1-.23-.19-.13-.5s.18-.27.33-.29l63.92-5.16A8,8,0,0,0,103,91.86l24.62-59.61c.08-.17.11-.25.35-.25s.27.08.35.25L153,91.86a8,8,0,0,0,6.75,4.92l63.92,5.16c.15,0,.24,0,.33.29S224,102.63,223.84,102.73Z"></path>
+                </svg>
+              </button>
+            </div>
+          </div>
+          <div class="flex-1">
+            <div class="text-text-primary whitespace-nowrap text-xs pointer-events-none flex h-full items-center gap-x-2.5">
+              <img alt="LTC" loading="lazy" width="24" height="24" decoding="async" data-nimg="1" class="h-auto w-6" src="/_next/static/media/ltc.3ad1557c.svg" style="color: transparent;">
+              <div class="flex flex-col items-start leading-4">
+                <p class="text-text-secondary text-xs">LTC-PERP</p>
+                <p class="text-text-tertiary text-2xs">874,831</p>
+              </div>
+            </div>
+          </div>
+          <div>
+            <div class="text-text-primary whitespace-nowrap text-xs pointer-events-none h-full flex flex-col justify-center items-end gap-y-0">
+              <div class="text-text-primary">93.72</div>
+              <div class="text-text-tertiary text-2xs">
+                <span class="text-negative text-2xs">−0.18%</span>
+              </div>
+            </div>
+          </div>
+        </a>
+        <a class="items-center justify-center whitespace-nowrap flex relative before:absolute before:inset-0 before:pointer-events-none hover:before:bg-overlay-hover before:opacity-[.07] before:rounded cursor-pointer pr-3 py-1" href="/perpetuals/GOAT-PERP">
+          <div>
+            <div class="text-text-primary whitespace-nowrap text-xs flex h-full items-center pointer-events-auto">
+              <button class="inline-flex items-center justify-center whitespace-nowrap gap-x-2 cursor-not-allowed text-disabled p-3" disabled="" type="button">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 256 256">
+                  <path d="M239.18,97.26A16.38,16.38,0,0,0,224.92,86l-59-4.76L143.14,26.15a16.36,16.36,0,0,0-30.27,0L90.11,81.23,31.08,86a16.46,16.46,0,0,0-9.37,28.86l45,38.83L53,211.75a16.38,16.38,0,0,0,24.5,17.82L128,198.49l50.53,31.08A16.4,16.4,0,0,0,203,211.75l-13.76-58.07,45-38.83A16.43,16.43,0,0,0,239.18,97.26Zm-15.34,5.47-48.7,42a8,8,0,0,0-2.56,7.91l14.88,62.8a.37.37,0,0,1-.17.48c-.18.14-.23.11-.38,0l-54.72-33.65a8,8,0,0,0-8.38,0L69.09,215.94c-.15.09-.19.12-.38,0a.37.37,0,0,1-.17-.48l14.88-62.8a8,8,0,0,0-2.56-7.91l-48.7-42c-.12-.1-.23-.19-.13-.5s.18-.27.33-.29l63.92-5.16A8,8,0,0,0,103,91.86l24.62-59.61c.08-.17.11-.25.35-.25s.27.08.35.25L153,91.86a8,8,0,0,0,6.75,4.92l63.92,5.16c.15,0,.24,0,.33.29S224,102.63,223.84,102.73Z"></path>
+                </svg>
+              </button>
+            </div>
+          </div>
+          <div class="flex-1">
+            <div class="text-text-primary whitespace-nowrap text-xs pointer-events-none flex h-full items-center gap-x-2.5">
+              <img alt="GOAT" loading="lazy" width="24" height="24" decoding="async" data-nimg="1" class="h-auto w-6" src="/_next/static/media/goat.315edf64.svg" style="color: transparent;">
+              <div class="flex flex-col items-start leading-4">
+                <p class="text-text-secondary text-xs">GOAT-PERP</p>
+                <p class="text-text-tertiary text-2xs">787,258</p>
+              </div>
+            </div>
+          </div>
+          <div>
+            <div class="text-text-primary whitespace-nowrap text-xs pointer-events-none h-full flex flex-col justify-center items-end gap-y-0">
+              <div class="text-text-primary">0.8694</div>
+              <div class="text-text-tertiary text-2xs">
+                <span class="text-positive text-2xs">+13.08%</span>
+              </div>
+            </div>
+          </div>
+        </a>
+        <a class="items-center justify-center whitespace-nowrap flex relative before:absolute before:inset-0 before:pointer-events-none hover:before:bg-overlay-hover before:opacity-[.07] before:rounded cursor-pointer pr-3 py-1" href="/perpetuals/FIL-PERP">
+          <div>
+            <div class="text-text-primary whitespace-nowrap text-xs flex h-full items-center pointer-events-auto">
+              <button class="inline-flex items-center justify-center whitespace-nowrap gap-x-2 cursor-not-allowed text-disabled p-3" disabled="" type="button">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 256 256">
+                  <path d="M239.18,97.26A16.38,16.38,0,0,0,224.92,86l-59-4.76L143.14,26.15a16.36,16.36,0,0,0-30.27,0L90.11,81.23,31.08,86a16.46,16.46,0,0,0-9.37,28.86l45,38.83L53,211.75a16.38,16.38,0,0,0,24.5,17.82L128,198.49l50.53,31.08A16.4,16.4,0,0,0,203,211.75l-13.76-58.07,45-38.83A16.43,16.43,0,0,0,239.18,97.26Zm-15.34,5.47-48.7,42a8,8,0,0,0-2.56,7.91l14.88,62.8a.37.37,0,0,1-.17.48c-.18.14-.23.11-.38,0l-54.72-33.65a8,8,0,0,0-8.38,0L69.09,215.94c-.15.09-.19.12-.38,0a.37.37,0,0,1-.17-.48l14.88-62.8a8,8,0,0,0-2.56-7.91l-48.7-42c-.12-.1-.23-.19-.13-.5s.18-.27.33-.29l63.92-5.16A8,8,0,0,0,103,91.86l24.62-59.61c.08-.17.11-.25.35-.25s.27.08.35.25L153,91.86a8,8,0,0,0,6.75,4.92l63.92,5.16c.15,0,.24,0,.33.29S224,102.63,223.84,102.73Z"></path>
+                </svg>
+              </button>
+            </div>
+          </div>
+          <div class="flex-1">
+            <div class="text-text-primary whitespace-nowrap text-xs pointer-events-none flex h-full items-center gap-x-2.5">
+              <img alt="FIL" loading="lazy" width="24" height="25" decoding="async" data-nimg="1" class="h-auto w-6" src="/_next/static/media/fil.432e1640.svg" style="color: transparent;">
+              <div class="flex flex-col items-start leading-4">
+                <p class="text-text-secondary text-xs">FIL-PERP</p>
+                <p class="text-text-tertiary text-2xs">659,240</p>
+              </div>
+            </div>
+          </div>
+          <div>
+            <div class="text-text-primary whitespace-nowrap text-xs pointer-events-none h-full flex flex-col justify-center items-end gap-y-0">
+              <div class="text-text-primary">5.4915</div>
+              <div class="text-text-tertiary text-2xs">
+                <span class="text-negative text-2xs">−1.04%</span>
+              </div>
+            </div>
+          </div>
+        </a>
+        <a class="items-center justify-center whitespace-nowrap flex relative before:absolute before:inset-0 before:pointer-events-none hover:before:bg-overlay-hover before:opacity-[.07] before:rounded cursor-pointer pr-3 py-1" href="/perpetuals/ATOM-PERP">
+          <div>
+            <div class="text-text-primary whitespace-nowrap text-xs flex h-full items-center pointer-events-auto">
+              <button class="inline-flex items-center justify-center whitespace-nowrap gap-x-2 cursor-not-allowed text-disabled p-3" disabled="" type="button">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 256 256">
+                  <path d="M239.18,97.26A16.38,16.38,0,0,0,224.92,86l-59-4.76L143.14,26.15a16.36,16.36,0,0,0-30.27,0L90.11,81.23,31.08,86a16.46,16.46,0,0,0-9.37,28.86l45,38.83L53,211.75a16.38,16.38,0,0,0,24.5,17.82L128,198.49l50.53,31.08A16.4,16.4,0,0,0,203,211.75l-13.76-58.07,45-38.83A16.43,16.43,0,0,0,239.18,97.26Zm-15.34,5.47-48.7,42a8,8,0,0,0-2.56,7.91l14.88,62.8a.37.37,0,0,1-.17.48c-.18.14-.23.11-.38,0l-54.72-33.65a8,8,0,0,0-8.38,0L69.09,215.94c-.15.09-.19.12-.38,0a.37.37,0,0,1-.17-.48l14.88-62.8a8,8,0,0,0-2.56-7.91l-48.7-42c-.12-.1-.23-.19-.13-.5s.18-.27.33-.29l63.92-5.16A8,8,0,0,0,103,91.86l24.62-59.61c.08-.17.11-.25.35-.25s.27.08.35.25L153,91.86a8,8,0,0,0,6.75,4.92l63.92,5.16c.15,0,.24,0,.33.29S224,102.63,223.84,102.73Z"></path>
+                </svg>
+              </button>
+            </div>
+          </div>
+          <div class="flex-1">
+            <div class="text-text-primary whitespace-nowrap text-xs pointer-events-none flex h-full items-center gap-x-2.5">
+              <img alt="ATOM" loading="lazy" width="24" height="25" decoding="async" data-nimg="1" class="h-auto w-6" src="/_next/static/media/atom.cfc50dab.svg" style="color: transparent;">
+              <div class="flex flex-col items-start leading-4">
+                <p class="text-text-secondary text-xs">ATOM-PERP</p>
+                <p class="text-text-tertiary text-2xs">552,525</p>
+              </div>
+            </div>
+          </div>
+          <div>
+            <div class="text-text-primary whitespace-nowrap text-xs pointer-events-none h-full flex flex-col justify-center items-end gap-y-0">
+              <div class="text-text-primary">8.0043</div>
+              <div class="text-text-tertiary text-2xs">
+                <span class="text-positive text-2xs">+0.58%</span>
+              </div>
+            </div>
+          </div>
+        </a>
+        <a class="items-center justify-center whitespace-nowrap flex relative before:absolute before:inset-0 before:pointer-events-none hover:before:bg-overlay-hover before:opacity-[.07] before:rounded cursor-pointer pr-3 py-1" href="/perpetuals/SNX-PERP">
+          <div>
+            <div class="text-text-primary whitespace-nowrap text-xs flex h-full items-center pointer-events-auto">
+              <button class="inline-flex items-center justify-center whitespace-nowrap gap-x-2 cursor-not-allowed text-disabled p-3" disabled="" type="button">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 256 256">
+                  <path d="M239.18,97.26A16.38,16.38,0,0,0,224.92,86l-59-4.76L143.14,26.15a16.36,16.36,0,0,0-30.27,0L90.11,81.23,31.08,86a16.46,16.46,0,0,0-9.37,28.86l45,38.83L53,211.75a16.38,16.38,0,0,0,24.5,17.82L128,198.49l50.53,31.08A16.4,16.4,0,0,0,203,211.75l-13.76-58.07,45-38.83A16.43,16.43,0,0,0,239.18,97.26Zm-15.34,5.47-48.7,42a8,8,0,0,0-2.56,7.91l14.88,62.8a.37.37,0,0,1-.17.48c-.18.14-.23.11-.38,0l-54.72-33.65a8,8,0,0,0-8.38,0L69.09,215.94c-.15.09-.19.12-.38,0a.37.37,0,0,1-.17-.48l14.88-62.8a8,8,0,0,0-2.56-7.91l-48.7-42c-.12-.1-.23-.19-.13-.5s.18-.27.33-.29l63.92-5.16A8,8,0,0,0,103,91.86l24.62-59.61c.08-.17.11-.25.35-.25s.27.08.35.25L153,91.86a8,8,0,0,0,6.75,4.92l63.92,5.16c.15,0,.24,0,.33.29S224,102.63,223.84,102.73Z"></path>
+                </svg>
+              </button>
+            </div>
+          </div>
+          <div class="flex-1">
+            <div class="text-text-primary whitespace-nowrap text-xs pointer-events-none flex h-full items-center gap-x-2.5">
+              <img alt="SNX" loading="lazy" width="24" height="24" decoding="async" data-nimg="1" class="h-auto w-6" src="/_next/static/media/snx.6eb8e5df.svg" style="color: transparent;">
+              <div class="flex flex-col items-start leading-4">
+                <p class="text-text-secondary text-xs">SNX-PERP</p>
+                <p class="text-text-tertiary text-2xs">516,997</p>
+              </div>
+            </div>
+          </div>
+          <div>
+            <div class="text-text-primary whitespace-nowrap text-xs pointer-events-none h-full flex flex-col justify-center items-end gap-y-0">
+              <div class="text-text-primary">2.3060</div>
+              <div class="text-text-tertiary text-2xs">
+                <span class="text-positive text-2xs">+1.32%</span>
+              </div>
+            </div>
+          </div>
+        </a>
+        <a class="items-center justify-center whitespace-nowrap flex relative before:absolute before:inset-0 before:pointer-events-none hover:before:bg-overlay-hover before:opacity-[.07] before:rounded cursor-pointer pr-3 py-1" href="/perpetuals/BRETT-PERP">
+          <div>
+            <div class="text-text-primary whitespace-nowrap text-xs flex h-full items-center pointer-events-auto">
+              <button class="inline-flex items-center justify-center whitespace-nowrap gap-x-2 cursor-not-allowed text-disabled p-3" disabled="" type="button">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 256 256">
+                  <path d="M239.18,97.26A16.38,16.38,0,0,0,224.92,86l-59-4.76L143.14,26.15a16.36,16.36,0,0,0-30.27,0L90.11,81.23,31.08,86a16.46,16.46,0,0,0-9.37,28.86l45,38.83L53,211.75a16.38,16.38,0,0,0,24.5,17.82L128,198.49l50.53,31.08A16.4,16.4,0,0,0,203,211.75l-13.76-58.07,45-38.83A16.43,16.43,0,0,0,239.18,97.26Zm-15.34,5.47-48.7,42a8,8,0,0,0-2.56,7.91l14.88,62.8a.37.37,0,0,1-.17.48c-.18.14-.23.11-.38,0l-54.72-33.65a8,8,0,0,0-8.38,0L69.09,215.94c-.15.09-.19.12-.38,0a.37.37,0,0,1-.17-.48l14.88-62.8a8,8,0,0,0-2.56-7.91l-48.7-42c-.12-.1-.23-.19-.13-.5s.18-.27.33-.29l63.92-5.16A8,8,0,0,0,103,91.86l24.62-59.61c.08-.17.11-.25.35-.25s.27.08.35.25L153,91.86a8,8,0,0,0,6.75,4.92l63.92,5.16c.15,0,.24,0,.33.29S224,102.63,223.84,102.73Z"></path>
+                </svg>
+              </button>
+            </div>
+          </div>
+          <div class="flex-1">
+            <div class="text-text-primary whitespace-nowrap text-xs pointer-events-none flex h-full items-center gap-x-2.5">
+              <img alt="BRETT" loading="lazy" width="25" height="25" decoding="async" data-nimg="1" class="h-auto w-6" src="/_next/static/media/brett.21515bfb.svg" style="color: transparent;">
+              <div class="flex flex-col items-start leading-4">
+                <p class="text-text-secondary text-xs">BRETT-PERP</p>
+                <p class="text-text-tertiary text-2xs">447,018</p>
+              </div>
+            </div>
+          </div>
+          <div>
+            <div class="text-text-primary whitespace-nowrap text-xs pointer-events-none h-full flex flex-col justify-center items-end gap-y-0">
+              <div class="text-text-primary">0.1678</div>
+              <div class="text-text-tertiary text-2xs">
+                <span class="text-negative text-2xs">−0.41%</span>
+              </div>
+            </div>
+          </div>
+        </a>
+        <a class="items-center justify-center whitespace-nowrap flex relative before:absolute before:inset-0 before:pointer-events-none hover:before:bg-overlay-hover before:opacity-[.07] before:rounded cursor-pointer pr-3 py-1" href="/perpetuals/BLAST-PERP">
+          <div>
+            <div class="text-text-primary whitespace-nowrap text-xs flex h-full items-center pointer-events-auto">
+              <button class="inline-flex items-center justify-center whitespace-nowrap gap-x-2 cursor-not-allowed text-disabled p-3" disabled="" type="button">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 256 256">
+                  <path d="M239.18,97.26A16.38,16.38,0,0,0,224.92,86l-59-4.76L143.14,26.15a16.36,16.36,0,0,0-30.27,0L90.11,81.23,31.08,86a16.46,16.46,0,0,0-9.37,28.86l45,38.83L53,211.75a16.38,16.38,0,0,0,24.5,17.82L128,198.49l50.53,31.08A16.4,16.4,0,0,0,203,211.75l-13.76-58.07,45-38.83A16.43,16.43,0,0,0,239.18,97.26Zm-15.34,5.47-48.7,42a8,8,0,0,0-2.56,7.91l14.88,62.8a.37.37,0,0,1-.17.48c-.18.14-.23.11-.38,0l-54.72-33.65a8,8,0,0,0-8.38,0L69.09,215.94c-.15.09-.19.12-.38,0a.37.37,0,0,1-.17-.48l14.88-62.8a8,8,0,0,0-2.56-7.91l-48.7-42c-.12-.1-.23-.19-.13-.5s.18-.27.33-.29l63.92-5.16A8,8,0,0,0,103,91.86l24.62-59.61c.08-.17.11-.25.35-.25s.27.08.35.25L153,91.86a8,8,0,0,0,6.75,4.92l63.92,5.16c.15,0,.24,0,.33.29S224,102.63,223.84,102.73Z"></path>
+                </svg>
+              </button>
+            </div>
+          </div>
+          <div class="flex-1">
+            <div class="text-text-primary whitespace-nowrap text-xs pointer-events-none flex h-full items-center gap-x-2.5">
+              <img alt="BLAST" loading="lazy" width="24" height="24" decoding="async" data-nimg="1" class="h-auto w-6" src="/_next/static/media/blast.049c34b2.svg" style="color: transparent;">
+              <div class="flex flex-col items-start leading-4">
+                <p class="text-text-secondary text-xs">BLAST-PERP</p>
+                <p class="text-text-tertiary text-2xs">201,846</p>
+              </div>
+            </div>
+          </div>
+          <div>
+            <div class="text-text-primary whitespace-nowrap text-xs pointer-events-none h-full flex flex-col justify-center items-end gap-y-0">
+              <div class="text-text-primary">0.010887</div>
+              <div class="text-text-tertiary text-2xs">
+                <span class="text-negative text-2xs">−5.08%</span>
+              </div>
+            </div>
+          </div>
+        </a>
+        <a class="items-center justify-center whitespace-nowrap flex relative before:absolute before:inset-0 before:pointer-events-none hover:before:bg-overlay-hover before:opacity-[.07] before:rounded cursor-pointer pr-3 py-1" href="/perpetuals/AAVE-PERP">
+          <div>
+            <div class="text-text-primary whitespace-nowrap text-xs flex h-full items-center pointer-events-auto">
+              <button class="inline-flex items-center justify-center whitespace-nowrap gap-x-2 cursor-not-allowed text-disabled p-3" disabled="" type="button">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 256 256">
+                  <path d="M239.18,97.26A16.38,16.38,0,0,0,224.92,86l-59-4.76L143.14,26.15a16.36,16.36,0,0,0-30.27,0L90.11,81.23,31.08,86a16.46,16.46,0,0,0-9.37,28.86l45,38.83L53,211.75a16.38,16.38,0,0,0,24.5,17.82L128,198.49l50.53,31.08A16.4,16.4,0,0,0,203,211.75l-13.76-58.07,45-38.83A16.43,16.43,0,0,0,239.18,97.26Zm-15.34,5.47-48.7,42a8,8,0,0,0-2.56,7.91l14.88,62.8a.37.37,0,0,1-.17.48c-.18.14-.23.11-.38,0l-54.72-33.65a8,8,0,0,0-8.38,0L69.09,215.94c-.15.09-.19.12-.38,0a.37.37,0,0,1-.17-.48l14.88-62.8a8,8,0,0,0-2.56-7.91l-48.7-42c-.12-.1-.23-.19-.13-.5s.18-.27.33-.29l63.92-5.16A8,8,0,0,0,103,91.86l24.62-59.61c.08-.17.11-.25.35-.25s.27.08.35.25L153,91.86a8,8,0,0,0,6.75,4.92l63.92,5.16c.15,0,.24,0,.33.29S224,102.63,223.84,102.73Z"></path>
+                </svg>
+              </button>
+            </div>
+          </div>
+          <div class="flex-1">
+            <div class="text-text-primary whitespace-nowrap text-xs pointer-events-none flex h-full items-center gap-x-2.5">
+              <img alt="AAVE" loading="lazy" width="24" height="24" decoding="async" data-nimg="1" class="h-auto w-6" src="/_next/static/media/aave.03842843.svg" style="color: transparent;">
+              <div class="flex flex-col items-start leading-4">
+                <p class="text-text-secondary text-xs">AAVE-PERP</p>
+                <p class="text-text-tertiary text-2xs">193,135</p>
+              </div>
+            </div>
+          </div>
+          <div>
+            <div class="text-text-primary whitespace-nowrap text-xs pointer-events-none h-full flex flex-col justify-center items-end gap-y-0">
+              <div class="text-text-primary">193.40</div>
+              <div class="text-text-tertiary text-2xs">
+                <span class="text-positive text-2xs">+7.82%</span>
+              </div>
+            </div>
+          </div>
+        </a>
+        <a class="items-center justify-center whitespace-nowrap flex relative before:absolute before:inset-0 before:pointer-events-none hover:before:bg-overlay-hover before:opacity-[.07] before:rounded cursor-pointer pr-3 py-1" href="/perpetuals/EIGEN-PERP">
+          <div>
+            <div class="text-text-primary whitespace-nowrap text-xs flex h-full items-center pointer-events-auto">
+              <button class="inline-flex items-center justify-center whitespace-nowrap gap-x-2 cursor-not-allowed text-disabled p-3" disabled="" type="button">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 256 256">
+                  <path d="M239.18,97.26A16.38,16.38,0,0,0,224.92,86l-59-4.76L143.14,26.15a16.36,16.36,0,0,0-30.27,0L90.11,81.23,31.08,86a16.46,16.46,0,0,0-9.37,28.86l45,38.83L53,211.75a16.38,16.38,0,0,0,24.5,17.82L128,198.49l50.53,31.08A16.4,16.4,0,0,0,203,211.75l-13.76-58.07,45-38.83A16.43,16.43,0,0,0,239.18,97.26Zm-15.34,5.47-48.7,42a8,8,0,0,0-2.56,7.91l14.88,62.8a.37.37,0,0,1-.17.48c-.18.14-.23.11-.38,0l-54.72-33.65a8,8,0,0,0-8.38,0L69.09,215.94c-.15.09-.19.12-.38,0a.37.37,0,0,1-.17-.48l14.88-62.8a8,8,0,0,0-2.56-7.91l-48.7-42c-.12-.1-.23-.19-.13-.5s.18-.27.33-.29l63.92-5.16A8,8,0,0,0,103,91.86l24.62-59.61c.08-.17.11-.25.35-.25s.27.08.35.25L153,91.86a8,8,0,0,0,6.75,4.92l63.92,5.16c.15,0,.24,0,.33.29S224,102.63,223.84,102.73Z"></path>
+                </svg>
+              </button>
+            </div>
+          </div>
+          <div class="flex-1">
+            <div class="text-text-primary whitespace-nowrap text-xs pointer-events-none flex h-full items-center gap-x-2.5">
+              <img alt="EIGEN" loading="lazy" width="24" height="24" decoding="async" data-nimg="1" class="h-auto w-6" src="/_next/static/media/eigen.72700d50.svg" style="color: transparent;">
+              <div class="flex flex-col items-start leading-4">
+                <p class="text-text-secondary text-xs">EIGEN-PERP</p>
+                <p class="text-text-tertiary text-2xs">168,317</p>
+              </div>
+            </div>
+          </div>
+          <div>
+            <div class="text-text-primary whitespace-nowrap text-xs pointer-events-none h-full flex flex-col justify-center items-end gap-y-0">
+              <div class="text-text-primary">3.4373</div>
+              <div class="text-text-tertiary text-2xs">
+                <span class="text-positive text-2xs">+9.94%</span>
+              </div>
+            </div>
+          </div>
+        </a>
+        <a class="items-center justify-center whitespace-nowrap flex relative before:absolute before:inset-0 before:pointer-events-none hover:before:bg-overlay-hover before:opacity-[.07] before:rounded cursor-pointer pr-3 py-1" href="/perpetuals/POL-PERP">
+          <div>
+            <div class="text-text-primary whitespace-nowrap text-xs flex h-full items-center pointer-events-auto">
+              <button class="inline-flex items-center justify-center whitespace-nowrap gap-x-2 cursor-not-allowed text-disabled p-3" disabled="" type="button">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 256 256">
+                  <path d="M239.18,97.26A16.38,16.38,0,0,0,224.92,86l-59-4.76L143.14,26.15a16.36,16.36,0,0,0-30.27,0L90.11,81.23,31.08,86a16.46,16.46,0,0,0-9.37,28.86l45,38.83L53,211.75a16.38,16.38,0,0,0,24.5,17.82L128,198.49l50.53,31.08A16.4,16.4,0,0,0,203,211.75l-13.76-58.07,45-38.83A16.43,16.43,0,0,0,239.18,97.26Zm-15.34,5.47-48.7,42a8,8,0,0,0-2.56,7.91l14.88,62.8a.37.37,0,0,1-.17.48c-.18.14-.23.11-.38,0l-54.72-33.65a8,8,0,0,0-8.38,0L69.09,215.94c-.15.09-.19.12-.38,0a.37.37,0,0,1-.17-.48l14.88-62.8a8,8,0,0,0-2.56-7.91l-48.7-42c-.12-.1-.23-.19-.13-.5s.18-.27.33-.29l63.92-5.16A8,8,0,0,0,103,91.86l24.62-59.61c.08-.17.11-.25.35-.25s.27.08.35.25L153,91.86a8,8,0,0,0,6.75,4.92l63.92,5.16c.15,0,.24,0,.33.29S224,102.63,223.84,102.73Z"></path>
+                </svg>
+              </button>
+            </div>
+          </div>
+          <div class="flex-1">
+            <div class="text-text-primary whitespace-nowrap text-xs pointer-events-none flex h-full items-center gap-x-2.5">
+              <img alt="POL" loading="lazy" width="24" height="24" decoding="async" data-nimg="1" class="h-auto w-6" src="/_next/static/media/pol.ca045d0c.svg" style="color: transparent;">
+              <div class="flex flex-col items-start leading-4">
+                <p class="text-text-secondary text-xs">POL-PERP</p>
+                <p class="text-text-tertiary text-2xs">160,494</p>
+              </div>
+            </div>
+          </div>
+          <div>
+            <div class="text-text-primary whitespace-nowrap text-xs pointer-events-none h-full flex flex-col justify-center items-end gap-y-0">
+              <div class="text-text-primary">0.5403</div>
+              <div class="text-text-tertiary text-2xs">
+                <span class="text-negative text-2xs">−2.05%</span>
+              </div>
+            </div>
+          </div>
+        </a>
+        <a class="items-center justify-center whitespace-nowrap flex relative before:absolute before:inset-0 before:pointer-events-none hover:before:bg-overlay-hover before:opacity-[.07] before:rounded cursor-pointer pr-3 py-1" href="/perpetuals/SCR-PERP">
+          <div>
+            <div class="text-text-primary whitespace-nowrap text-xs flex h-full items-center pointer-events-auto">
+              <button class="inline-flex items-center justify-center whitespace-nowrap gap-x-2 cursor-not-allowed text-disabled p-3" disabled="" type="button">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 256 256">
+                  <path d="M239.18,97.26A16.38,16.38,0,0,0,224.92,86l-59-4.76L143.14,26.15a16.36,16.36,0,0,0-30.27,0L90.11,81.23,31.08,86a16.46,16.46,0,0,0-9.37,28.86l45,38.83L53,211.75a16.38,16.38,0,0,0,24.5,17.82L128,198.49l50.53,31.08A16.4,16.4,0,0,0,203,211.75l-13.76-58.07,45-38.83A16.43,16.43,0,0,0,239.18,97.26Zm-15.34,5.47-48.7,42a8,8,0,0,0-2.56,7.91l14.88,62.8a.37.37,0,0,1-.17.48c-.18.14-.23.11-.38,0l-54.72-33.65a8,8,0,0,0-8.38,0L69.09,215.94c-.15.09-.19.12-.38,0a.37.37,0,0,1-.17-.48l14.88-62.8a8,8,0,0,0-2.56-7.91l-48.7-42c-.12-.1-.23-.19-.13-.5s.18-.27.33-.29l63.92-5.16A8,8,0,0,0,103,91.86l24.62-59.61c.08-.17.11-.25.35-.25s.27.08.35.25L153,91.86a8,8,0,0,0,6.75,4.92l63.92,5.16c.15,0,.24,0,.33.29S224,102.63,223.84,102.73Z"></path>
+                </svg>
+              </button>
+            </div>
+          </div>
+          <div class="flex-1">
+            <div class="text-text-primary whitespace-nowrap text-xs pointer-events-none flex h-full items-center gap-x-2.5">
+              <img alt="SCR" loading="lazy" width="24" height="24" decoding="async" data-nimg="1" class="h-auto w-6" src="/_next/static/media/scr.f85a8b1d.svg" style="color: transparent;">
+              <div class="flex flex-col items-start leading-4">
+                <p class="text-text-secondary text-xs">SCR-PERP</p>
+                <p class="text-text-tertiary text-2xs">80,488</p>
+              </div>
+            </div>
+          </div>
+          <div>
+            <div class="text-text-primary whitespace-nowrap text-xs pointer-events-none h-full flex flex-col justify-center items-end gap-y-0">
+              <div class="text-text-primary">0.7723</div>
+              <div class="text-text-tertiary text-2xs">
+                <span class="text-negative text-2xs">−0.04%</span>
+              </div>
+            </div>
+          </div>
+        </a>
+        <a class="items-center justify-center whitespace-nowrap flex relative before:absolute before:inset-0 before:pointer-events-none hover:before:bg-overlay-hover before:opacity-[.07] before:rounded cursor-pointer pr-3 py-1" href="/perpetuals/DEGEN-PERP">
+          <div>
+            <div class="text-text-primary whitespace-nowrap text-xs flex h-full items-center pointer-events-auto">
+              <button class="inline-flex items-center justify-center whitespace-nowrap gap-x-2 cursor-not-allowed text-disabled p-3" disabled="" type="button">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 256 256">
+                  <path d="M239.18,97.26A16.38,16.38,0,0,0,224.92,86l-59-4.76L143.14,26.15a16.36,16.36,0,0,0-30.27,0L90.11,81.23,31.08,86a16.46,16.46,0,0,0-9.37,28.86l45,38.83L53,211.75a16.38,16.38,0,0,0,24.5,17.82L128,198.49l50.53,31.08A16.4,16.4,0,0,0,203,211.75l-13.76-58.07,45-38.83A16.43,16.43,0,0,0,239.18,97.26Zm-15.34,5.47-48.7,42a8,8,0,0,0-2.56,7.91l14.88,62.8a.37.37,0,0,1-.17.48c-.18.14-.23.11-.38,0l-54.72-33.65a8,8,0,0,0-8.38,0L69.09,215.94c-.15.09-.19.12-.38,0a.37.37,0,0,1-.17-.48l14.88-62.8a8,8,0,0,0-2.56-7.91l-48.7-42c-.12-.1-.23-.19-.13-.5s.18-.27.33-.29l63.92-5.16A8,8,0,0,0,103,91.86l24.62-59.61c.08-.17.11-.25.35-.25s.27.08.35.25L153,91.86a8,8,0,0,0,6.75,4.92l63.92,5.16c.15,0,.24,0,.33.29S224,102.63,223.84,102.73Z"></path>
+                </svg>
+              </button>
+            </div>
+          </div>
+          <div class="flex-1">
+            <div class="text-text-primary whitespace-nowrap text-xs pointer-events-none flex h-full items-center gap-x-2.5">
+              <img alt="DEGEN" loading="lazy" width="24" height="24" decoding="async" data-nimg="1" class="h-auto w-6" src="/_next/static/media/degen.12f04692.svg" style="color: transparent;">
+              <div class="flex flex-col items-start leading-4">
+                <p class="text-text-secondary text-xs">DEGEN-PERP</p>
+                <p class="text-text-tertiary text-2xs">79,070</p>
+              </div>
+            </div>
+          </div>
+          <div>
+            <div class="text-text-primary whitespace-nowrap text-xs pointer-events-none h-full flex flex-col justify-center items-end gap-y-0">
+              <div class="text-text-primary">0.017840</div>
+              <div class="text-text-tertiary text-2xs">
+                <span class="text-negative text-2xs">−3.31%</span>
+              </div>
+            </div>
+          </div>
+        </a>
+        <a class="items-center justify-center whitespace-nowrap flex relative before:absolute before:inset-0 before:pointer-events-none hover:before:bg-overlay-hover before:opacity-[.07] before:rounded cursor-pointer pr-3 py-1" href="/perpetuals/ZRO-PERP">
+          <div>
+            <div class="text-text-primary whitespace-nowrap text-xs flex h-full items-center pointer-events-auto">
+              <button class="inline-flex items-center justify-center whitespace-nowrap gap-x-2 cursor-not-allowed text-disabled p-3" disabled="" type="button">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 256 256">
+                  <path d="M239.18,97.26A16.38,16.38,0,0,0,224.92,86l-59-4.76L143.14,26.15a16.36,16.36,0,0,0-30.27,0L90.11,81.23,31.08,86a16.46,16.46,0,0,0-9.37,28.86l45,38.83L53,211.75a16.38,16.38,0,0,0,24.5,17.82L128,198.49l50.53,31.08A16.4,16.4,0,0,0,203,211.75l-13.76-58.07,45-38.83A16.43,16.43,0,0,0,239.18,97.26Zm-15.34,5.47-48.7,42a8,8,0,0,0-2.56,7.91l14.88,62.8a.37.37,0,0,1-.17.48c-.18.14-.23.11-.38,0l-54.72-33.65a8,8,0,0,0-8.38,0L69.09,215.94c-.15.09-.19.12-.38,0a.37.37,0,0,1-.17-.48l14.88-62.8a8,8,0,0,0-2.56-7.91l-48.7-42c-.12-.1-.23-.19-.13-.5s.18-.27.33-.29l63.92-5.16A8,8,0,0,0,103,91.86l24.62-59.61c.08-.17.11-.25.35-.25s.27.08.35.25L153,91.86a8,8,0,0,0,6.75,4.92l63.92,5.16c.15,0,.24,0,.33.29S224,102.63,223.84,102.73Z"></path>
+                </svg>
+              </button>
+            </div>
+          </div>
+          <div class="flex-1">
+            <div class="text-text-primary whitespace-nowrap text-xs pointer-events-none flex h-full items-center gap-x-2.5">
+              <img alt="ZRO" loading="lazy" width="24" height="24" decoding="async" data-nimg="1" class="h-auto w-6" src="/_next/static/media/zro.812def1a.svg" style="color: transparent;">
+              <div class="flex flex-col items-start leading-4">
+                <p class="text-text-secondary text-xs">ZRO-PERP</p>
+                <p class="text-text-tertiary text-2xs">49,002</p>
+              </div>
+            </div>
+          </div>
+          <div>
+            <div class="text-text-primary whitespace-nowrap text-xs pointer-events-none h-full flex flex-col justify-center items-end gap-y-0">
+              <div class="text-text-primary">4.5064</div>
+              <div class="text-text-tertiary text-2xs">
+                <span class="text-positive text-2xs">+3.73%</span>
+              </div>
+            </div>
+          </div>
+        </a>
+        <a class="items-center justify-center whitespace-nowrap flex relative before:absolute before:inset-0 before:pointer-events-none hover:before:bg-overlay-hover before:opacity-[.07] before:rounded cursor-pointer pr-3 py-1" href="/perpetuals/GMMEME-PERP">
+          <div>
+            <div class="text-text-primary whitespace-nowrap text-xs flex h-full items-center pointer-events-auto">
+              <button class="inline-flex items-center justify-center whitespace-nowrap gap-x-2 cursor-not-allowed text-disabled p-3" disabled="" type="button">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 256 256">
+                  <path d="M239.18,97.26A16.38,16.38,0,0,0,224.92,86l-59-4.76L143.14,26.15a16.36,16.36,0,0,0-30.27,0L90.11,81.23,31.08,86a16.46,16.46,0,0,0-9.37,28.86l45,38.83L53,211.75a16.38,16.38,0,0,0,24.5,17.82L128,198.49l50.53,31.08A16.4,16.4,0,0,0,203,211.75l-13.76-58.07,45-38.83A16.43,16.43,0,0,0,239.18,97.26Zm-15.34,5.47-48.7,42a8,8,0,0,0-2.56,7.91l14.88,62.8a.37.37,0,0,1-.17.48c-.18.14-.23.11-.38,0l-54.72-33.65a8,8,0,0,0-8.38,0L69.09,215.94c-.15.09-.19.12-.38,0a.37.37,0,0,1-.17-.48l14.88-62.8a8,8,0,0,0-2.56-7.91l-48.7-42c-.12-.1-.23-.19-.13-.5s.18-.27.33-.29l63.92-5.16A8,8,0,0,0,103,91.86l24.62-59.61c.08-.17.11-.25.35-.25s.27.08.35.25L153,91.86a8,8,0,0,0,6.75,4.92l63.92,5.16c.15,0,.24,0,.33.29S224,102.63,223.84,102.73Z"></path>
+                </svg>
+              </button>
+            </div>
+          </div>
+          <div class="flex-1">
+            <div class="text-text-primary whitespace-nowrap text-xs pointer-events-none flex h-full items-center gap-x-2.5">
+              <img alt="GMMEME" loading="lazy" width="24" height="24" decoding="async" data-nimg="1" class="h-auto w-6" src="/_next/static/media/gmmeme.9f2bb6f0.svg" style="color: transparent;">
+              <div class="flex flex-col items-start leading-4">
+                <p class="text-text-secondary text-xs">GMMEME-PERP</p>
+                <p class="text-text-tertiary text-2xs">23,020</p>
+              </div>
+            </div>
+          </div>
+          <div>
+            <div class="text-text-primary whitespace-nowrap text-xs pointer-events-none h-full flex flex-col justify-center items-end gap-y-0">
+              <div class="text-text-primary">487.23</div>
+              <div class="text-text-tertiary text-2xs">
+                <span class="text-negative text-2xs">−3.12%</span>
+              </div>
+            </div>
+          </div>
+        </a>
+        <a class="items-center justify-center whitespace-nowrap flex relative before:absolute before:inset-0 before:pointer-events-none hover:before:bg-overlay-hover before:opacity-[.07] before:rounded cursor-pointer pr-3 py-1" href="/perpetuals/GMCI30-PERP">
+          <div>
+            <div class="text-text-primary whitespace-nowrap text-xs flex h-full items-center pointer-events-auto">
+              <button class="inline-flex items-center justify-center whitespace-nowrap gap-x-2 cursor-not-allowed text-disabled p-3" disabled="" type="button">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 256 256">
+                  <path d="M239.18,97.26A16.38,16.38,0,0,0,224.92,86l-59-4.76L143.14,26.15a16.36,16.36,0,0,0-30.27,0L90.11,81.23,31.08,86a16.46,16.46,0,0,0-9.37,28.86l45,38.83L53,211.75a16.38,16.38,0,0,0,24.5,17.82L128,198.49l50.53,31.08A16.4,16.4,0,0,0,203,211.75l-13.76-58.07,45-38.83A16.43,16.43,0,0,0,239.18,97.26Zm-15.34,5.47-48.7,42a8,8,0,0,0-2.56,7.91l14.88,62.8a.37.37,0,0,1-.17.48c-.18.14-.23.11-.38,0l-54.72-33.65a8,8,0,0,0-8.38,0L69.09,215.94c-.15.09-.19.12-.38,0a.37.37,0,0,1-.17-.48l14.88-62.8a8,8,0,0,0-2.56-7.91l-48.7-42c-.12-.1-.23-.19-.13-.5s.18-.27.33-.29l63.92-5.16A8,8,0,0,0,103,91.86l24.62-59.61c.08-.17.11-.25.35-.25s.27.08.35.25L153,91.86a8,8,0,0,0,6.75,4.92l63.92,5.16c.15,0,.24,0,.33.29S224,102.63,223.84,102.73Z"></path>
+                </svg>
+              </button>
+            </div>
+          </div>
+          <div class="flex-1">
+            <div class="text-text-primary whitespace-nowrap text-xs pointer-events-none flex h-full items-center gap-x-2.5">
+              <img alt="GMCI30" loading="lazy" width="24" height="24" decoding="async" data-nimg="1" class="h-auto w-6" src="/_next/static/media/gmci30.9f2bb6f0.svg" style="color: transparent;">
+              <div class="flex flex-col items-start leading-4">
+                <p class="text-text-secondary text-xs">GMCI30-PERP</p>
+                <p class="text-text-tertiary text-2xs">14,803</p>
+              </div>
+            </div>
+          </div>
+          <div>
+            <div class="text-text-primary whitespace-nowrap text-xs pointer-events-none h-full flex flex-col justify-center items-end gap-y-0">
+              <div class="text-text-primary">181.956</div>
+              <div class="text-text-tertiary text-2xs">
+                <span class="text-negative text-2xs">−1.38%</span>
+              </div>
+            </div>
+          </div>
+        </a>
+        <a class="items-center justify-center whitespace-nowrap flex relative before:absolute before:inset-0 before:pointer-events-none hover:before:bg-overlay-hover before:opacity-[.07] before:rounded cursor-pointer pr-3 py-1" href="/perpetuals/MNT-PERP">
+          <div>
+            <div class="text-text-primary whitespace-nowrap text-xs flex h-full items-center pointer-events-auto">
+              <button class="inline-flex items-center justify-center whitespace-nowrap gap-x-2 cursor-not-allowed text-disabled p-3" disabled="" type="button">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 256 256">
+                  <path d="M239.18,97.26A16.38,16.38,0,0,0,224.92,86l-59-4.76L143.14,26.15a16.36,16.36,0,0,0-30.27,0L90.11,81.23,31.08,86a16.46,16.46,0,0,0-9.37,28.86l45,38.83L53,211.75a16.38,16.38,0,0,0,24.5,17.82L128,198.49l50.53,31.08A16.4,16.4,0,0,0,203,211.75l-13.76-58.07,45-38.83A16.43,16.43,0,0,0,239.18,97.26Zm-15.34,5.47-48.7,42a8,8,0,0,0-2.56,7.91l14.88,62.8a.37.37,0,0,1-.17.48c-.18.14-.23.11-.38,0l-54.72-33.65a8,8,0,0,0-8.38,0L69.09,215.94c-.15.09-.19.12-.38,0a.37.37,0,0,1-.17-.48l14.88-62.8a8,8,0,0,0-2.56-7.91l-48.7-42c-.12-.1-.23-.19-.13-.5s.18-.27.33-.29l63.92-5.16A8,8,0,0,0,103,91.86l24.62-59.61c.08-.17.11-.25.35-.25s.27.08.35.25L153,91.86a8,8,0,0,0,6.75,4.92l63.92,5.16c.15,0,.24,0,.33.29S224,102.63,223.84,102.73Z"></path>
+                </svg>
+              </button>
+            </div>
+          </div>
+          <div class="flex-1">
+            <div class="text-text-primary whitespace-nowrap text-xs pointer-events-none flex h-full items-center gap-x-2.5">
+              <img alt="MNT" loading="lazy" width="24" height="24" decoding="async" data-nimg="1" class="h-auto w-6" src="/_next/static/media/mnt.a475f2cb.svg" style="color: transparent;">
+              <div class="flex flex-col items-start leading-4">
+                <p class="text-text-secondary text-xs">MNT-PERP</p>
+                <p class="text-text-tertiary text-2xs">9,092</p>
+              </div>
+            </div>
+          </div>
+          <div>
+            <div class="text-text-primary whitespace-nowrap text-xs pointer-events-none h-full flex flex-col justify-center items-end gap-y-0">
+              <div class="text-text-primary">0.83005</div>
+              <div class="text-text-tertiary text-2xs">
+                <span class="text-negative text-2xs">−0.22%</span>
+              </div>
+            </div>
+          </div>
+        </a>
+      </div>
+    </div>
+  </div>
+</div>

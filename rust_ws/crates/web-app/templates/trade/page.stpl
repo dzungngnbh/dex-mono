@@ -21,7 +21,7 @@
                                                                                 <ProjectName> and earn $PROTOCOL." property="og:description">
     <link href="/public/mirrors/inter.css" rel="stylesheet">
     <link rel="preload" href="/public/styles/trade/style.css" as="style">
-    <link rel="stylesheet" href="/public/styles/trade/style.css" data-n-g="">
+    <link rel="stylesheet" href="/public/styles/trade/style.css">
     <style id="_goober">
       @keyframes go2264125279 {
         from {
@@ -262,6 +262,9 @@
                       </svg>
                     </div>
                   </button>
+
+                  <% include!("./choose_market.stpl"); %>
+
                   <div class="no-scrollbar bg-black-800 flex w-full items-center overflow-x-auto px-4 py-2 flex-1" id="trade-stats">
                     <div class="flex min-w-max flex-col justify-center">
                       <div class="text-white-800 min-w-max font-mono text-xs leading-4 tracking-wide">
