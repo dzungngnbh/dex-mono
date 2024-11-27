@@ -4,8 +4,10 @@ module.exports = {
     content: [
         "prototypes/login/index.html",
         "prototypes/signup/index.html",
+        "prototypes/trade/index.html",
         "templates/login/page.stpl",
         "templates/signup/page.stpl",
+        "templates/trade/page.stpl",
         "templates/lib/walletconnect2.ts",
     ],
     theme: {

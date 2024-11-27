@@ -50,7 +50,6 @@ fn setup_routes(env: &Env) -> Router {
         // API routes
         .nest("/api/auth", auth::routes())
         .nest("/api/account", account::routes())
-
         // WebSocket handler
         .route("/ws", get(ws::ws_handler))
         // UI routes
@@ -58,6 +57,7 @@ fn setup_routes(env: &Env) -> Router {
         // Component routes
         .route("/c/:component_name", get(app::components::components))
         // /markets
+        .route("/trade/:symbol", get(app::trade::Page::index))
         // /trade/{:market}
         // order_book, market_trades, current_price, 24h change, 24h volume
         // auth
@@ -70,7 +70,8 @@ fn setup_routes(env: &Env) -> Router {
 
     // Enable development-only routes
     if env.env == "dev" {
-        info!("[dev] Prototypes are enabled");
+        info!("Environment DEV");
+        info!("Prototypes are enabled");
         app = app.nest_service("/prototypes", ServeDir::new("prototypes"))
     }
 
@@ -91,7 +92,6 @@ fn setup_middleware(app: Router, backend: Backend) -> Router {
 #[tokio::main]
 async fn main() -> Result<()> {
     // Initialize logging
-    shared::log::init();
     tracing_subscriber::fmt::init();
 
     // Load environment configuration

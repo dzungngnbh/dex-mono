@@ -29,7 +29,7 @@ pub struct AppLayout {
 pub struct StaticLayout {
     pub title: String,
     pub description: String,
-    pub children: String
+    pub children: String,
 }
 
 impl AppLayout {

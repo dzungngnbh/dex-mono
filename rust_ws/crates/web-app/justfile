@@ -6,7 +6,7 @@ alias f := fmt
 alias d := dev
 
 dev:
-    cargo run --bin web-api
+    RUST_LOG=INFO cargo run
 
 update:
     cargo update
@@ -14,7 +14,7 @@ update:
 test:
     cargo test -- --nocapture
 
-fmt: fmt-ts
+fmt:
     cargo fmt --all;
 
 compile-css-webapp:
