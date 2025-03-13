@@ -1,52 +1,32 @@
+<!DOCTYPE html>
 <html lang="en">
-<meta charset="UTF-8">
+<head>
+  <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title><%= title %></title>
   <meta name="description" content="<%= description %>">
-<!--TODO: Checking why turbo doesnt load new page even if there is a cache -->
+
   <meta name="turbo-cache-control" content="no-cache">
-<!--  <link rel="preconnect" href="https://rsms.me/">-->
-<!--  <link rel="stylesheet" href="https://rsms.me/inter/inter.css">-->
+
   <link rel="stylesheet" href="/public/mirrors/inter.css">
   <link rel="stylesheet" href="/dist/output.css">
+
   <link rel="icon" href="/public/favicon.ico" type="image/x-icon">
+</head>
 
-<!--  -->
+<body class="dark antialiased min-h-screen flex transition"
+      data-controller="toast http combobox htmx-turbostream"
+      data-action="http:selectComboboxItem->combobox#selectItemDispatched"
+      hx-history="false">
 
-
-  <!--  we still have htmx to swap certain element on click -->
-
-
-
-
-
-
-  <!-- general components -->
-
-
-
-
-
-
-
-
-  <body class="dark antialiased min-h-screen flex transition"
-        data-controller="toast http combobox htmx-turbostream"
-        data-action="http:selectComboboxItem->combobox#selectItemDispatched"
-        hx-history="false"
-  >
-
-  <turbo-stream-source class="flex w-full text-xs"
-      src="wss://localhost:3000/ws">
+  <turbo-stream-source class="flex w-full text-xs" src="wss://localhost:3000/ws">
     <div class="flex w-full text-xs" id="rootContent">
       <%- main_sidebar_ui %>
       <%- children %>
     </div>
-<!--    <div id="turbo_stream_replace_update">-->
-<!--      Some div content-->
-<!--    </div>-->
   </turbo-stream-source>
 
-    <% include!("./components/ui/toast.stpl"); %>
-  </body>
+  <% include!("./components/ui/toast.stpl"); %>
+
+</body>
 </html>
