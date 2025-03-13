@@ -33,7 +33,6 @@ mod tests {
 
     #[tokio::test]
     async fn test_get_backend() -> Result<()> {
-        dotenvy::dotenv().ok();
         let env = Env::get_env()?;
         let backend = Backend::new(&env);
         Ok(())

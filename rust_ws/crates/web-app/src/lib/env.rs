@@ -1,5 +1,4 @@
 use anyhow::Result;
-use dotenvy::dotenv;
 use std::env;
 
 #[derive(Debug)]
@@ -18,7 +17,6 @@ const DEFAULT_PORT: u16 = 3000;
 
 impl Env {
     pub fn get_env() -> Result<Self> {
-        dotenv()?;
         let env = Env {
             env: env::var("ENV")?,
             port: env::var("PORT")

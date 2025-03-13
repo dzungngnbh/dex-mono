@@ -3,8 +3,10 @@ use anyhow::Result;
 use axum::extract::{Path, Query};
 use axum::response::{Html, IntoResponse};
 use axum::Extension;
+use log::info;
 use minify_html::{minify, Cfg};
 use sailfish::TemplateOnce;
+use tracing::log;
 
 #[derive(TemplateOnce, Default)]
 #[template(path = "trade/page.stpl")]
@@ -23,7 +25,7 @@ impl Page {
         Extension(backend): Extension<Backend>,
         Path(symbol): Path<String>,
     ) -> impl IntoResponse {
-        println!("symbol: {}", symbol);
+        info!("symbol: {}", symbol);
 
         let page = Page::new();
 

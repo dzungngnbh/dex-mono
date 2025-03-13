@@ -18,7 +18,6 @@ async fn main() -> Result<()> {
     minitrace::set_reporter(ConsoleReporter, Config::default());
     env_logger::init();
 
-    dotenvy::dotenv().ok();
     let redis_client = rediss::get_redis_client()?;
     info!("Indexer service started");
 

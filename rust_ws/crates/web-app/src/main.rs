@@ -17,7 +17,11 @@ use axum::{
     Extension, Router,
 };
 use axum_server::tls_rustls::RustlsConfig;
-use std::{net::SocketAddr, path::PathBuf};
+use log::LevelFilter;
+use logforth::append;
+use logforth::layout::JsonLayout;
+use std::str::FromStr;
+use std::{env, net::SocketAddr, path::PathBuf};
 use tower::builder::ServiceBuilder;
 use tower_cookies::CookieManagerLayer;
 use tower_http::{compression::CompressionLayer, services::ServeDir, trace::TraceLayer};
@@ -71,7 +75,7 @@ fn setup_routes(env: &Env) -> Router {
     // Enable development-only routes
     if env.env == "dev" {
         info!("Environment DEV");
-        info!("Prototypes are enabled");
+        info!("Prototypes are enabled at /prototypes");
         app = app.nest_service("/prototypes", ServeDir::new("prototypes"))
     }
 
@@ -92,7 +96,14 @@ fn setup_middleware(app: Router, backend: Backend) -> Router {
 #[tokio::main]
 async fn main() -> Result<()> {
     // Initialize logging
-    tracing_subscriber::fmt::init();
+    let level = env::var("RUST_LOG")?;
+    let level_filter = LevelFilter::from_str(&level)?;
+    logforth::builder()
+        .dispatch(|d| {
+            d.filter(level_filter)
+                .append(append::Stdout::default().with_layout(JsonLayout::default()))
+        })
+        .apply();
 
     // Load environment configuration
     let env = Env::get_env()?;
@@ -110,7 +121,7 @@ async fn main() -> Result<()> {
     // Configure server address and port
     let port = if env.env == "dev" { 3000 } else { 443 };
     let addr = SocketAddr::from(([0, 0, 0, 0], port));
-    info!("Listening on {addr}");
+    info!("Listening on http://{addr}");
 
     // Start the server
     axum_server::bind_rustls(addr, config)

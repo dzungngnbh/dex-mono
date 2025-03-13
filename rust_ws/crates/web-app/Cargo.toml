@@ -16,7 +16,6 @@ indexer_service = { path = "../indexer-service" }
 mimalloc = { workspace = true }
 anyhow = { workspace = true }
 thiserror = { workspace = true }
-dotenvy = { workspace = true }
 tokio = { workspace = true }
 tracing = { workspace = true }
 tracing-subscriber = { workspace = true }
@@ -32,8 +31,6 @@ async-broadcast = "0.7"
 axiom-rs = "0.11.0"
 axum = { version = "0.6.20", features = ["ws"] }
 axum-server = { version = "0.5.1", features = ["tls-rustls"] }
-capnp = "0.17.2"
-capnpc = "0.17.2"
 deadpool-postgres = "*"
 futures = { version = "*", default-features = false, features = ["std", "async-await"] }
 hyper = { version = "0.14", features = ["http2"] }
@@ -52,3 +49,6 @@ tower = "0.4.13"
 tower-cookies = { version = "0.9.0", features = ["private"] }
 tower-http = { version = "0.4.4", features = ["trace", "fs", "compression-br"] }
 uuid = { version = "1.7.0", features = ["v4"] }
+
+log = { version = "0.4.26" }
+logforth = { version = "0.22.1", features = ["default", "json"] }
