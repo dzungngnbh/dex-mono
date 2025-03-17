@@ -1,0 +1,124 @@
+<html data-theme="dark"
+    style="color-scheme: dark; --wcm-color-fg-1: rgb(228,231,231); --wcm-color-fg-2: rgb(148,158,158); --wcm-color-fg-3: rgb(110,119,119); --wcm-color-bg-1: rgb(20,20,20); --wcm-color-bg-2: rgb(39,42,42); --wcm-color-bg-3: rgb(59,64,64); --wcm-color-overlay: rgba(255,255,255,0.1); --wcm-accent-color: #3396FF; --wcm-accent-fill-color: #FFFFFF; --wcm-z-index: 89; --wcm-background-color: #3396FF; --wcm-background-border-radius: 8px; --wcm-container-border-radius: 30px; --wcm-wallet-icon-border-radius: 15px; --wcm-wallet-icon-large-border-radius: 30px; --wcm-wallet-icon-small-border-radius: 7px; --wcm-input-border-radius: 28px; --wcm-button-border-radius: 10px; --wcm-notification-border-radius: 36px; --wcm-secondary-button-border-radius: 28px; --wcm-icon-button-border-radius: 50%; --wcm-button-hover-highlight-border-radius: 10px; --wcm-text-big-bold-size: 20px; --wcm-text-big-bold-weight: 600; --wcm-text-big-bold-line-height: 24px; --wcm-text-big-bold-letter-spacing: -0.03em; --wcm-text-big-bold-text-transform: none; --wcm-text-xsmall-bold-size: 10px; --wcm-text-xsmall-bold-weight: 700; --wcm-text-xsmall-bold-line-height: 12px; --wcm-text-xsmall-bold-letter-spacing: 0.02em; --wcm-text-xsmall-bold-text-transform: uppercase; --wcm-text-xsmall-regular-size: 12px; --wcm-text-xsmall-regular-weight: 600; --wcm-text-xsmall-regular-line-height: 14px; --wcm-text-xsmall-regular-letter-spacing: -0.03em; --wcm-text-xsmall-regular-text-transform: none; --wcm-text-small-thin-size: 14px; --wcm-text-small-thin-weight: 500; --wcm-text-small-thin-line-height: 16px; --wcm-text-small-thin-letter-spacing: -0.03em; --wcm-text-small-thin-text-transform: none; --wcm-text-small-regular-size: 14px; --wcm-text-small-regular-weight: 600; --wcm-text-small-regular-line-height: 16px; --wcm-text-small-regular-letter-spacing: -0.03em; --wcm-text-small-regular-text-transform: none; --wcm-text-medium-regular-size: 16px; --wcm-text-medium-regular-weight: 600; --wcm-text-medium-regular-line-height: 20px; --wcm-text-medium-regular-letter-spacing: -0.03em; --wcm-text-medium-regular-text-transform: none; --wcm-font-family: -apple-system, system-ui, BlinkMacSystemFont, 'Segoe UI', Roboto, Ubuntu, 'Helvetica Neue', sans-serif; --wcm-font-feature-settings: 'tnum' on, 'lnum' on, 'case' on; --wcm-success-color: rgb(38,181,98); --wcm-error-color: rgb(242, 90, 103); --wcm-overlay-background-color: rgba(0, 0, 0, 0.3); --wcm-overlay-backdrop-filter: none;">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title id="page-title">46,858.00 BTC-PERP | <ProjectName>
+    </title>
+    <meta name="next-head-count" content="3">
+    <link rel="icon" href="/favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="mask-icon" type="image/svg+xml" sizes="any" href="/safari-pinned-tab.svg">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#111118">
+    <meta content="Trade, Earn &amp; Borrow. All in One DEX. Turbo-charged trading engine to outperform the competition. Trade on 
+                                                        
+														<ProjectName> and earn $PROTOCOL." name="description">
+    <meta content="
+                                                                
+																<ProjectName>" property="og:title">
+    <meta content="
+                                                                        
+																		<ProjectName>" property="og:site_name">
+    <meta content="Trade, Earn &amp; Borrow. All in One DEX. Turbo-charged trading engine to outperform the competition. Trade on 
+                                                                                
+																				<ProjectName> and earn $PROTOCOL." property="og:description">
+    <link href="/public/mirrors/inter.css" rel="stylesheet">
+    <link rel="preload" href="/public/styles/trade/style.css" as="style">
+    <link rel="stylesheet" href="/public/styles/trade/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/typesense-minibar@1.3.4/typesense-minibar.css">
+
+    <!-- typesense -->
+
+    <!-- <link rel="preload" href="https://esm.run/@hotwired/turbo" as="script"> -->
+    <!-- it's much easier to import _esm from viem, so we have the source code -->
+    <script type="importmap"> {
+          "imports": {
+              "@hotwired/turbo": "https://esm.run/@hotwired/turbo@8.0.0-beta.4",
+              "@noble/curves/": "https://esm.run/@noble/curves@1.3.0/",
+              "@noble/hashes/": "https://esm.run/@noble/hashes@1.3.3/",
+              "@wagmi/": "https://esm.run/@wagmi/",
+              "@walletconnect/ethereum-provider": "https://esm.run/@walletconnect/ethereum-provider",
+              "@web3modal/wagmi": "https://esm.run/@web3modal/wagmi@3.5.7",
+              "abitype": "https://esm.run/abitype@1.0.0",
+              "stimulus": "https://esm.run/@hotwired/stimulus",
+              "viem": "https://cdn.jsdelivr.net/npm/viem@latest/_esm/index.js",
+              "viem/": "https://cdn.jsdelivr.net/npm/viem@latest/_esm/",
+              "@scure/base": "https://esm.run/@scure/base",
+              "@scure/bip32": "https://cdn.jsdelivr.net/npm/@scure/bip32@latest/lib/esm/index.js",
+              "@scure/bip39": "https://cdn.jsdelivr.net/npm/@scure/bip39@latest/esm/index.js",
+              "@scure/bip39/wordlists/czech": "https://cdn.jsdelivr.net/npm/@scure/bip39@latest/esm/wordlists/czech.js",
+              "@scure/bip39/wordlists/english": "https://cdn.jsdelivr.net/npm/@scure/bip39@latest/esm/wordlists/english.js",
+              "@scure/bip39/wordlists/french": "https://cdn.jsdelivr.net/npm/@scure/bip39@latest/esm/wordlists/french.js",
+              "@scure/bip39/wordlists/italian": "https://cdn.jsdelivr.net/npm/@scure/bip39@latest/esm/wordlists/italian.js",
+              "@scure/bip39/wordlists/japanese": "https://cdn.jsdelivr.net/npm/@scure/bip39@latest/esm/wordlists/japanese.js",
+              "@scure/bip39/wordlists/korean": "https://cdn.jsdelivr.net/npm/@scure/bip39@latest/esm/wordlists/korean.js",
+              "@scure/bip39/wordlists/portuguese": "https://cdn.jsdelivr.net/npm/@scure/bip39@latest/esm/wordlists/portuguese.js",
+              "@scure/bip39/wordlists/spanish": "https://cdn.jsdelivr.net/npm/@scure/bip39@latest/esm/wordlists/spanish.js",
+              "@scure/bip39/wordlists/traditional-chinese": "https://cdn.jsdelivr.net/npm/@scure/bip39@latest/esm/wordlists/traditional-chinese.js",
+              "@scure/bip39/wordlists/simplified-chinese": "https://cdn.jsdelivr.net/npm/@scure/bip39@latest/esm/wordlists/simplified-chinese.js"
+          }
+      }
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/ag-grid-community@33.1.1/dist/ag-grid-community.min.js?t=1741259843109"></script>
+    <script defer type="module" src= "https://cdn.jsdelivr.net/npm/typesense-minibar@1.3.4/typesense-minibar.js"></script>
+
+    <script type="module">
+        import hotwiredTurbo from "@hotwired/turbo";
+    </script>
+    <script type="module">
+        import {
+            Application,
+            Controller
+        } from "stimulus"
+        window.Stimulus = Application.start()
+    </script>
+</head>
+
+<body data-controller="trade-page" data-trade-page-product-id-value="3" data-trade-page-product-symbol-value="BTC_DAI"
+    data-trade-size-increment-value="0.01">
+    <typesense-minibar data-origin="http://157.180.36.5:8108" data-collection="companies" data-key="qungdung12345">
+        <form role="search" action="https://duckduckgo.com">
+            <input type="search" name="q" placeholder="Search..." autocomplete="off">
+            <input type="hidden" name="sites" value="example.org">
+        </form>
+    </typesense-minibar>
+    <div id="agGrid">
+    </div>
+
+    <script>
+// Grid API: Access to Grid API methods
+let gridApi;
+
+// Grid Options: Contains all of the grid configurations
+const gridOptions = {
+  // Data to be displayed
+  rowData: [
+    { make: "Tesla", model: "Model Y", price: 64950, electric: true },
+    { make: "Ford", model: "F-Series", price: 33850, electric: false },
+    { make: "Toyota", model: "Corolla", price: 29600, electric: false },
+    { make: "Mercedes", model: "EQA", price: 48890, electric: true },
+    { make: "Fiat", model: "500", price: 15774, electric: false },
+    { make: "Nissan", model: "Juke", price: 20675, electric: false },
+  ],
+  // Columns to be displayed (Should match rowData properties)
+  columnDefs: [
+    { field: "make" },
+    { field: "model" },
+    { field: "price" },
+    { field: "electric" },
+  ],
+  defaultColDef: {
+    flex: 1,
+  },
+};
+// Create Grid: Create new grid within the #myGrid div, using the Grid Options object
+gridApi = agGrid.createGrid(document.querySelector("#agGrid"), gridOptions);
+</script>
+</body>
+
+</html>
