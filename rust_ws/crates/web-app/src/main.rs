@@ -53,6 +53,7 @@ fn setup_routes(env: &Env) -> Router {
         .nest("/api/account", account::routes())
         // WebSocket handler
         .route("/ws", get(ws::ws_handler))
+        .route("/ws_traders", get(ws::traders_ws_handler))
         // UI routes
         .route("/404", get(four0four_index))
         // Component routes
