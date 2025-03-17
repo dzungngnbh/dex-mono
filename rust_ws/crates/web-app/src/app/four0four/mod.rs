@@ -1,4 +1,3 @@
-use anyhow::Result;
 use sailfish::TemplateOnce;
 
 #[derive(TemplateOnce, Default)]
@@ -6,7 +5,7 @@ use sailfish::TemplateOnce;
 pub struct Four0FourPage {}
 
 mod tests {
-    use super::*;
+    
 
     #[test]
     fn test_render_four0four_template() -> Result<()> {

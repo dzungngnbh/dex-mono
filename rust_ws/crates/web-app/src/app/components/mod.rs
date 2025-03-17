@@ -1,12 +1,9 @@
 use axum::extract::{Path, Query};
-use axum::http::StatusCode;
 use axum::response::{Html, IntoResponse};
 use axum::Extension;
 use ecow::EcoString;
 use minify_html::{minify, Cfg};
-use sailfish::TemplateOnce;
 use serde::Deserialize;
-use std::default;
 
 use crate::app::components::ui::toast;
 use crate::auth::session_context::SessionContext;

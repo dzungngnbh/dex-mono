@@ -1,4 +1,3 @@
-use anyhow::Result;
 use sailfish::TemplateOnce;
 
 pub const ACTION_UPDATE: &str = "update";

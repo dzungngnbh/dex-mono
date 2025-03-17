@@ -34,12 +34,12 @@ impl Env {
     }
 
     pub fn validate(&self) -> Result<()> {
-        if (VALID_ENVS.contains(&self.env.as_str())
+        if VALID_ENVS.contains(&self.env.as_str())
             && !self.clickhouse_db.is_empty()
             && !self.clickhouse_url.is_empty()
             // && !self.clickhouse_pwd.is_empty() // pwd can be empty
             && !self.redis_conn_str.is_empty()
-            && self.port > 0)
+            && self.port > 0
         {
             return Ok(());
         }

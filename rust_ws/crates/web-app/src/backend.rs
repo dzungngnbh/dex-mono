@@ -1,4 +1,3 @@
-use anyhow::Result;
 use clickhouse::Client;
 use shared::db::clickhouse::get_client;
 use shared::db::redis as rediss;

@@ -50,10 +50,10 @@ async fn handle_socket(
 
     // By splitting socket we can send and receive at the same time. In this example we will send
     // unsolicited messages to client based on some sort of server's internal event (i.e .timer).
-    let (mut sender, mut receiver) = socket.split();
+    let (mut sender, receiver) = socket.split();
 
     // Spawn a task that will push several messages to the client (does not matter what client does)
-    let mut send_task = tokio::spawn(async move {
+    let send_task = tokio::spawn(async move {
         let mut interval = tokio::time::interval(std::time::Duration::from_millis(1000));
         loop {
             let page_turbo = trade::PageTurbo::new(&backend.redis_client, &session_context)

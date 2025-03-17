@@ -8,7 +8,6 @@ use minify_html::{minify, Cfg};
 use sailfish::TemplateOnce;
 
 use crate::app::four0four::Four0FourPage;
-use crate::lib::constants::SITE_NAME;
 
 #[derive(TemplateOnce, Default)]
 #[template(path = "layout.stpl")]
@@ -46,7 +45,7 @@ impl AppLayout {
 pub async fn four0four_index() -> impl IntoResponse {
     let page = Four0FourPage {};
     let children = page.render_once().unwrap();
-    let mut root = StaticLayout {
+    let root = StaticLayout {
         title: "Trading Exec".to_string(),
         description: "TODO".to_string(),
         children,

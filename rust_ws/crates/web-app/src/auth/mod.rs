@@ -1,4 +1,3 @@
-use axum::extract::FromRequest;
 use axum::response::IntoResponse;
 use axum::Router;
 use axum::{
@@ -78,7 +77,7 @@ async fn is_login(session_context: SessionContext) -> impl IntoResponse {
         is_login = true;
     }
 
-    return ApiResponse::success(Some(json!({"is_login": is_login})));
+    ApiResponse::success(Some(json!({"is_login": is_login})))
 }
 
 /// Force logout

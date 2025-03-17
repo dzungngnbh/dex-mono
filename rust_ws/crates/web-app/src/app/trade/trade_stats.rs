@@ -2,7 +2,7 @@ use anyhow::Result;
 use redis::Client;
 use sailfish::TemplateOnce;
 
-use oracle::{indexer, BTCUSD_INTERNAL_ID, BTC_USD_ORACLE_ID};
+use oracle::{indexer, BTCUSD_INTERNAL_ID};
 
 use crate::app::components::hotwired_turbo::turbo_stream::ACTION_REPLACE;
 use crate::app::components::hotwired_turbo::TurboStream;
@@ -79,7 +79,7 @@ impl TradeStatsUi {
 }
 
 mod tests {
-    use super::*;
+    
 
     #[test]
     fn test_render_trade_stats() -> Result<()> {

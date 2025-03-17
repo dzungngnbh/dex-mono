@@ -3,7 +3,7 @@ use dashmap::DashMap;
 use std::sync::LazyLock;
 
 static TRADE_SYMBOLS: LazyLock<DashMap<&str, u32>> = LazyLock::new(|| {
-    let mut map = DashMap::new();
+    let map = DashMap::new();
     map.insert("BTC_DAI", 3);
     map
 });

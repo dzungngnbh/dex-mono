@@ -11,11 +11,8 @@ pub fn build_cookie(k: &str, v: &str) -> anyhow::Result<Cookie<'static>> {
 }
 
 pub fn remove_leftover_user_id_cookie(signed_cookies: &PrivateCookies) {
-    match signed_cookies.get(USER_KEY) {
-        Some(cookie) => {
-            signed_cookies.remove(cookie);
-        }
-        None => {}
+    if let Some(cookie) = signed_cookies.get(USER_KEY) {
+        signed_cookies.remove(cookie);
     }
 }
 

@@ -1,5 +1,5 @@
 use time::macros::format_description;
-use time::{Duration, OffsetDateTime};
+use time::OffsetDateTime;
 
 // TODO: make it static
 // pub static fmt: &[BorrowedFormatItem] = format_description!("[year]-[month]-[day] [hour]:[minute]:[second]");
@@ -8,7 +8,7 @@ pub fn to_timeago(time_input: OffsetDateTime) -> String {
     let now = OffsetDateTime::now_utc();
     let offset = now - time_input;
 
-    return if offset.whole_weeks() > 2 {
+    if offset.whole_weeks() > 2 {
         // ref: https://github.com/time-rs/time/blob/cf6683a7c25a87a59f169ddea2070f91f4f4f4b8/tests/formatting.rs#L280
         let fmt = format_description!("[year]-[month]-[day] [hour]:[minute]:[second]");
         time_input.format(&fmt).unwrap()
@@ -38,7 +38,7 @@ pub fn to_timeago(time_input: OffsetDateTime) -> String {
         )
     } else {
         "just now".to_string()
-    };
+    }
 }
 
 #[cfg(test)]

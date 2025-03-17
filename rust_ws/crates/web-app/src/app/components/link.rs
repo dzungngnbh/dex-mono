@@ -1,4 +1,3 @@
-use anyhow::Result;
 use sailfish::TemplateOnce;
 
 #[derive(TemplateOnce, Default, Clone)]

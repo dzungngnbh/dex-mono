@@ -1,6 +1,5 @@
 use crate::backend::Backend;
-use anyhow::Result;
-use axum::extract::{Path, Query};
+use axum::extract::Path;
 use axum::response::{Html, IntoResponse};
 use axum::Extension;
 use log::info;
@@ -36,7 +35,7 @@ impl Page {
 }
 
 mod tests {
-    use super::*;
+    
 
     #[test]
     fn test_render() -> Result<()> {

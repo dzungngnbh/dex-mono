@@ -11,8 +11,6 @@ mod ws;
 
 use anyhow::Result;
 use axum::{
-    extract::{FromRef, FromRequestParts},
-    response::IntoResponse,
     routing::get,
     Extension, Router,
 };
@@ -28,8 +26,7 @@ use tower_http::{compression::CompressionLayer, services::ServeDir, trace::Trace
 use tracing::info;
 
 use crate::{
-    app::four0four_index,
-    auth::extractor, // Contains session_context extractor
+    app::four0four_index, // Contains session_context extractor
     backend::Backend,
     lib::env::Env,
 };
