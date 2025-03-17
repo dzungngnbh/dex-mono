@@ -64,8 +64,10 @@
       }
     </script>
 
-    <script src="https://cdn.jsdelivr.net/npm/ag-grid-community@33.1.1/dist/ag-grid-community.min.js?t=1741259843109"></script>
-    <script defer type="module" src= "https://cdn.jsdelivr.net/npm/typesense-minibar@1.3.4/typesense-minibar.js"></script>
+    <script
+        src="https://cdn.jsdelivr.net/npm/ag-grid-community@33.1.1/dist/ag-grid-community.min.js?t=1741259843109"></script>
+    <script defer type="module"
+        src="https://cdn.jsdelivr.net/npm/typesense-minibar@1.3.4/typesense-minibar.js"></script>
 
     <script type="module">
         import hotwiredTurbo from "@hotwired/turbo";
@@ -81,7 +83,8 @@
 
 <body data-controller="trade-page" data-trade-page-product-id-value="3" data-trade-page-product-symbol-value="BTC_DAI"
     data-trade-size-increment-value="0.01">
-    <typesense-minibar data-origin="http://157.180.36.5:8108" data-collection="companies" data-key="qungdung12345">
+    <typesense-minibar data-origin="http://157.180.36.5:8108" data-collection="companies" data-key="qungdung12345"
+        data-search-params="{'include_fields': '', 'query_by': ''}">
         <form role="search" action="https://duckduckgo.com">
             <input type="search" name="q" placeholder="Search..." autocomplete="off">
             <input type="hidden" name="sites" value="example.org">
@@ -91,34 +94,128 @@
     </div>
 
     <script>
-// Grid API: Access to Grid API methods
-let gridApi;
+        // Grid API: Access to Grid API methods
+        let gridApi;
 
-// Grid Options: Contains all of the grid configurations
-const gridOptions = {
-  // Data to be displayed
-  rowData: [
-    { make: "Tesla", model: "Model Y", price: 64950, electric: true },
-    { make: "Ford", model: "F-Series", price: 33850, electric: false },
-    { make: "Toyota", model: "Corolla", price: 29600, electric: false },
-    { make: "Mercedes", model: "EQA", price: 48890, electric: true },
-    { make: "Fiat", model: "500", price: 15774, electric: false },
-    { make: "Nissan", model: "Juke", price: 20675, electric: false },
-  ],
-  // Columns to be displayed (Should match rowData properties)
-  columnDefs: [
-    { field: "make" },
-    { field: "model" },
-    { field: "price" },
-    { field: "electric" },
-  ],
-  defaultColDef: {
-    flex: 1,
-  },
-};
-// Create Grid: Create new grid within the #myGrid div, using the Grid Options object
-gridApi = agGrid.createGrid(document.querySelector("#agGrid"), gridOptions);
-</script>
+        // Grid Options: Contains all of the grid configurations
+        const gridOptions = {
+            columnDefs: [
+                { headerName: 'ACCOUNT', field: 'account', width: 150 },
+                { headerName: 'YOUTUBE_URL', field: 'youtubeUrl', width: 120 },
+                { headerName: 'LAST_UPLOAD', field: 'lastUpload', width: 120 },
+                { headerName: 'MARKET', field: 'market', width: 100 },
+                { headerName: 'PRICE', field: 'price', width: 100 },
+                { headerName: 'TOTAL_VOLUME', field: 'totalVolume', width: 120 },
+                { headerName: 'AVG_VOLUME', field: 'avgVolume', width: 120 },
+                { headerName: 'CHANGE', field: 'change', width: 100 },
+                { headerName: 'TRADES', field: 'trades', width: 80 },
+                { headerName: 'TRADES_C', field: 'tradesC', width: 80 },
+                { headerName: 'AVG_PRICE', field: 'avgPrice', width: 100 },
+                { headerName: 'AVG_PRICE_C', field: 'avgPriceC', width: 100 },
+                { headerName: 'AD_COVERAGE', field: 'adCoverage', width: 120 },
+                { headerName: 'AD_COVERAGE_C', field: 'adCoverageC', width: 120 },
+                { headerName: 'AD_DURATION', field: 'adDuration', width: 120 },
+                { headerName: 'AD_DURATION_C', field: 'adDurationC', width: 120 },
+            ],
+            rowData: [
+                {
+                    account: 'DOGE.AI',
+                    youtubeUrl: '115 days',
+                    lastUpload: '3 days ago',
+                    market: '...', // Replace with actual market data
+                    price: '$4,321,456',
+                    totalVolume: '$398,725,487',
+                    avgVolume: '$7,454,723',
+                    change: '-5.21%',
+                    trades: '62',
+                    tradesC: '31',
+                    avgPrice: '82.54%',
+                    avgPriceC: '38.62%',
+                    adCoverage: '...', // Replace with actual ad coverage data
+                    adCoverageC: '...', // Replace with actual ad coverage data
+                    adDuration: '37.8s',
+                    adDurationC: '-90.92%',
+                },
+                {
+                    account: 'FLOKI_INU',
+                    youtubeUrl: '54 days',
+                    lastUpload: '25 days ago',
+                    market: '...', // Replace with actual market data
+                    price: '$2,451,908',
+                    totalVolume: '$1,482,804',
+                    avgVolume: '$2,465,604',
+                    change: '188.14%',
+                    trades: '1',
+                    tradesC: '1',
+                    avgPrice: '100.00%',
+                    avgPriceC: '100.00%',
+                    adCoverage: '...', // Replace with actual ad coverage data
+                    adCoverageC: '...', // Replace with actual ad coverage data
+                    adDuration: '71s',
+                    adDurationC: '1.00%',
+                },
+                {
+                    account: 'PepeCoin',
+                    youtubeUrl: '172 days',
+                    lastUpload: '21 hours ago',
+                    market: '...', // Replace with actual market data
+                    price: '$2,333,342',
+                    totalVolume: '$4,448,782',
+                    avgVolume: '$117,038',
+                    change: '178.16%',
+                    trades: '14',
+                    tradesC: '12',
+                    avgPrice: '65.71%',
+                    avgPriceC: '98.92%',
+                    adCoverage: '...', // Replace with actual ad coverage data
+                    adCoverageC: '...', // Replace with actual ad coverage data
+                    adDuration: '7.1s',
+                    adDurationC: '-111.11%',
+                },
+                {
+                    account: 'SHIBA',
+                    youtubeUrl: '127 days',
+                    lastUpload: '2 days ago',
+                    market: '...', // Replace with actual market data
+                    price: '$1,433,438',
+                    totalVolume: '$5,333,935',
+                    avgVolume: '$205,039',
+                    change: '21.78%',
+                    trades: '23',
+                    tradesC: '14',
+                    avgPrice: '77.78%',
+                    avgPriceC: '91.12%',
+                    adCoverage: '...', // Replace with actual ad coverage data
+                    adCoverageC: '...', // Replace with actual ad coverage data
+                    adDuration: '35s',
+                    adDurationC: '-14.36%',
+                },
+            ],
+            // Add other grid options as needed
+        };
+        // Create Grid: Create new grid within the #myGrid div, using the Grid Options object
+        gridApi = agGrid.createGrid(document.querySelector("#agGrid"), gridOptions);
+    </script>
+
+    <script>
+        const socket = new WebSocket('wss://echo.websocket.org/.ws'); // Replace with your WebSocket URL
+
+        socket.onopen = () => {
+            console.log('WebSocket connection established.');
+        };
+
+        socket.onmessage = (event) => {
+            console.log(event)
+        };
+
+        socket.onclose = () => {
+            console.log('WebSocket connection closed.');
+        };
+
+        socket.onerror = (error) => {
+            console.error('WebSocket error:', error);
+        };
+    </script>
 </body>
 
 </html>
