@@ -55,6 +55,5 @@ mod tests {
     #[test]
     fn test_get_env() {
         let env = Env::get_env().unwrap();
-        dbg!(&env);
     }
 }

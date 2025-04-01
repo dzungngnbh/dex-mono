@@ -1,6 +1,3 @@
-
-
-
 <section id="mainContent" class="flex flex-col w-full"
          data-controller="dashboard-page"
          data-action="dashboard-page:selectComboboxItem->combobox#selectItemDispatched"
