@@ -7,3 +7,6 @@ pub mod moment;
 pub mod serde;
 pub mod test_helper;
 pub mod trade_symbol;
+
+mod utils;
+pub use utils::render_minified;

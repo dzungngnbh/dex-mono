@@ -9,17 +9,22 @@
     <link rel="stylesheet" href="/public/mirrors/inter.css">
     <link rel="stylesheet" href="/dist/output.css">
     <link rel="icon" href="/public/favicon.ico" type="image/x-icon">
+    <script type="module">
+        import {Application} from "stimulus"
+
+        window.Stimulus = Application.start()
+    </script>
+    <%- head_extra %>
 </head>
-<body class="dark antialiased min-h-screen flex transition" data-controller="toast http combobox"
-      data-action="http:selectComboboxItem->combobox#selectItemDispatched">
-<turbo-stream-source class="flex w-full text-xs" src="wss://localhost:3000/ws">
-    <div class="flex w-full text-xs" id="rootContent">
-        <%- main_sidebar_ui %>
-        <%- children %>
-    </div>
-</turbo-stream-source>
+<body class="dark antialiased transition"
+      data-controller="toast http combobox"
+      data-action="http:selectComboboxItem->combobox#selectItemDispatched"
+<%- body_extra_attrs %>
+>
+
+<%- children %>
 
 <% include!("./components/ui/toast.stpl"); %>
-<% include!("./components/footer.stpl"); %>
+<!--<% include!("./components/footer.stpl"); %>-->
 </body>
 </html>

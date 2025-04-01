@@ -3,6 +3,7 @@
 mod api;
 mod backend;
 mod errors;
+mod layout;
 mod lib;
 mod models;
 mod pages;

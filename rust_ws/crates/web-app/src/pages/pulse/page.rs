@@ -1,5 +1,6 @@
 use crate::backend::Backend;
-use crate::pages::AppLayout;
+use crate::layout::AppLayout;
+use crate::lib::render_minified;
 use axum::Extension;
 use axum::response::{Html, IntoResponse};
 use minify_html::{Cfg, minify};
@@ -19,6 +20,8 @@ impl Page<'_> {
     pub async fn index(Extension(backend): Extension<Backend>) -> impl IntoResponse {
         let page = Page::new();
         let app_layout = AppLayout::new(
+            "head".to_string(),
+            "body_extra_attrs",
             "Pulse",
             "Page description",
             page.render_once().unwrap().as_str(),
@@ -26,8 +29,7 @@ impl Page<'_> {
         .unwrap();
 
         let s = app_layout.render_once().unwrap();
-        let s = minify(s.as_bytes(), &Cfg::default());
-        Html(s).into_response()
+        render_minified(s)
     }
 }
 
