@@ -1,5 +1,5 @@
-use axum::response::IntoResponse;
 use axum::Router;
+use axum::response::IntoResponse;
 use axum::{
     extract,
     routing::{get, post},

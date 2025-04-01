@@ -4,9 +4,7 @@ use sailfish::TemplateOnce;
 
 use std::sync::LazyLock;
 
-pub static TOAST_UI: LazyLock<String> = LazyLock::new(|| {
-    render().unwrap()
-});
+pub static TOAST_UI: LazyLock<String> = LazyLock::new(|| render().unwrap());
 
 #[derive(TemplateOnce, Default)]
 #[template(path = "components/ui/toast.stpl")]

@@ -1,14 +1,14 @@
+use axum::Extension;
 use axum::extract::{Path, Query};
 use axum::response::{Html, IntoResponse};
-use axum::Extension;
 use ecow::EcoString;
-use minify_html::{minify, Cfg};
+use minify_html::{Cfg, minify};
 use serde::Deserialize;
 
-use crate::pages::components::ui::toast;
 use crate::api::auth::session_context::SessionContext;
 use crate::backend::Backend;
 use crate::lib::serde::empty_ecostring_as_none;
+use crate::pages::components::ui::toast;
 
 pub mod breadcrumb;
 pub mod hotwired_turbo;

@@ -1,6 +1,6 @@
 use crate::lib::api::ApiResponse;
-use axum::http::StatusCode;
 use axum::Json;
+use axum::http::StatusCode;
 use serde_json::json;
 
 pub fn unauthorized_error() -> (StatusCode, Json<ApiResponse>) {

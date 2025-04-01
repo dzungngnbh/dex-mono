@@ -1,10 +1,10 @@
 use axum::response::IntoResponse;
 use axum::routing::post;
-use axum::{extract, Router};
+use axum::{Router, extract};
 use serde::Deserialize;
 
 use crate::api::auth::session_context::SessionContext;
-use crate::lib::api::{check_auth, ApiResponse};
+use crate::lib::api::{ApiResponse, check_auth};
 
 pub fn routes() -> Router {
     Router::new().route("/place_order", post(place_order))

@@ -1,10 +1,10 @@
 use crate::pages::components::meta::TitleUi;
 use anyhow::Result;
-use minify_html::{minify, Cfg};
+use minify_html::{Cfg, minify};
 
-use crate::pages::trade::account_stats::TopAccountStats;
-use crate::pages::trade::TradeStatsUi;
 use crate::api::auth::session_context::SessionContext;
+use crate::pages::trade::TradeStatsUi;
+use crate::pages::trade::account_stats::TopAccountStats;
 
 pub struct PageTurbo {}
 

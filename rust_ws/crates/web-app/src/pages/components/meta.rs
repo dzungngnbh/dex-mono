@@ -1,4 +1,4 @@
-use crate::pages::components::hotwired_turbo::{TurboStream, ACTION_UPDATE};
+use crate::pages::components::hotwired_turbo::{ACTION_UPDATE, TurboStream};
 use anyhow::Result;
 use sailfish::TemplateOnce;
 

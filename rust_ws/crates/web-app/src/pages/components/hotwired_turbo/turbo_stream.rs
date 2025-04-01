@@ -21,8 +21,7 @@ mod tests {
         let turbo_stream = TurboStream {
             action: "replace",
             target: "message_1",
-            template_ui:
-                "this div will replace the existing element with the dom id \"message_1\".",
+            template_ui: "this div will replace the existing element with the dom id \"message_1\".",
         };
         let res = turbo_stream.render_once()?;
         assert_ne!(res, "");

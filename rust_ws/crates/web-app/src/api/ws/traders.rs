@@ -1,13 +1,13 @@
 use anyhow::Result;
+use axum::Extension;
 use axum::extract::ws::{Message, WebSocket};
 use axum::extract::{ConnectInfo, WebSocketUpgrade};
 use axum::response::Response;
-use axum::Extension;
 use futures::{SinkExt, StreamExt};
+use log::{error, info};
+use serde_json::json;
 use std::net::SocketAddr;
 use std::sync::Arc;
-use log::{info, error};
-use serde_json::json;
 
 use crate::api::auth::session_context::SessionContext;
 use crate::backend::Backend;
@@ -63,7 +63,11 @@ async fn handle_socket(
                 "adDurationC": "-14.36%"
             });
 
-            if sender.send(Message::Text(trader_data.to_string())).await.is_err() {
+            if sender
+                .send(Message::Text(trader_data.to_string()))
+                .await
+                .is_err()
+            {
                 break;
             }
 

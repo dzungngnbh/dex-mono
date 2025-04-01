@@ -1,16 +1,16 @@
 use anyhow::Result;
+use axum::Extension;
 use axum::extract::ws::{CloseFrame, Message, WebSocket};
 use axum::extract::{ConnectInfo, WebSocketUpgrade};
 use axum::response::Response;
-use axum::Extension;
 use futures::{SinkExt, StreamExt};
 use std::borrow::Cow;
 use std::net::SocketAddr;
 use std::sync::Arc;
 
-use crate::pages::trade;
 use crate::api::auth::session_context::SessionContext;
 use crate::backend::Backend;
+use crate::pages::trade;
 
 pub async fn ws_handler(
     Extension(backend): Extension<Backend>,

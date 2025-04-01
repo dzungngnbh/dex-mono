@@ -1,6 +1,6 @@
+use crate::api::auth::COOKIE_KEY;
 use crate::api::auth::constants::USER_KEY;
 use crate::api::auth::session_context::SessionContext;
-use crate::api::auth::COOKIE_KEY;
 use axum::async_trait;
 use axum::extract::FromRequestParts;
 use axum::http;

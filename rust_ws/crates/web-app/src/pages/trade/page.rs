@@ -1,9 +1,9 @@
 use crate::backend::Backend;
+use axum::Extension;
 use axum::extract::Path;
 use axum::response::{Html, IntoResponse};
-use axum::Extension;
 use log::info;
-use minify_html::{minify, Cfg};
+use minify_html::{Cfg, minify};
 use sailfish::TemplateOnce;
 use tracing::log;
 

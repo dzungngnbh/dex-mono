@@ -1,4 +1,3 @@
-
 // Session context provides an information about the current user.
 #[derive(Debug)]
 pub struct SessionContext {

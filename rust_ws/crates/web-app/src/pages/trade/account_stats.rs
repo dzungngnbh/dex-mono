@@ -1,5 +1,5 @@
-use crate::pages::components::hotwired_turbo::turbo_stream::ACTION_REPLACE;
 use crate::pages::components::hotwired_turbo::TurboStream;
+use crate::pages::components::hotwired_turbo::turbo_stream::ACTION_REPLACE;
 use anyhow::Result;
 use sailfish::TemplateOnce;
 

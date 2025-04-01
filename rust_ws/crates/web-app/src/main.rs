@@ -1,18 +1,15 @@
 #![feature(lazy_cell)]
 
-mod pages;
+mod api;
 mod backend;
 mod errors;
 mod lib;
-mod routes;
-mod api;
 mod models;
+mod pages;
+mod routes;
 
 use anyhow::Result;
-use axum::{
-    routing::get,
-    Extension, Router,
-};
+use axum::{Extension, Router, routing::get};
 use axum_server::tls_rustls::RustlsConfig;
 use log::LevelFilter;
 use logforth::append;
@@ -25,16 +22,16 @@ use tower_http::{compression::CompressionLayer, services::ServeDir, trace::Trace
 use tracing::info;
 
 use crate::{
-    pages::four0four_index, // Contains session_context extractor
     backend::Backend,
     lib::env::Env,
+    pages::four0four_index, // Contains session_context extractor
 };
 
 // Use mimalloc as the global allocator for better performance
-use mimalloc::MiMalloc;
-use api::{auth, ws};
-use models::account;
 use crate::pages::pulse;
+use api::{auth, ws};
+use mimalloc::MiMalloc;
+use models::account;
 
 #[global_allocator]
 static GLOBAL: MiMalloc = MiMalloc;

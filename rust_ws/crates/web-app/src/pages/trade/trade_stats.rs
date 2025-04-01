@@ -2,10 +2,10 @@ use anyhow::Result;
 use redis::Client;
 use sailfish::TemplateOnce;
 
-use oracle::{indexer, BTCUSD_INTERNAL_ID};
+use oracle::{BTCUSD_INTERNAL_ID, indexer};
 
-use crate::pages::components::hotwired_turbo::turbo_stream::ACTION_REPLACE;
 use crate::pages::components::hotwired_turbo::TurboStream;
+use crate::pages::components::hotwired_turbo::turbo_stream::ACTION_REPLACE;
 
 pub struct TradeStatsUi {
     pub product_str: String,

@@ -14,7 +14,7 @@ update:
 test:
     cargo test -- --nocapture
 
-fmt:
+fmt: fmt-ts
     cargo fmt --all;
 
 compile-css-webapp:
