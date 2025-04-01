@@ -17,14 +17,14 @@ test:
 fmt: fmt-ts
     cargo fmt --all;
 
-compile-css-webapp:
-		pnpm dlx tailwindcss -c './tailwind.config.js' -i './styles/global.css' -o './dist/output.css' --minify --watch
+css-webapp:
+    bunx @tailwindcss/cli  -i './styles/global.css' -o './dist/output.css' --minify --watch
 
-compile-css-prototype:
-		pnpm dlx tailwindcss -c './tailwind.config.js' -i './styles/global.css' -o './dist/prototype_output.css' --minify --watch
+css-prototype:
+    bunx tailwindcss -c './tailwind.config.js' -i './styles/global.css' -o './dist/prototype_output.css' --minify --watch
 
 compile-js-webapp:
-		npx swc -d dist templates --watch
+    npx swc -d dist templates --watch
 
 clippy:
     cargo clippy --fix --allow-dirty

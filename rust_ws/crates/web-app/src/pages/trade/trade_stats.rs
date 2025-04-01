@@ -80,7 +80,6 @@ impl TradeStatsUi {
 
 mod tests {
     use super::*;
-    use anyhow::Result;
 
     #[test]
     fn test_render_trade_stats() -> Result<()> {

@@ -36,10 +36,9 @@ impl Page {
 
 mod tests {
     use super::*;
-    use anyhow::Result;
 
     #[test]
-    fn test_render() -> Result<()> {
+    fn test_render() -> anyhow::Result<()> {
         let template = Page {
             title: "46,858.00 BTC-PERP | <ProjectName> ".to_string(),
         };

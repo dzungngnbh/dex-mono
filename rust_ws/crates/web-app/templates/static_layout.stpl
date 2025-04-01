@@ -7,7 +7,6 @@
 <link rel="stylesheet" href="https://rsms.me/inter/inter.css">
 <link rel="stylesheet" href="/dist/output.css">
 <link rel="icon" href="/public/favicon.ico" type="image/x-icon">
-
   <body class="dark antialiased min-h-screen flex transition">
     <%- children %>
   </body>

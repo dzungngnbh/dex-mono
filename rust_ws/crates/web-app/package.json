@@ -4,8 +4,11 @@
 		"@swc/cli": "0.5.1",
 		"@swc/core": "^1.11.11",
 		"@types/node": "^20.17.25",
-		"tailwindcss": "^4.0.15",
+		"tailwindcss": "^4.0.17",
 		"tailwindcss-animate": "^1.0.7",
-		"typescript": "^5.8.2",
+		"typescript": "^5.8.2"
+	},
+	"dependencies": {
+		"@tailwindcss/cli": "^4.0.17"
 	}
 }

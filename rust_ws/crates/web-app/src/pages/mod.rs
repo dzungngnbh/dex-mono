@@ -3,7 +3,6 @@ pub mod four0four;
 pub mod pulse;
 pub mod trade;
 
-use crate::pages::components::meta::TitleUi;
 use crate::pages::components::ui::toast::TOAST_UI;
 use crate::pages::four0four::Four0FourPage;
 use anyhow::Result;
@@ -22,6 +21,7 @@ pub struct AppLayout {
     pub children: String,
     pub main_sidebar_ui: String,
 
+    // components
     pub toast_ui: String,
 }
 

@@ -1,10 +1,7 @@
 use crate::backend::Backend;
 use crate::pages::AppLayout;
 use axum::Extension;
-use axum::extract::Path;
 use axum::response::{Html, IntoResponse};
-use axum::routing::get;
-use log::info;
 use minify_html::{Cfg, minify};
 use sailfish::TemplateOnce;
 
