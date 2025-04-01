@@ -94,15 +94,7 @@ fn setup_middleware(app: Router, backend: Backend) -> Router {
 
 #[tokio::main]
 async fn main() -> Result<()> {
-    // TODO: Copy ts-log
-    let level = env::var("RUST_LOG")?;
-    let level_filter = LevelFilter::from_str(&level)?;
-    logforth::builder()
-        .dispatch(|d| {
-            d.filter(level_filter)
-                .append(append::Stdout::default().with_layout(JsonLayout::default()))
-        })
-        .apply();
+    lib::log::init();
 
     // Load environment configuration
     let env = Env::get_env()?;

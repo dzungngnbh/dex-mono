@@ -2,6 +2,7 @@ pub mod api;
 pub mod constants;
 pub mod currency;
 pub mod env;
+pub mod log;
 pub mod misc;
 pub mod moment;
 pub mod serde;

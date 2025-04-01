@@ -8,10 +8,9 @@
     <meta name="turbo-cache-control" content="no-cache">
     <link rel="stylesheet" href="/public/mirrors/inter.css">
     <link rel="stylesheet" href="/dist/output.css">
-    <link rel="icon" href="/public/favicon.ico" type="image/x-icon">
+<!--    <link rel="icon" href="/public/favicon.ico" type="image/x-icon">-->
     <script type="module">
         import {Application} from "stimulus"
-
         window.Stimulus = Application.start()
     </script>
     <%- head_extra %>
