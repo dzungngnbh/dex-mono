@@ -1,13 +1,12 @@
 #![feature(lazy_cell)]
 
-mod account;
-mod app;
-mod auth;
+mod pages;
 mod backend;
 mod errors;
 mod lib;
 mod routes;
-mod ws;
+mod api;
+mod models;
 
 use anyhow::Result;
 use axum::{
@@ -26,13 +25,17 @@ use tower_http::{compression::CompressionLayer, services::ServeDir, trace::Trace
 use tracing::info;
 
 use crate::{
-    app::four0four_index, // Contains session_context extractor
+    pages::four0four_index, // Contains session_context extractor
     backend::Backend,
     lib::env::Env,
 };
 
 // Use mimalloc as the global allocator for better performance
 use mimalloc::MiMalloc;
+use api::{auth, ws};
+use models::account;
+use crate::pages::pulse;
+
 #[global_allocator]
 static GLOBAL: MiMalloc = MiMalloc;
 
@@ -48,17 +51,18 @@ async fn get_rust_tsl_config() -> Result<RustlsConfig> {
 /// Configure and set up application routes
 fn setup_routes(env: &Env) -> Router {
     let mut app = Router::new()
-        // API routes
+        // API http
         .nest("/api/auth", auth::routes())
         .nest("/api/account", account::routes())
-        // WebSocket handler
+        // API websockets
         .route("/ws", get(ws::ws_handler))
-        // UI routes
-        .route("/404", get(four0four_index))
+        .route("/ws_traders", get(ws::traders_ws_handler))
+        // Page routes
+        .route("/c/:component_name", get(pages::components::components))
+        .route("/pulse", get(pulse::Page::index))
+        .route("/trade/:symbol", get(pages::trade::Page::index))
         // Component routes
-        .route("/c/:component_name", get(app::components::components))
-        // /markets
-        .route("/trade/:symbol", get(app::trade::Page::index))
+        .route("/404", get(four0four_index))
         // /trade/{:market}
         // order_book, market_trades, current_price, 24h change, 24h volume
         // auth
@@ -92,7 +96,7 @@ fn setup_middleware(app: Router, backend: Backend) -> Router {
 
 #[tokio::main]
 async fn main() -> Result<()> {
-    // Initialize logging
+    // TODO: Copy ts-log
     let level = env::var("RUST_LOG")?;
     let level_filter = LevelFilter::from_str(&level)?;
     logforth::builder()

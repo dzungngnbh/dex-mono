@@ -1,32 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title><%= title %></title>
-  <meta name="description" content="<%= description %>">
-
-  <meta name="turbo-cache-control" content="no-cache">
-
-  <link rel="stylesheet" href="/public/mirrors/inter.css">
-  <link rel="stylesheet" href="/dist/output.css">
-
-  <link rel="icon" href="/public/favicon.ico" type="image/x-icon">
-</head>
-
-<body class="dark antialiased min-h-screen flex transition"
-      data-controller="toast http combobox htmx-turbostream"
-      data-action="http:selectComboboxItem->combobox#selectItemDispatched"
-      hx-history="false">
-
-  <turbo-stream-source class="flex w-full text-xs" src="wss://localhost:3000/ws">
-    <div class="flex w-full text-xs" id="rootContent">
-      <%- main_sidebar_ui %>
-      <%- children %>
-    </div>
-  </turbo-stream-source>
-
-  <% include!("./components/ui/toast.stpl"); %>
-
-</body>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><%= title %> </title>
+    <meta name="description" content="<%= description %>">
+    <meta name="turbo-cache-control" content="no-cache">
+    <link rel="stylesheet" href="/public/mirrors/inter.css">
+    <link rel="stylesheet" href="/dist/output.css">
+    <link rel="icon" href="/public/favicon.ico" type="image/x-icon">
+  </head>
+  <body class="dark antialiased min-h-screen flex transition" data-controller="toast http combobox" data-action="http:selectComboboxItem->combobox#selectItemDispatched">
+    <turbo-stream-source class="flex w-full text-xs" src="wss://localhost:3000/ws">
+      <div class="flex w-full text-xs" id="rootContent"><%- main_sidebar_ui %><%- children %> </div>
+    </turbo-stream-source><% include!("./components/ui/toast.stpl"); %><% include!("./components/footer.stpl"); %>
+  </body>
 </html>

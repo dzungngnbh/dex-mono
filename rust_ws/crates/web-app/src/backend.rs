@@ -29,9 +29,10 @@ impl Backend {
 #[cfg(test)]
 mod tests {
     use super::*;
+    use anyhow::Result;
 
-    #[tokio::test]
-    async fn test_get_backend() -> Result<()> {
+    #[test]
+    fn test_get_backend() -> Result<()> {
         let env = Env::get_env()?;
         let backend = Backend::new(&env);
         Ok(())

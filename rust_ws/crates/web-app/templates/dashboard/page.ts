@@ -1,6 +1,5 @@
 // @ts-ignore
 import { Controller } from "stimulus"
-import { editorPageComponentRouteHtmx } from "../lib/routes.js"
 
 // @ts-ignore
 Stimulus.register(
@@ -135,18 +134,18 @@ Stimulus.register(
 			const { id } = data
 
 			// replace this with your own http
-			htmx
-				.ajax("GET", `${editorPageComponentRouteHtmx(id)}/page`, {
-					target: "#mainContent",
-					swap: "outerHTML",
-				})
-				.then(() => {
-					window.history.pushState(
-						window.history.state,
-						"",
-						`/dashboard/editor/${data.id}`,
-					)
-				})
+			// htmx
+			// 	.ajax("GET", `${editorPageComponentRouteHtmx(id)}/page`, {
+			// 		target: "#mainContent",
+			// 		swap: "outerHTML",
+			// 	})
+			// 	.then(() => {
+			// 		window.history.pushState(
+			// 			window.history.state,
+			// 			"",
+			// 			`/dashboard/editor/${data.id}`,
+			// 		)
+			// 	})
 		}
 	},
 )

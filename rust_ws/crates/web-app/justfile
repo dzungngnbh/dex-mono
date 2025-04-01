@@ -30,7 +30,7 @@ clippy:
     cargo clippy --fix --allow-dirty
 
 fmt-ts:
-    biome format ./templates/ --write
+    bunx biome format ./templates/ --write
 
 test-e2e:
     '.\node_modules\.bin\playwright' test './e2etests'

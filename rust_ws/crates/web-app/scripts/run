@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+
+set -euo pipefail
+
+echo "Rerun";
+rm -rf ../../target/debug/build/sailfish-*;
+cargo run
