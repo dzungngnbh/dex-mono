@@ -98,37 +98,6 @@
         pointer-events: auto;
     }
 </style>
-<!-- <link rel="preload" href="https://esm.run/@hotwired/turbo" as="script"> -->
-<!-- it's much easier to import _esm from viem, so we have the source code -->
-<script type="importmap">
-    {
-          "imports": {
-              "@hotwired/turbo": "https://esm.run/@hotwired/turbo@8.0.0-beta.4",
-              "@noble/curves/": "https://esm.run/@noble/curves@1.3.0/",
-              "@noble/hashes/": "https://esm.run/@noble/hashes@1.3.3/",
-              "@wagmi/": "https://esm.run/@wagmi/",
-              "@walletconnect/ethereum-provider": "https://esm.run/@walletconnect/ethereum-provider",
-              "@web3modal/wagmi": "https://esm.run/@web3modal/wagmi@3.5.7",
-              "abitype": "https://esm.run/abitype@1.0.0",
-              "stimulus": "https://esm.run/@hotwired/stimulus",
-              "viem": "https://cdn.jsdelivr.net/npm/viem@latest/_esm/index.js",
-              "viem/": "https://cdn.jsdelivr.net/npm/viem@latest/_esm/",
-              "@scure/base": "https://esm.run/@scure/base",
-              "@scure/bip32": "https://cdn.jsdelivr.net/npm/@scure/bip32@latest/lib/esm/index.js",
-              "@scure/bip39": "https://cdn.jsdelivr.net/npm/@scure/bip39@latest/esm/index.js",
-              "@scure/bip39/wordlists/czech": "https://cdn.jsdelivr.net/npm/@scure/bip39@latest/esm/wordlists/czech.js",
-              "@scure/bip39/wordlists/english": "https://cdn.jsdelivr.net/npm/@scure/bip39@latest/esm/wordlists/english.js",
-              "@scure/bip39/wordlists/french": "https://cdn.jsdelivr.net/npm/@scure/bip39@latest/esm/wordlists/french.js",
-              "@scure/bip39/wordlists/italian": "https://cdn.jsdelivr.net/npm/@scure/bip39@latest/esm/wordlists/italian.js",
-              "@scure/bip39/wordlists/japanese": "https://cdn.jsdelivr.net/npm/@scure/bip39@latest/esm/wordlists/japanese.js",
-              "@scure/bip39/wordlists/korean": "https://cdn.jsdelivr.net/npm/@scure/bip39@latest/esm/wordlists/korean.js",
-              "@scure/bip39/wordlists/portuguese": "https://cdn.jsdelivr.net/npm/@scure/bip39@latest/esm/wordlists/portuguese.js",
-              "@scure/bip39/wordlists/spanish": "https://cdn.jsdelivr.net/npm/@scure/bip39@latest/esm/wordlists/spanish.js",
-              "@scure/bip39/wordlists/traditional-chinese": "https://cdn.jsdelivr.net/npm/@scure/bip39@latest/esm/wordlists/traditional-chinese.js",
-              "@scure/bip39/wordlists/simplified-chinese": "https://cdn.jsdelivr.net/npm/@scure/bip39@latest/esm/wordlists/simplified-chinese.js"
-          }
-      }
-</script>
 <script type="module" src="/dist/lib/htmx_turbostream.js"></script>
 <script type="module" src="/dist/trade/page.js"></script>
 <script>

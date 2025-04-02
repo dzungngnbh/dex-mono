@@ -1,7 +1,6 @@
 #!/usr/bin/env bash
 
 set -euo pipefail
-
-echo "Rerun";
-rm -rf ../../target/debug/build/sailfish-*;
+rm -rf ../../target/debug/build/sailfish-* && \
+echo "Clearing sailfish template complete" && \
 cargo run

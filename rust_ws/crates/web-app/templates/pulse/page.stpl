@@ -1,7 +1,7 @@
 <section id="mainContent" class="flex flex-col w-full">
   <section class="pl-9 pr-7 flex flex-col">
     <div class="py-5 grid grid-cols-9 items-center">
-        Another content being used to 9999
+
     </div>
   </section>
 </section>

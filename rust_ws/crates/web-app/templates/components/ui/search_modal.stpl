@@ -1,0 +1,39 @@
+<button data-uk-toggle="target: #global-search"
+        class="bg-grey-700 hover:bg-grey-900 flex gap-0.5 h-[22px] items-center rounded pl-1 pr-[2px] border border-grey-400 w-[100px]">
+    <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+         stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+         class="lucide lucide-search text-grey-200 mr-[2px]">
+        <circle cx="11" cy="11" r="8"></circle>
+        <path d="m21 21-4.3-4.3"></path>
+    </svg>
+    <span class="text-xs font-semibold leading-[1] text-grey-100 whitespace-nowrap">Search</span><span
+        class="border border-grey-200 size-4 mr-0 ml-auto text-grey-200 text-center rounded text-xs leading-[14px] font-medium">/</span>
+</button>
+
+<div id="global-search" class="uk-flex-top" data-uk-modal>
+    <div class="bg-white border-secondaryStroke border-[1px] flex flex-col w-[calc(100%-8px)] sm:w-[640px] sm:h-[600px] h-[480px] rounded-[8px] justify-start items-center shadow-[0_4px_4px_0_rgba(0,0,0,0.30),0_8px_8px_0_rgba(0,0,0,0.45)] overflow-hidden pointer-events-auto">
+        <div class="flex flex-row w-full gap-[12px] justify-start items-start px-[16px] pl-[12px] pt-[12px]">
+        <span
+                class="contents"><button
+                class="whitespace-nowrap border-[1px] text-[12px] h-[24px] flex flex-row px-[4px] gap-[3px] justify-center items-center rounded-[4px] cursor-pointer border-secondaryStroke bg-secondaryStroke/45 text-textSecondary hover:bg-secondaryStroke/60 hover:transition-colors hover:duration-[125ms]"><img
+                alt="Pump" loading="lazy" width="12" height="12" decoding="async" data-nimg="1" src="/images/pump.svg"
+                style="color: transparent;"><span class="font-medium">Pump Only</span></button></span><span
+                class="contents"><button
+                class="group whitespace-nowrap border-[1px] text-[12px] h-[24px] flex flex-row px-[4px] gap-[3px] justify-center items-center rounded-[4px] cursor-pointer border-secondaryStroke bg-secondaryStroke/45 text-textSecondary hover:bg-secondaryStroke/60 hover:transition-colors hover:duration-[125ms]"><i
+                class="text-[14px] ri-fire-line text-textAS group-hover:text-textSecondary opacity-70"></i><span
+                class="font-medium">OG Mode</span></button></span></div>
+        <div class="flex flex-row p-[16px] w-full h-[64px] border-b-secondaryStroke/50 border-b-[1px] justify-start items-center">
+            <input class="bg-transparent text-regular outline-none placeholder:text-textTertiary placeholder:text-[20px] text-primaryText text-[20px] flex flex-row w-full h-full gap-[8px] justify-center items-center"
+                   placeholder="Search by name, ticker, or CA..." type="text">
+            <button class="whitespace-nowrap border-primaryStroke bg-background border-[1px] text-[12px] h-[20px] flex flex-row px-[8px] gap-[8px] justify-center items-center rounded-full hover:bg-primaryStroke/35 transition-colors duration-[125ms] cursor-pointer">
+                <span>Esc</span></button>
+        </div>
+        <div class="flex flex-row p-[16px] w-full h-[40px] justify-between items-center"><span
+                class="text-primaryText text-[12px] text-textSecondary font-regular">History</span></div>
+        <div class="flex flex-col flex-1 w-full h-[352px] overflow-y-auto"></div>
+    </div>
+</div>
+
+<script>
+    UIKit.modal("global-search");
+</script>
