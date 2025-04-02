@@ -18,7 +18,7 @@ fmt: fmt-ts
     cargo fmt --all;
 
 css-webapp:
-    bunx @tailwindcss/cli  -i './styles/global.css' -o './dist/output.css' --minify --watch
+    bunx @tailwindcss/cli -i './styles/global.css' -o './dist/output.css' --minify --watch
 
 css-prototype:
     bunx tailwindcss -c './tailwind.config.js' -i './styles/global.css' -o './dist/prototype_output.css' --minify --watch
